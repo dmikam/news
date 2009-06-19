@@ -1,0 +1,210 @@
+Sending notifications for post: 1
+No suscriptions found for post 1
+New comment posted, id: 7, status: 1
+Subscribe checkbox status (empty -> not set): 1
+Going on with subscription
+Start a new subscription
+Sending notifications for post: 1
+No suscriptions found for post 1
+Sending notifications for post: 1
+No suscriptions found for post 1
+New comment posted, id: 8, status: 1
+Subscribe checkbox status (empty -> not set): 1
+Going on with subscription
+Start a new subscription
+Sending notifications for post: 1
+No suscriptions found for post 1
+New comment posted, id: 9, status: 0
+Subscribe checkbox status (empty -> not set): 1
+Going on with subscription
+Start a new subscription
+New comment posted, id: 10, status: 0
+Subscribe checkbox status (empty -> not set): 1
+Going on with subscription
+Start a new subscription
+Sending notifications for post: 1
+No suscriptions found for post 1
+Sending notifications for post: 1
+No suscriptions found for post 1
+Sending notifications for post: 1
+No suscriptions found for post 1
+New comment posted, id: 11, status: 1
+Subscribe checkbox status (empty -> not set): 1
+Going on with subscription
+Start a new subscription
+FAILURE
+Sending notifications for post: 1
+No suscriptions found for post 1
+New comment posted, id: 12, status: 0
+Subscribe checkbox status (empty -> not set): 1
+Going on with subscription
+Start a new subscription
+17
+New comment posted, id: 13, status: 0
+Subscribe checkbox status (empty -> not set): 1
+Going on with subscription
+Start a new subscription
+
+New comment posted, id: 14, status: 0
+Subscribe checkbox status (empty -> not set): 1
+Going on with subscription
+Start a new subscription
+array (
+  0 => 
+  stdClass::__set_state(array(
+     'Tables_in_enfoqw_db1' => 'wp_1_comments',
+  )),
+  1 => 
+  stdClass::__set_state(array(
+     'Tables_in_enfoqw_db1' => 'wp_1_links',
+  )),
+  2 => 
+  stdClass::__set_state(array(
+     'Tables_in_enfoqw_db1' => 'wp_1_options',
+  )),
+  3 => 
+  stdClass::__set_state(array(
+     'Tables_in_enfoqw_db1' => 'wp_1_postmeta',
+  )),
+  4 => 
+  stdClass::__set_state(array(
+     'Tables_in_enfoqw_db1' => 'wp_1_posts',
+  )),
+  5 => 
+  stdClass::__set_state(array(
+     'Tables_in_enfoqw_db1' => 'wp_1_term_relationships',
+  )),
+  6 => 
+  stdClass::__set_state(array(
+     'Tables_in_enfoqw_db1' => 'wp_1_term_taxonomy',
+  )),
+  7 => 
+  stdClass::__set_state(array(
+     'Tables_in_enfoqw_db1' => 'wp_1_terms',
+  )),
+  8 => 
+  stdClass::__set_state(array(
+     'Tables_in_enfoqw_db1' => 'wp_blog_versions',
+  )),
+  9 => 
+  stdClass::__set_state(array(
+     'Tables_in_enfoqw_db1' => 'wp_blogs',
+  )),
+  10 => 
+  stdClass::__set_state(array(
+     'Tables_in_enfoqw_db1' => 'wp_registration_log',
+  )),
+  11 => 
+  stdClass::__set_state(array(
+     'Tables_in_enfoqw_db1' => 'wp_signups',
+  )),
+  12 => 
+  stdClass::__set_state(array(
+     'Tables_in_enfoqw_db1' => 'wp_site',
+  )),
+  13 => 
+  stdClass::__set_state(array(
+     'Tables_in_enfoqw_db1' => 'wp_sitecategories',
+  )),
+  14 => 
+  stdClass::__set_state(array(
+     'Tables_in_enfoqw_db1' => 'wp_sitemeta',
+  )),
+  15 => 
+  stdClass::__set_state(array(
+     'Tables_in_enfoqw_db1' => 'wp_usermeta',
+  )),
+  16 => 
+  stdClass::__set_state(array(
+     'Tables_in_enfoqw_db1' => 'wp_users',
+  )),
+)
+New comment posted, id: 15, status: 0
+Subscribe checkbox status (empty -> not set): 1
+Going on with subscription
+Start a new subscription
+array (
+  0 => 
+  stdClass::__set_state(array(
+     'Tables_in_enfoqw_db1' => 'wp_1_comment_notifier',
+  )),
+  1 => 
+  stdClass::__set_state(array(
+     'Tables_in_enfoqw_db1' => 'wp_1_comments',
+  )),
+  2 => 
+  stdClass::__set_state(array(
+     'Tables_in_enfoqw_db1' => 'wp_1_links',
+  )),
+  3 => 
+  stdClass::__set_state(array(
+     'Tables_in_enfoqw_db1' => 'wp_1_options',
+  )),
+  4 => 
+  stdClass::__set_state(array(
+     'Tables_in_enfoqw_db1' => 'wp_1_postmeta',
+  )),
+  5 => 
+  stdClass::__set_state(array(
+     'Tables_in_enfoqw_db1' => 'wp_1_posts',
+  )),
+  6 => 
+  stdClass::__set_state(array(
+     'Tables_in_enfoqw_db1' => 'wp_1_term_relationships',
+  )),
+  7 => 
+  stdClass::__set_state(array(
+     'Tables_in_enfoqw_db1' => 'wp_1_term_taxonomy',
+  )),
+  8 => 
+  stdClass::__set_state(array(
+     'Tables_in_enfoqw_db1' => 'wp_1_terms',
+  )),
+  9 => 
+  stdClass::__set_state(array(
+     'Tables_in_enfoqw_db1' => 'wp_blog_versions',
+  )),
+  10 => 
+  stdClass::__set_state(array(
+     'Tables_in_enfoqw_db1' => 'wp_blogs',
+  )),
+  11 => 
+  stdClass::__set_state(array(
+     'Tables_in_enfoqw_db1' => 'wp_registration_log',
+  )),
+  12 => 
+  stdClass::__set_state(array(
+     'Tables_in_enfoqw_db1' => 'wp_signups',
+  )),
+  13 => 
+  stdClass::__set_state(array(
+     'Tables_in_enfoqw_db1' => 'wp_site',
+  )),
+  14 => 
+  stdClass::__set_state(array(
+     'Tables_in_enfoqw_db1' => 'wp_sitecategories',
+  )),
+  15 => 
+  stdClass::__set_state(array(
+     'Tables_in_enfoqw_db1' => 'wp_sitemeta',
+  )),
+  16 => 
+  stdClass::__set_state(array(
+     'Tables_in_enfoqw_db1' => 'wp_usermeta',
+  )),
+  17 => 
+  stdClass::__set_state(array(
+     'Tables_in_enfoqw_db1' => 'wp_users',
+  )),
+)
+New comment posted, id: 16, status: 0
+Subscribe checkbox status (empty -> not set): 1
+Going on with subscription
+Start a new subscription
+This address is already suscribed
+New comment posted, id: 17, status: 0
+Subscribe checkbox status (empty -> not set): 1
+Going on with subscription
+Start a new subscription
+'1'
+This address is already suscribed
