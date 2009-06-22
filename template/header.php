@@ -11,8 +11,32 @@
 
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 	<?php wp_head(); ?>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js" charset="utf-8"></script>
+	
+	<script type="text/javascript" charset="utf-8">
+		$(document).ready(function(){
+		    $("#menu li").hover(function(){
+		        $(this).addClass("hover");
+		        $('ul:first',this).css('visibility', 'visible');
+
+		    }, function(){
+
+		        $(this).removeClass("hover");
+		        $('ul:first',this).css('visibility', 'hidden');
+
+		    });
+
+		    $("#menu li ul li:has(ul)").find("a:first").append(" &raquo; ");
+
+		});
+	</script>
 </head>
 <body>
-	<div id="header">
+	<div id="header" class="clearfix">
 		<h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
+	</div>
+	<div id="navbar" class="clearfix">
+		<ul id="menu">
+			<? wp_list_categories('title_li=&hide_empty=0'); ?>
+		</ul>
 	</div>

@@ -1,9 +1,9 @@
 /*
-      Theme Name: ---
-      Theme URI: http://www.
+      Theme Name: NewsThemes
+      Theme URI: http://www.enfoque19.com
       Version: 1.0
-      Author: Portales Andalucia
-      Author URI: http://www.portalesandalucia.com
+      Author: Daniel Aguilar & Dmitrijus Kamyninas
+      Author URI: http://www.e-dac.es
 */
 
 /* FIXES */
@@ -27,12 +27,86 @@
 /* End hide from IE-mac */
 
 /* END FIXES */
-
-#header {
-	
+body {
+	font-family: Arial,Helvetica,sans-serif;
+	font-size:0.9em;
 }
+#header {
+	width:980px;
+	height:99px;
+	margin:10px auto 0px auto;
+	border:1px solid #bbb;
+}
+	#navbar {
+		width:980px;
+		margin:0px auto;
+		border-bottom:1px solid #bbb;
+		position:relative;
+		height:24px;
+	}
+	#navbar #menu {
+		list-style:none;
+		position: absolute; 
+		text-transform:uppercase;
+		left:0;
+		top:0px;
+		z-index:90;
+	}
+		#navbar #menu li {
+			font-weight: bold; 
+			float: left; 
+			zoom: 1;
+			list-style:none;
+		}
+		#navbar #menu li a {
+			display: block; 
+			padding: 4px 8px; 
+			display:block;
+			text-decoration:none;
+			font-weight:bold;
+			color: #222; 
+		}
+
+		#menu li.hover, #menu li:hover { 
+			position: relative; 
+			}
+		#menu li.hover a { 
+			}
+		#menu ul { 
+			font-size:0.8em;
+			visibility: hidden; 
+			position: absolute; 
+			top: 100%; 
+			left: 0px; 
+			background:#fff;
+			border:1px solid #e4e4e4;
+			padding-right:6px;
+			width:200px;
+			}
+		#menu ul li { 
+			font-weight: normal; 
+			color: #000; 
+			margin:0px;
+			background:#fff;
+			padding:3px;
+			border-bottom: 1px dotted #e4e4e4; 
+			float: none; 
+			} /* IE 6 & 7 Needs Inline Block */
+
+			#menu ul li a:hover { 
+				background:#e7f4fa;
+			}
+			#menu ul li a {
+				color:#008bcb;
+		 	}
+		#menu ul li { 
+			border-right: none; 
+			width: 100%; 
+			display: inline-block; 
+			}
 #container {
-	
+	width:980px;
+	margin:0px auto;
 }
 	#content {
 	
