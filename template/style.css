@@ -1,0 +1,46 @@
+/*
+      Theme Name: ---
+      Theme URI: http://www.
+      Version: 1.0
+      Author: Portales Andalucia
+      Author URI: http://www.portalesandalucia.com
+*/
+
+/* FIXES */
+*, html { 
+	margin:0; 
+	padding:0;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {display: inline-block;}
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+/* END FIXES */
+
+#header {
+	
+}
+#container {
+	
+}
+	#content {
+	
+	}
+	#sidebar {
+	
+	}
+#footer {
+	
+}
+	
