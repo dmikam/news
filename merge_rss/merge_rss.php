@@ -23,6 +23,7 @@ if ( is_admin() ){ // admin actions
 	register_activation_hook(__FILE__,'mss_install');
 	add_action('admin_menu', 'mss_menu');
 	add_action('admin_init', 'mss_register_settings' );
+	add_filter("plugin_action_links_merge_rss/merge_rss.php", 'mss_options_link');
 } else {
   // non-admin enqueues, actions, and filters
 }
@@ -49,6 +50,13 @@ function mss_install() {
 function mss_menu() {
 	add_options_page('Merge RSS Plugin Options', 'MSS Options', 8, 'merge_rss/mss_options.php');
 }
+
+function mss_options_link($links){
+	$settings_link = '<a href="options-general.php?page=merge_rss/mss_options.php">' . __('Settings') . '</a>';
+	array_unshift($links, $settings_link);
+	return $links;
+}
+
 
 function mss_register_settings(){
 	register_setting('mss-opt', 'mss_opt');
@@ -149,7 +157,7 @@ function mss_block($val){
 
 function mss_log($text) {
 	global $mss_opt;
-	//if (!$mss_opt['log']) return;
+	if (!$mss_opt['log']) return;
 	//var_dump($mss_opt);
 	$file = fopen(dirname(__FILE__) . '/mss.log', 'a');
 	fwrite($file, $text . "\n");
