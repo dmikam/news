@@ -161,6 +161,42 @@ a:hover {
 		-webkit-border-radius:3px;
 		border-radius:3px;
 	}
+		#sidebar #more-featured {
+			height:300px;
+			background:#000;
+			overflow:hidden;
+			text-align:center;
+			position:relative;
+			
+		}
+			#sidebar #more-featured .featured-item {
+				position:absolute;
+				top:0;
+				left:0;
+				height:300px;
+				background:#000;
+			}
+			#sidebar #more-featured .featured-item h2 {
+				position:absolute;
+				top:5px;
+				left:5px;
+				z-index:2;
+				color:#fff;
+				background:#000;
+				opacity:0.8;
+				padding:5px;
+				font-size:0.8em;
+			}
+			#sidebar #more-featured .featured-item h2 a {
+				color:#fff;
+			}
+			#sidebar #more-featured .featured-item.active {
+			    z-index:10;
+			}
+
+			#sidebar #more-featured .featured-item.last-active {
+			    z-index:9;
+			}
 #footer {
 	
 }

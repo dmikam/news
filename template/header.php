@@ -11,7 +11,9 @@
 
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 	<?php wp_head(); ?>
+
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js" charset="utf-8"></script>
+
 	
 	<script type="text/javascript" charset="utf-8">
 		$(document).ready(function(){
@@ -37,6 +39,6 @@
 	</div>
 	<div id="navbar" class="clearfix">
 		<ul id="menu">
-			<? wp_list_categories('title_li=&hide_empty=0'); ?>
+			<? wp_list_categories('title_li=&hide_empty=0&exclude=24,25,26'); ?>
 		</ul>
 	</div>
