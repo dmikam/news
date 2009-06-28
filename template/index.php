@@ -13,16 +13,37 @@
 		 	<?php endforeach; ?>
 		</div>
 		
-		<?php while (have_posts()) : the_post(); ?>
-			<h2 class="title" id="title-<? the_ID(); ?>">
-				<a class="none" href="<?php the_permalink() ?>" rel="bookmark" title="Enlace a <?php the_title_attribute(); ?>">
-					<?php the_title(); ?>
-				</a>
-			</h2>
-			<div class="entry">
-					<?php the_content('Leer más &raquo;'); ?>
+		<div id="sub-content" class="clearfix">
+			<div id="left">
+				<? $width = 350; ?>
+				<? $number = "Bloque 1"; ?>
+				<? require(TEMPLATEPATH . "/block.php"); ?>
+				<? $number = "Bloque 3"; ?>
+				<? require(TEMPLATEPATH . "/block.php"); ?>
+				<? $number = "Bloque 5"; ?>
+				<? require(TEMPLATEPATH . "/block.php"); ?>
+				<? $number = "Bloque 7"; ?>
+				<? require(TEMPLATEPATH . "/block.php"); ?>
+				<? $number = "Bloque 9"; ?>
+				<? require(TEMPLATEPATH . "/block.php"); ?>
 			</div>
-		<?php endwhile; ?>
+			<div id="right">
+				<? $width = 260; ?>
+				<? $number = "Bloque 2"; ?>
+				<? require(TEMPLATEPATH . "/block.php"); ?>
+				<? $number = "Bloque 4"; ?>
+				<? require(TEMPLATEPATH . "/block.php"); ?>
+				<? $number = "Bloque 6"; ?>
+				<? require(TEMPLATEPATH . "/block.php"); ?>
+				<? $number = "Bloque 8"; ?>
+				<? require(TEMPLATEPATH . "/block.php"); ?>
+				<? $number = "Bloque 10"; ?>
+				<? require(TEMPLATEPATH . "/block.php"); ?>
+			</div>		
+		</div>
+		
+		
+
 	</div>
 <?php get_sidebar() ?>
 </div>

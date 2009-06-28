@@ -43,4 +43,5 @@ function get_category_featured_id($category_parent='') {
  	return $category->cat_ID;
 }
 
+
 ?>
