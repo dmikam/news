@@ -11,8 +11,10 @@
 
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 	<?php wp_head(); ?>
-
+	
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="<?php bloginfo('template_directory')?>/scripts/jquery.thickbox.js" charset="utf-8"></script>
+	<link rel="stylesheet" href="<?php bloginfo('template_directory')?>/scripts/jquery.thickbox.css" type="text/css" />
 
 	
 	<script type="text/javascript" charset="utf-8">
@@ -34,6 +36,7 @@
 	</script>
 </head>
 <body>
+	<a href="wp-login.php?height=220&width=400" class="thickbox" title="Iniciar sesión">Inicia sesión</a>  
 	<div id="header" class="clearfix">
 		<h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
 	</div>
