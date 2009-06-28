@@ -26,6 +26,7 @@
 				<? require(TEMPLATEPATH . "/block.php"); ?>
 				<? $number = "Bloque 9"; ?>
 				<? require(TEMPLATEPATH . "/block.php"); ?>
+<?php require(TEMPLATEPATH . "/links_block.php"); ?>	
 			</div>
 			<div id="right">
 				<? $width = 260; ?>
