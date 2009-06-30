@@ -43,5 +43,70 @@ function get_category_featured_id($category_parent='') {
  	return $category->cat_ID;
 }
 
+function get_bicat_links($cat1,$cat2){
+	global $wpdb;
+	if (is_int($cat1)){
+		$dc1 = $cat1;
+	}else{
+		$term1 = get_term_by('slug', $cat1, 'link_category');
+		$dc1 = $term1->term_id;
+	}
+	if (is_int($cat2)){
+		$dc2 = $cat2;
+	}else{
+		$term2 = get_term_by('slug', $cat2, 'link_category');
+		$dc2 = $term2->term_id;
+	}
+	
+	if ( $dc1 && $dc2 ) {
+	
+		$wherestring = "
+			$wpdb->links.link_id IN (
+				SELECT DISTINCT 
+					object_id 
+				FROM 
+					$wpdb->term_relationships 
+				WHERE 
+					object_id IN (
+						SELECT 
+							object_id 
+						FROM 
+							$wpdb->term_relationships 
+							inner join 
+								$wpdb->term_taxonomy 
+								ON 
+								$wpdb->term_relationships.term_taxonomy_id = $wpdb->term_taxonomy.term_taxonomy_id 
+						WHERE 
+							term_id = '$dc1'
+					) 
+					AND 
+					object_id IN (
+						SELECT 
+							object_id 
+						FROM 
+							$wpdb->term_relationships 
+							inner join 
+								$wpdb->term_taxonomy 
+								on 
+								$wpdb->term_relationships.term_taxonomy_id = $wpdb->term_taxonomy.term_taxonomy_id 
+						WHERE 
+						term_id = '$dc2'
+					)
+			)
+		";
+	}
+	$sql = "
+		SELECT
+			*
+		FROM
+			$wpdb->links
+		WHERE
+	".$wherestring;
+	
+	$res = $wpdb->get_results($sql,OBJECT);
+	
+	return $res;
+}
+
 
 ?>
