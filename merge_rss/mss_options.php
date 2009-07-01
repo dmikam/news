@@ -94,9 +94,9 @@
 				</td>
 				<td>
 					<select name="mss[type]" >
-						<option value="internal">Internal</option>
-						<option value="external">External</option>
-						<option value="blog">Blog</option>
+						<option value="internal">Blogs propios</option>
+						<option value="external">Blogs ajenos</option>
+						<option value="blog">Blogs en primera voz</option>
 					</select>
 				</td>
 				<td><input type="text"	name="mss[url]"	value=""	size="75" /></td>

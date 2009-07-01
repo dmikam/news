@@ -47,17 +47,19 @@ function get_bicat_links($cat1,$cat2){
 	global $wpdb;
 	if (is_int($cat1)){
 		$dc1 = $cat1;
+		$c1 = get_category($cat1);
 	}else{
 		$term1 = get_term_by('slug', $cat1, 'link_category');
 		$dc1 = $term1->term_id;
 	}
 	if (is_int($cat2)){
 		$dc2 = $cat2;
+		$c2 = get_category($cat2);
 	}else{
 		$term2 = get_term_by('slug', $cat2, 'link_category');
 		$dc2 = $term2->term_id;
 	}
-	
+
 	if ( $dc1 && $dc2 ) {
 	
 		$wherestring = "
@@ -76,6 +78,8 @@ function get_bicat_links($cat1,$cat2){
 								$wpdb->term_taxonomy 
 								ON 
 								$wpdb->term_relationships.term_taxonomy_id = $wpdb->term_taxonomy.term_taxonomy_id 
+								AND
+								$wpdb->term_taxonomy.taxonomy = 'link_category'
 						WHERE 
 							term_id = '$dc1'
 					) 
@@ -89,6 +93,8 @@ function get_bicat_links($cat1,$cat2){
 								$wpdb->term_taxonomy 
 								on 
 								$wpdb->term_relationships.term_taxonomy_id = $wpdb->term_taxonomy.term_taxonomy_id 
+								AND
+								$wpdb->term_taxonomy.taxonomy = 'link_category'
 						WHERE 
 						term_id = '$dc2'
 					)
@@ -103,9 +109,18 @@ function get_bicat_links($cat1,$cat2){
 		WHERE
 	".$wherestring;
 	
+
 	$res = $wpdb->get_results($sql,OBJECT);
 	
 	return $res;
+}
+
+function excerpt($text,$maxlen=500){
+	if (strlen($text)<=$maxlen){
+		echo $text;
+	}else{
+		echo substr($text,0,strpos($text,' ',$maxlen)).(strlen($text)>$maxlen? " [...]":"");
+	}
 }
 
 
