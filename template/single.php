@@ -10,6 +10,10 @@
 			<div class="entry">
 					<?php the_content('Leer más &raquo;'); ?>
 			</div>
+			<div class="related_posts">
+				<h3>Artículos relacionados</h3>
+			<?php echo related_posts_shortcode('limit=5');?>
+			</div>
 		<?php endwhile; ?>
 	</div>
 <?php get_sidebar() ?>
