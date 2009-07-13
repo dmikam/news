@@ -9,10 +9,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	<head>
 	  	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-		<meta name="Author" content="" />
-		<meta name="Keywords" content="" />
-		<meta name="description" content="" />
-		<link rel="stylesheet" href="styles.css" type="text/css" media="all" />
 		<title>Inicia sesión</title>
 	</head>
 	<body>
