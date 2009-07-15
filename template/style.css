@@ -297,10 +297,17 @@ a:hover {
 		font-size:13px;
 		line-height:19px;
 	}
-			
+		
+	#tags {
+		border-top:1px solid #e4e4e4;
+		border-bottom:1px solid #e4e4e4;
+		padding:3px;	
+	}	
 .recomended-links,
 .related_posts {
 	margin:10px 0px;
+	width:300px;
+	float:left
 }
 .recomended-links ul,
 .related_posts ul {
