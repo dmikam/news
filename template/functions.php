@@ -174,5 +174,10 @@ function related_posts_shortcode( $atts ) {
 }
 
 
+function the_current_date() {
+		$months = array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
+		$days = array("Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado");
+		echo $days[date("w")] . ", " . date("j") . " de " . $months[date("n")] . " de " . date("Y");
+}
 
 ?>

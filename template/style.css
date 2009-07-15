@@ -47,8 +47,11 @@ a:hover {
 		width:980px;
 		margin:0px auto;
 		border-bottom:1px solid #bbb;
+		border-left:1px solid #bbb;
+		border-right:1px solid #bbb;		
 		position:relative;
 		height:24px;
+		background:#f8f8f8;
 	}
 	#navbar #menu {
 		list-style:none;
@@ -110,6 +113,16 @@ a:hover {
 			width: 100%; 
 			display: inline-block; 
 			}
+	#header_bar {
+		width:980px;
+		margin:5px auto;
+	}
+	#date {
+		float:left;
+	}
+	#login_bar {
+		float:right;
+	}
 #container {
 	width:980px;
 	margin:0px auto;

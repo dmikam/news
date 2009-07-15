@@ -36,14 +36,6 @@
 	</script>
 </head>
 <body>
-	
-	<? if (is_user_logged_in()) { ?>
-		<a href="/wp-admin">Accede al panel</a>. 
-		<a href='<?php echo wp_logout_url(); ?>&redirect_to=<? echo 'http://' . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"] ?>'>Desconectar</a>
-	<? } else { ?>
-		<a href="/iniciar-sesion/?height=220&width=350&redirect_to=<? echo 'http://' . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"] ?>" class="thickbox" title="Iniciar sesión">Inicia sesión</a>  
-	<? } ?>
-
 	<div id="header" class="clearfix">
 		<h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
 	</div>
@@ -51,4 +43,17 @@
 		<ul id="menu">
 			<? wp_list_categories('title_li=&hide_empty=0&exclude=24,25,26'); ?>
 		</ul>
+	</div>
+	<div id="header_bar" class="clearfix">
+		<div id="date">
+			<? the_current_date(); ?>
+		</div>
+		<div id="login_bar">
+			<? if (is_user_logged_in()) { ?>
+				<a href="/wp-admin">Accede al panel</a>. 
+				<a href='<?php echo wp_logout_url(); ?>&redirect_to=<? echo 'http://' . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"] ?>'>Desconectar</a>
+			<? } else { ?>
+				<a href="/iniciar-sesion/?height=220&width=350&redirect_to=<? echo 'http://' . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"] ?>" class="thickbox" title="Iniciar sesión">Inicia sesión</a>  |  <a href="#">Registrate</a>
+			<? } ?>
+		</div>
 	</div>
