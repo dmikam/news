@@ -180,4 +180,7 @@ function the_current_date() {
 		echo $days[date("w")] . ", " . date("j") . " de " . $months[date("n")] . " de " . date("Y");
 }
 
+function the_current_url() {
+	echo 'http://' . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"];
+}
 ?>
