@@ -1,14 +1,14 @@
 <div id="sidebar">
 	<div id="more-featured">
 		<? $featured = get_posts("category=26&numberposts=10"); ?>
-		<? $cnt = 0; ?>
+		<? dump($featured);$cnt = 0; ?>
 		<? $buttons = "";?>
-	 	<? foreach($featured as $post) : ?>
+	 	<? foreach($featured as $item) : ?>
 			<? $id = get_the_ID(); ?>
-	    	<? setup_postdata($post); ?>
+	    	<? setup_postdata($item); ?>
 			<div id="post-<?php the_ID(); ?>" class="featured-item <? echo $cnt==0 ? "active" : ""; ?> post-<?php the_ID(); ?>">
 				<h2><a href="<?php the_permalink(); ?>" id="post-<?php the_ID(); ?>"><?php the_title(); ?></a></h2>
-				<? echo get_single_image("large"); ?>
+				<? echo get_single_image("large",$item->ID); ?>
 				<?$buttons .= "<a href='#image-$id' class=\"button goto post-$id\" onclick='slideSwitch(\"post-$id\");return false;'>".($cnt+1)."</a>"; ?>
 			</div>
 	 	<?php $cnt++; endforeach; ?>
@@ -17,12 +17,44 @@
 			<?echo $buttons;?>
 		</div>
 	</div>
-	
+<?
+/*	if (is_single()){	
+?>
+		<div class="related_posts">
+			<h3>Artículos relacionados</h3>
+		<?php echo related_posts_shortcode('limit=5');?>
+		</div>
+<?
+		global $post;
+		$more_fields = mf_get_boxes();
+		reset($more_fields["Enlaces recomendados"]["field"]);
+		$title = each($more_fields["Enlaces recomendados"]["field"]);
+		$recomended = '';
+		while($title!==FALSE) { 
+			$title_val = get_post_meta($post->ID,$title['value']['key'],true);
+			$link = each($more_fields["Enlaces recomendados"]["field"]);
+			$link_val = get_post_meta($post->ID,$link['value']['key'],true);
+			if (!empty($title_val) && !empty($link_val)){
+				$recomended .= "<li><a href=\"$link_val\">$title_val</a></li>";
+			}
+			$title = each($more_fields["Enlaces recomendados"]["field"]);
+		}
+		if (!empty($recomended)){
+?>		
+		<div class="recomended-links">
+			<h3>Enlaces recomendados</h3>
+			<ul>
+				<?echo $recomended;?>
+			</ul>
+		</div>
+<?		}		?>
+<?	}		*/?>
 </div>
 
 <script type="text/javascript" charset="utf-8">
 	var interval = false;
 	var play = true;
+	
 	function slideSwitch(force_next) {
 		var $active = jQuery('#more-featured .featured-item.active');
 
