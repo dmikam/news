@@ -50,6 +50,9 @@
 		</div>
 		<div id="login_bar">
 			<? if (is_user_logged_in()) { ?>
+				<? global $current_user; ?>
+				<? get_currentuserinfo(); ?>
+				¡Hola <strong><? echo $current_user->display_name; ?></strong>!  
 				<a href="/wp-admin">Accede al panel</a>  | 
 				<a href='<?php echo wp_logout_url(); ?>&amp;redirect_to=<? the_current_url() ?>'>Desconectar</a>
 			<? } else { ?>
