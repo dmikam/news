@@ -6,9 +6,12 @@ function add_clearfix() {
 	return "<div style=\"clear:both\"></div>";
 }
 
-function get_single_image($size = 'thumbnail') {
+function get_single_image($size = 'thumbnail',$post_id=false) {
 	global $post;
-	$images = get_children("post_parent=$post->ID&post_type=attachment&post_mime_type=image&numberposts=1");
+	if ($post_id===false){
+		$post_id = $post->ID;
+	}
+	$images = get_children("post_parent=$post_id&post_type=attachment&post_mime_type=image&numberposts=1");
 
 	if (empty($images)) :
 		return "<img src='" . get_bloginfo('template_directory') . "/imagenes/default.png'>";

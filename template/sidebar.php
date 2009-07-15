@@ -18,7 +18,7 @@
 		</div>
 	</div>
 <?
-/*	if (is_single()){	
+	if (is_single()){	
 ?>
 		<div class="related_posts">
 			<h3>Artículos relacionados</h3>
@@ -48,7 +48,40 @@
 			</ul>
 		</div>
 <?		}		?>
-<?	}		*/?>
+			
+			<div id="meta_links" class="clearfix">
+					<div class="related_posts">
+						<h3>Artículos relacionados</h3>
+					<?php echo related_posts_shortcode('limit=5');?>
+					</div>
+		<?
+				$more_fields = mf_get_boxes();
+				reset($more_fields["Enlaces recomendados"]["field"]);
+				$title = each($more_fields["Enlaces recomendados"]["field"]);
+				$recomended = '';
+				while($title) { 
+					$title_val = get_meta($title['value']['key']);
+					$link = each($more_fields["Enlaces recomendados"]["field"]);
+					$link_val = get_meta($link['value']['key']);
+					if (!empty($title_val) && !empty($link_val)){
+						$recomended .= "<li><a href=\"$link_val\">$title_val</a></li>";
+					}
+					$title = each($more_fields["Enlaces recomendados"]["field"]);
+				}
+				if (!empty($recomended)){
+		?>		
+				<div class="recomended-links">
+					<h3>Enlaces recomendados</h3>
+					<ul>
+						<?echo $recomended;?>
+					</ul>
+				</div>
+		<?		}		?>
+			</div>
+
+<?	}		?>
+
+
 </div>
 
 <script type="text/javascript" charset="utf-8">
