@@ -19,12 +19,6 @@
 	</div>
 <?
 	if (is_single()){	
-?>
-		<div class="related_posts">
-			<h3>Artículos relacionados</h3>
-		<?php echo related_posts_shortcode('limit=5');?>
-		</div>
-<?
 		global $post;
 		$more_fields = mf_get_boxes();
 		reset($more_fields["Enlaces recomendados"]["field"]);
@@ -80,6 +74,10 @@
 			</div>
 
 <?	}		?>
+
+<?php require(TEMPLATEPATH . "/links_block.php"); ?>	
+<?php require(TEMPLATEPATH . "/mss_block.php"); ?>	
+
 
 
 </div>
