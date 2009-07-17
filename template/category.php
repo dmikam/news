@@ -1,19 +1,22 @@
 <?php get_header() ?>
 <div id="container">
 	<div id="content" class="clearfix">
-		<? $featured = get_posts("category=" . get_category_featured_id() . "&numberposts=1"); ?>
-		<? if (!empty($featured)) : ?>
-		<div id="featured" class="clearfix">
-		 	<? foreach($featured as $post) : ?>
-		    	<? setup_postdata($post); ?>
-		 		<h2><a href="<?php the_permalink(); ?>" id="post-<?php the_ID(); ?>"><?php the_title(); ?></a></h2>
-				<? echo get_single_image("large"); ?>
-				<div id="excerpt">
-					<? the_excerpt(); ?>
-				</div>
-		 	<?php endforeach; ?>
-		</div>
-		<? endif; // Si no hay posts destacado, no se muestra nada ?>
+		<? $featured_cat = get_category_featured_id(intval(get_query_var('cat'))); ?>
+		<? if (!empty($featured_cat)) : ?>
+			<? $featured = get_posts("category=" . get_category_featured_id(intval(get_query_var('cat'))) . "&numberposts=1"); ?>
+			<? if (!empty($featured)) : ?>
+			<div id="featured" class="clearfix">
+			 	<? foreach($featured as $post) : ?>
+			    	<? setup_postdata($post); ?>
+			 		<h2><a href="<?php the_permalink(); ?>" id="post-<?php the_ID(); ?>"><?php the_title(); ?></a></h2>
+					<? echo get_single_image("large"); ?>
+					<div id="excerpt">
+						<? the_excerpt(); ?>
+					</div>
+			 	<?php endforeach; ?>
+			</div>
+			<? endif; // Si no hay posts destacado, no se muestra nada ?>
+		<? endif; // Si no se encuentra la categoría destacada de la sección ?>
 		
 		<div id="sub-content" class="clearfix">
 			<div id="left">
