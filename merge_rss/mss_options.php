@@ -1,6 +1,6 @@
 <?
 	global $wpdb;
-	$wpdb->show_errors();
+//	$wpdb->show_errors();
    $table_name = $wpdb->prefix . "merge_rss";
 
 	if ($_POST['new_rss']){

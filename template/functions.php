@@ -196,4 +196,23 @@ function the_current_date() {
 function the_current_url() {
 	echo 'http://' . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"];
 }
+
+function recomended_links(){
+	global $post;
+	$more_fields = mf_get_boxes();
+	reset($more_fields["Enlaces recomendados"]["field"]);
+	$title = each($more_fields["Enlaces recomendados"]["field"]);
+	$recomended = '';
+	while($title!==FALSE) {
+		$title_val = get_post_meta($post->ID,$title['value']['key'],true);
+		$link = each($more_fields["Enlaces recomendados"]["field"]);
+		$link_val = get_post_meta($post->ID,$link['value']['key'],true);
+		if (!empty($title_val) && !empty($link_val)){
+			$recomended .= "<li><a href=\"$link_val\">$title_val</a></li>";
+		}
+		$title = each($more_fields["Enlaces recomendados"]["field"]);
+	}
+	return $recomended;
+}
+
 ?>
