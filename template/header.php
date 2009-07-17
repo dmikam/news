@@ -54,7 +54,7 @@
 				<? get_currentuserinfo(); ?>
 				¡Hola <strong><? echo $current_user->display_name; ?></strong>!  
 				<a href="/wp-admin">Accede al panel</a>  | 
-				<a href='<?php echo wp_logout_url(); ?>&amp;redirect_to=<? the_current_url() ?>'>Desconectar</a>
+				<a href='<?php echo wp_logout_url(); ?>&amp;redirect_to=<? the_current_url() ?>'>Desconecta</a>
 			<? } else { ?>
 				<a href="/iniciar-sesion/?height=220&amp;width=350&amp;redirect_to=<? the_current_url() ?>" class="thickbox" title="Iniciar sesión">Inicia sesión</a>  |  
 				<a href="#">Registrate</a>

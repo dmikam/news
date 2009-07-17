@@ -37,6 +37,9 @@ a {
 a:hover {
 	text-decoration:underline;
 }
+strong {
+	color:#000;
+}
 #header {
 	width:990px;
 	height:99px;
@@ -116,7 +119,10 @@ a:hover {
 	#header_bar {
 		width:990px;
 		margin:5px auto;
+		font-size:11px;
+		color:#888;
 	}
+
 	#date {
 		float:left;
 	}
@@ -206,7 +212,7 @@ a:hover {
 			padding:9px 3px;
 		}
 		#sidebar .block {
-			margin-bottom:20px;
+			margin-bottom:30px;
 		}
 		/* TEMAS dESTACADOS*/
 		#sidebar #more-featured {
