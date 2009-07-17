@@ -1,6 +1,7 @@
 <div id="sidebar">
+	<? if (is_home()) :  // solo se mostrará el bloque en la portada?>
 	<h3>Temas destacados</h3>
-	<div id="more-featured">
+	<div id="more-featured" class="block">
 		<? $featured = get_posts("category=26&numberposts=10"); ?>
 		<? dump($featured);$cnt = 0; ?>
 		<? $buttons = "";?>
@@ -18,6 +19,7 @@
 			<?echo $buttons;?>
 		</div>
 	</div>
+	<? endif;  // Fin de condición para mostrar solo si es portada ?>
 <?
 	if (is_single()){	
 		global $post;
@@ -37,7 +39,7 @@
 		if (!empty($recomended)){
 ?>		
 		<h3>Enlaces recomendados</h3>
-		<div class="recomended-links">
+		<div class="recomended-links" class="block">
 			<ul>
 				<?echo $recomended;?>
 			</ul>
@@ -45,7 +47,7 @@
 <?		}		?>
 			
 		<h3>Artículos relacionados</h3>
-		<div id="meta_links" class="clearfix">
+		<div id="meta_links" class="block clearfix">
 				<div class="related_posts">
 				<?php echo related_posts_shortcode('limit=5');?>
 				</div>
@@ -66,7 +68,7 @@
 			if (!empty($recomended)) {
 	?>		
 		<h3>Enlaces recomendados</h3>
-			<div class="recomended-links">
+			<div class="recomended-links" class="block">
 				<ul>
 					<?echo $recomended;?>
 				</ul>
