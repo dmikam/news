@@ -11,7 +11,12 @@ function get_single_image($size = 'thumbnail',$post_id=false) {
 	if ($post_id===false){
 		$post_id = $post->ID;
 	}
-	$images = get_children("post_parent=$post_id&post_type=attachment&post_mime_type=image&numberposts=1");
+	$images = get_children(array('post_parent' => $post->ID, 
+								'post_type' => 'attachment',
+								'post_mime_type' => 'image',
+								'orderby' => 'menu_order',
+								'numberposts' => 1,
+								'order' => 'ASC'));
 
 	if (empty($images)) :
 		return "<img src='" . get_bloginfo('template_directory') . "/imagenes/default.png'>";
@@ -24,7 +29,12 @@ function get_single_image($size = 'thumbnail',$post_id=false) {
 
 function get_single_image_src($size = 'thumbnail') {
 	global $post;
-	$images = get_children("post_parent=$post->ID&post_type=attachment&post_mime_type=image&numberposts=1");
+	$images = get_children(array('post_parent' => $post->ID, 
+								'post_type' => 'attachment',
+								'post_mime_type' => 'image',
+								'orderby' => 'menu_order',
+								'numberposts' => 1,
+								'order' => 'ASC'));
 
 	if (empty($images)) :
 		return "<img src='" . get_bloginfo('template_directory') . "/imagenes/default.png'>";
