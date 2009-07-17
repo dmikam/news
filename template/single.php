@@ -20,14 +20,16 @@
 			</div>
 			<div id="sign_and_date" class="clearfix">
 				<div id="author">
+					Por 
 					<? if (get_the_author_meta('user_level') > 6) : ?>
-						<? the_author_posts_link(); ?> <span class="internal_author">(Enfoque 19)</span> 
+						<strong><? the_author_posts_link(); ?></strong> <span class="internal_author">(Enfoque 19)</span> 
 					<? else : ?>
-						<? the_author(); ?> <span class="external_author">(Redactor externo)</span>
+						<strong><? the_author(); ?></strong> <span class="external_author">(Redactor externo)</span>
 					<? endif;?>
 				</div>
 				<div id="postdate">
-					<?	the_date('d/m/Y', '', '');  ?> <? the_time('G:i'); ?>
+					Actualizado el 
+					<strong><?	the_date('d/m/Y', '', '');  ?></strong> a las <strong><? the_time('G:i'); ?></strong>
 				</div>
 			</div>
 			<div class="entry">

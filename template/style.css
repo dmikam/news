@@ -297,7 +297,11 @@ a:hover {
 		border-top:1px solid #e4e4e4;
 		border-bottom:1px solid #e4e4e4;
 		padding:3px;
-	}
+		color:#888;
+	}	
+		#sign_and_date strong {
+			color:#000;
+		}
 	#author {
 		float:left;
 	}

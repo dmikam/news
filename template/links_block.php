@@ -13,7 +13,7 @@
 		<h3>
 			Blogs en enfoque19
 		</h3>
-		<div class="entry">
+		<div id="internal_blogs" class="block">
 			<dl class="links_list">
 <?php		
 			foreach ($res as $item){
@@ -39,7 +39,7 @@
 ?>
 
 		<h3> Blogs en internet </h3>
-		<div class="entry">
+		<div id="external_blogs" class="block">
 			<dl class="links_list">
 <?php
 		
