@@ -6,9 +6,7 @@
 			the_post(); 
 ?>
 			<h2 class="single-title" id="title-<? the_ID(); ?>">
-				<a class="none" href="<?php the_permalink() ?>" rel="bookmark" title="Enlace a <?php the_title_attribute(); ?>">
 					<?php the_title(); ?>
-				</a>
 			</h2>
 			<div id="subtitles">
 				<? $subtitle = get_meta('subtitle'); ?>
@@ -38,12 +36,9 @@
 <?php
 		} 
 ?>
-			
 			<div id="tags">
 				<? the_tags('Etiquetas: ',', '); ?>
 			</div>
-
-		
 	</div>
 <?php get_sidebar() ?>
 </div>

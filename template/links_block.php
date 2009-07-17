@@ -10,9 +10,9 @@
 	$res = &get_bicat_links(intval(get_query_var('cat')),'enlaces-propios');
 	if ($res){
 ?>
-		<h2 class="title">
-			Enlaces Internos
-		</h2>
+		<h3>
+			Blogs en enfoque19
+		</h3>
 		<div class="entry">
 			<dl class="links_list">
 <?php		
@@ -38,9 +38,7 @@
 	if ($res){
 ?>
 
-		<h2 class="title">
-			Enlaces Externos
-		</h2>
+		<h3> Blogs en internet </h3>
 		<div class="entry">
 			<dl class="links_list">
 <?php

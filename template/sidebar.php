@@ -1,4 +1,5 @@
 <div id="sidebar">
+	<h3>Temas destacados</h3>
 	<div id="more-featured">
 		<? $featured = get_posts("category=26&numberposts=10"); ?>
 		<? dump($featured);$cnt = 0; ?>
@@ -35,43 +36,43 @@
 		}
 		if (!empty($recomended)){
 ?>		
+		<h3>Enlaces recomendados</h3>
 		<div class="recomended-links">
-			<h3>Enlaces recomendados</h3>
 			<ul>
 				<?echo $recomended;?>
 			</ul>
 		</div>
 <?		}		?>
 			
-			<div id="meta_links" class="clearfix">
-					<div class="related_posts">
-						<h3>Artículos relacionados</h3>
-					<?php echo related_posts_shortcode('limit=5');?>
-					</div>
-		<?
-				$more_fields = mf_get_boxes();
-				reset($more_fields["Enlaces recomendados"]["field"]);
-				$title = each($more_fields["Enlaces recomendados"]["field"]);
-				$recomended = '';
-				while($title) { 
-					$title_val = get_meta($title['value']['key']);
-					$link = each($more_fields["Enlaces recomendados"]["field"]);
-					$link_val = get_meta($link['value']['key']);
-					if (!empty($title_val) && !empty($link_val)){
-						$recomended .= "<li><a href=\"$link_val\">$title_val</a></li>";
-					}
-					$title = each($more_fields["Enlaces recomendados"]["field"]);
-				}
-				if (!empty($recomended)){
-		?>		
-				<div class="recomended-links">
-					<h3>Enlaces recomendados</h3>
-					<ul>
-						<?echo $recomended;?>
-					</ul>
+		<h3>Artículos relacionados</h3>
+		<div id="meta_links" class="clearfix">
+				<div class="related_posts">
+				<?php echo related_posts_shortcode('limit=5');?>
 				</div>
-		<?		}		?>
+	<?
+			$more_fields = mf_get_boxes();
+			reset($more_fields["Enlaces recomendados"]["field"]);
+			$title = each($more_fields["Enlaces recomendados"]["field"]);
+			$recomended = '';
+			while($title) { 
+				$title_val = get_meta($title['value']['key']);
+				$link = each($more_fields["Enlaces recomendados"]["field"]);
+				$link_val = get_meta($link['value']['key']);
+				if (!empty($title_val) && !empty($link_val)){
+					$recomended .= "<li><a href=\"$link_val\">$title_val</a></li>";
+				}
+				$title = each($more_fields["Enlaces recomendados"]["field"]);
+			}
+			if (!empty($recomended)) {
+	?>		
+		<h3>Enlaces recomendados</h3>
+			<div class="recomended-links">
+				<ul>
+					<?echo $recomended;?>
+				</ul>
 			</div>
+	<?		}		?>
+		</div>
 
 <?	}		?>
 

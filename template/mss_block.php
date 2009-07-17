@@ -4,9 +4,9 @@
 		$mss = mss_get_rss($cat->slug,'blog');
 		if (!empty($mss)){
 ?>
-		<h2 class="title">
-			Lista RSS
-		</h2>
+		<h3>
+			Sobre este tema
+		</h3>
 		<div class="entry">
 			<dl class="rss_list">
 <?php		foreach ($mss as $item){		?>
