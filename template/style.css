@@ -211,6 +211,24 @@ strong {
 		#sidebar .block {
 			margin-bottom:30px;
 		}
+		/* ENLACES INTERNOS Y EXTERNOS */
+		#sidebar .links_list {
+			margin:10px 0px;
+		}
+			#sidebar .links_list dt {
+				font-size:17px;
+				margin-bottom:5px;
+			}
+				#sidebar .links_list dt a {
+					color:#000;
+				}
+			#sidebar .links_list dd {
+				color:#333333;
+				margin-bottom:10px;
+				line-height:19px;
+			}
+			
+			
 		/* TEMAS dESTACADOS*/
 		#sidebar #more-featured {
 			height:270px;
@@ -228,7 +246,7 @@ strong {
 			#sidebar #more-featured .featured-item h2 {
 				color:#000;
 				background:#fff;
-				font-size:15px;
+				font-size:19px;
 				margin-top:8px;
 				height:40px;
 				font-weight:normal;
