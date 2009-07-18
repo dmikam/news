@@ -43,6 +43,7 @@
 		<ul id="menu">
 			<? wp_list_categories('title_li=&hide_empty=0&exclude=24,25,26'); ?>
 		</ul>
+		<?php include (TEMPLATEPATH . '/searchform.php'); ?>
 	</div>
 	<div id="header_bar" class="clearfix">
 		<div id="date">

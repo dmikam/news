@@ -56,6 +56,10 @@ strong {
 		height:24px;
 		background:#f8f8f8;
 	}
+	#navbar #searchbox {
+		float:right;
+		padding:2px;
+	}
 	#navbar #menu {
 		list-style:none;
 		position: absolute; 
@@ -288,10 +292,16 @@ strong {
 			}
 			
 	/* NOTICIAS INDIVIDUALES */
+	.article {
+		margin-bottom:30px;
+	}
 	.single-title {
 		font-size:30px;
 		font-weight:normal;
 		margin-bottom:10px;
+	}
+	.single-title a {
+		color:#000;
 	}
 	.subtitle {
 		color:#555;
