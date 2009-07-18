@@ -225,15 +225,12 @@ strong {
 				background:#000;
 			}
 			#sidebar #more-featured .featured-item h2 {
-				position:absolute;
-				top:5px;
-				left:5px;
-				z-index:2;
 				color:#fff;
 				background:#000;
 				opacity:0.8;
 				padding:5px;
 				font-size:0.8em;
+				width:300px;
 			}
 			#sidebar #more-featured .featured-item h2 a {
 				color:#fff;
@@ -246,23 +243,17 @@ strong {
 			    z-index:9;
 			}
 			
-			#sidebar #more-featured .buttons {
-				position:absolute;
-				top:250px;
-				z-index:11;
-				text-align:center;
-				width:310px;
-				padding:5px;
+			#sidebar #featureds .buttons {
 			}
 			
-			#sidebar #more-featured .buttons .button {
+			#sidebar #featureds .buttons .button {
 				padding:1px 5px;
 				background:#fff;
 				border:1px solid #ccc;
 				margin:2px;
 			}
 			
-			#sidebar #more-featured .buttons .playstop {
+			#sidebar #featureds .buttons .playstop {
 				width:32px;
 				height:32px;
 				display:inline-block;
@@ -273,11 +264,11 @@ strong {
 				border:none;
 				background:transparent url(images/stop.png) no-repeat;
 			}
-			#sidebar #more-featured .buttons .playstop.pause {
+			#sidebar #featureds .buttons .playstop.pause {
 				background:transparent url(images/play.png) no-repeat;
 			}
 				
-			#sidebar #more-featured .buttons .button.active {
+			#sidebar #featureds .buttons .button.active {
 				background-color:#fcc;
 			}
 			

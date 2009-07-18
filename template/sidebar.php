@@ -1,19 +1,21 @@
 <div id="sidebar">
 	<? if (is_home()) :  // solo se mostrará el bloque en la portada?>
 	<h3>Temas destacados</h3>
-	<div id="more-featured" class="block">
-		<? $featured = get_posts("category=26&numberposts=10"); ?>
-		<? $cnt = 0; ?>
-		<? $buttons = "";?>
-	 	<? foreach($featured as $item) : ?>
-			<? $id = get_the_ID(); ?>
-	    	<? setup_postdata($item); ?>
-			<div id="post-<?php the_ID(); ?>" class="featured-item <? echo $cnt==0 ? "active" : ""; ?> post-<?php the_ID(); ?>">
-				<h2><a href="<?php the_permalink(); ?>" id="post-<?php the_ID(); ?>"><?php the_title(); ?></a></h2>
-				<? echo get_single_image("large",$item->ID); ?>
-				<?$buttons .= "<a href='#image-$id' class=\"button goto post-$id\" onclick='slideSwitch(\"post-$id\");return false;'>".($cnt+1)."</a>"; ?>
-			</div>
-	 	<?php $cnt++; endforeach; ?>
+	<div id="featureds" class="block">
+		<div id="more-featured">
+			<? $featureds = get_posts("category=26&numberposts=10"); ?>
+			<? $cnt = 0; ?>
+			<? $buttons = "";?>
+		 	<? foreach($featureds as $post) : ?>
+				<? setup_postdata($post); ?>
+				<? $id = get_the_ID(); ?>
+				<div id="post-<?php the_ID(); ?>" class="featured-item <? echo $cnt==0 ? "active" : ""; ?> post-<?php the_ID(); ?>">
+					<h2><a href="<?php the_permalink(); ?>" id="post-<?php the_ID(); ?>"><?php the_title(); ?></a></h2>
+					<? echo get_single_image("large",$post->ID); ?>
+					<?$buttons .= "<a href='#image-$id' class=\"button goto post-$id\" onclick='slideSwitch(\"post-$id\");return false;'>".($cnt+1)."</a>"; ?>
+				</div>
+		 	<?php $cnt++; endforeach; ?>
+		</div>
 		<div class="buttons">
 			<a href="#play-stop" class="playstop button" onclick="slide_toggle(); return false;">play/pause</a>
 			<?echo $buttons;?>
