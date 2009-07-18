@@ -37,6 +37,9 @@ a {
 a:hover {
 	text-decoration:underline;
 }
+a img {
+	border:0px;
+}
 strong {
 	color:#000;
 }
@@ -210,30 +213,29 @@ strong {
 		}
 		/* TEMAS dESTACADOS*/
 		#sidebar #more-featured {
-			height:300px;
-			background:#000;
+			height:270px;
 			overflow:hidden;
-			text-align:center;
-			position:relative;
-			
+			position:relative;			
 		}
 			#sidebar #more-featured .featured-item {
 				position:absolute;
 				top:0;
+				margin-top:20px;
 				left:0;
-				height:300px;
-				background:#000;
+				height:250px;
+				background:#fff;
 			}
 			#sidebar #more-featured .featured-item h2 {
-				color:#fff;
-				background:#000;
-				opacity:0.8;
-				padding:5px;
-				font-size:0.8em;
+				color:#000;
+				background:#fff;
+				font-size:15px;
+				margin-top:8px;
+				height:40px;
+				font-weight:normal;
 				width:300px;
 			}
 			#sidebar #more-featured .featured-item h2 a {
-				color:#fff;
+				color:#000;
 			}
 			#sidebar #more-featured .featured-item.active {
 			    z-index:10;
@@ -244,28 +246,30 @@ strong {
 			}
 			
 			#sidebar #featureds .buttons {
+				float:right;
 			}
 			
 			#sidebar #featureds .buttons .button {
-				padding:1px 5px;
+				padding:2px 4px 0px 4px;
+				font-size:9px;
 				background:#fff;
 				border:1px solid #ccc;
 				margin:2px;
 			}
 			
 			#sidebar #featureds .buttons .playstop {
-				width:32px;
-				height:32px;
+				width:16px;
+				height:16px;
 				display:inline-block;
 				padding:0px;
-				margin:0px 0px -13px 0px;
+				margin:0px 0px -5px 0px;
 				text-indent:-99999px;
 				overflow:hidden;
 				border:none;
-				background:transparent url(images/stop.png) no-repeat;
+				background:transparent url("images/pause.png") no-repeat;
 			}
 			#sidebar #featureds .buttons .playstop.pause {
-				background:transparent url(images/play.png) no-repeat;
+				background:transparent url("images/play.png") no-repeat;
 			}
 				
 			#sidebar #featureds .buttons .button.active {

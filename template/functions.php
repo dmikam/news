@@ -215,4 +215,23 @@ function recomended_links(){
 	return $recomended;
 }
 
+
+if ( false === get_option("featureds_size_w") ) {
+	add_option("featureds_size_w", "300");
+	add_option("featureds_size_h", "200");
+	add_option("featureds_crop", "1");
+} else {
+	update_option("featureds_size_w", "300");
+	update_option("featureds_size_h", "200");
+	update_option("featureds_crop", "1");
+}
+
+function additional_image_sizes( $sizes )
+{
+	$sizes[] = "featureds";
+
+	return $sizes;
+}
+add_filter( 'intermediate_image_sizes', 'additional_image_sizes' );
+
 ?>
