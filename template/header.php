@@ -15,7 +15,7 @@
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js" charset="utf-8"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_directory')?>/scripts/jquery.thickbox.js" charset="utf-8"></script>
 	<link rel="stylesheet" href="<?php bloginfo('template_directory')?>/scripts/jquery.thickbox.css" type="text/css" />
-
+	<? if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 	
 	<script type="text/javascript" charset="utf-8">
 		$(document).ready(function(){

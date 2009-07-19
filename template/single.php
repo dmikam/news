@@ -39,8 +39,11 @@
 		} 
 ?>
 			<div id="tags">
-				<? the_tags('Etiquetas: ',', '); ?>
+				<strong>Etiquetas:</strong> <? the_tags('',', '); ?>
 			</div>
+			
+			<?php comments_template(); ?>
+			
 	</div>
 <?php get_sidebar() ?>
 </div>
