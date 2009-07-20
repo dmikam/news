@@ -39,7 +39,8 @@
 		} 
 ?>
 			<div id="tags">
-				<strong>Etiquetas:</strong> <? the_tags('',', '); ?>
+				<p><strong>Etiquetas:</strong> <? the_tags('',', '); ?></p>
+				<p><strong>Compartir esta noticia en</strong> Meneame.net facebook twitter digg reddit</p>
 			</div>
 			
 			<?php comments_template(); ?>

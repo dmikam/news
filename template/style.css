@@ -313,9 +313,10 @@ strong {
 		margin:3px 10px 10px 20px;
 	}
 	#sign_and_date {
-		border-top:1px solid #e4e4e4;
 		border-bottom:1px solid #e4e4e4;
 		padding:3px;
+		font-size:10px;
+		font-style:italic;
 		color:#888;
 	}	
 		#sign_and_date strong {
@@ -333,19 +334,32 @@ strong {
 		font-size:13px;
 		line-height:19px;
 	}
-	.entry img.alignleft {
+	.entry .alignleft {
 		float:left;
 		margin-right:10px;
 	}
-	.entry img.alignright {
+	.entry .alignright {
 		float:right;
 		margin-left:10px;
+	}
+	.entry .wp-caption-text {
+		margin:0px;
+		font-size:10px;
+		font-style:italic;
+		margin-right:10px;
+		background:#e4e4e4;
+		padding:3px;
 	}
 	#tags {
 		border-top:1px solid #e4e4e4;
 		border-bottom:1px solid #e4e4e4;
-		padding:3px;	
+		background:#f8f8f8;
+		padding:3px 3px;	
 	}	
+	#tags p {
+		height:16px;
+		margin:6px 0px;
+	}
 
 .recomended-links ul,
 .related_posts ul {
