@@ -1,12 +1,11 @@
 <?php get_header() ?>
 <div id="container">
 	<div id="content" class="clearfix">
-<?php	
-		if (have_posts()) {
-			the_post(); 
-?>
+	
+	<?php while (have_posts()) : the_post(); ?>
+		<div class="article">
 			<h2 class="single-title" id="title-<? the_ID(); ?>">
-					<?php the_title(); ?>
+				<a href="<?php the_permalink(); ?>" id="post-<?php the_ID(); ?>">	<?php the_title(); ?>	</a>
 			</h2>
 			<div id="subtitles">
 				<? $subtitle = get_meta('subtitle'); ?>
@@ -35,16 +34,12 @@
 			<div class="entry">
 				<?php the_content('Leer más &raquo;'); ?>
 			</div>
-<?php
-		} 
-?>
 			<div id="tags">
-				<p><strong>Etiquetas:</strong> <? the_tags('',', '); ?></p>
-				<p><strong>Compartir esta noticia en</strong> Meneame.net facebook twitter digg reddit</p>
+				<? the_tags('Etiquetas: ',', '); ?>
 			</div>
-			
-			<?php comments_template(); ?>
-			
+		</div>
+	<?php endwhile; ?>
+
 	</div>
 <?php get_sidebar() ?>
 </div>

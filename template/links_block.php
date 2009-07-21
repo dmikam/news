@@ -6,14 +6,19 @@
 		$cat = get_category(intval(get_query_var('cat')));
 		//dump($cat);
 		$cat_slug = $wpdb->escape($cat->slug);
+	} 
+
+	if (is_home()) {
+		$res = &get_bicat_links('portada','enlaces-propios');
+	} else {
+		$res = &get_bicat_links(intval(get_query_var('cat')),'enlaces-propios');
 	}
-	$res = &get_bicat_links(intval(get_query_var('cat')),'enlaces-propios');
 	if ($res){
 ?>
 		<h3>
 			Blogs en enfoque19
 		</h3>
-		<div class="entry">
+		<div id="internal_blogs" class="links block">
 			<dl class="links_list">
 <?php		
 			foreach ($res as $item){
@@ -34,12 +39,16 @@
 	}
 	
 	
-	$res = &get_bicat_links(intval(get_query_var('cat')),'enlaces-externos');
+	if (is_home()) {
+		$res = &get_bicat_links('portada','enlaces-externos');
+	} else {
+		$res = &get_bicat_links(intval(get_query_var('cat')),'enlaces-externos');
+	}
 	if ($res){
 ?>
 
 		<h3> Blogs en internet </h3>
-		<div class="entry">
+		<div id="external_blogs" class="links block">
 			<dl class="links_list">
 <?php
 		

@@ -37,6 +37,12 @@ a {
 a:hover {
 	text-decoration:underline;
 }
+a img {
+	border:0px;
+}
+strong {
+	color:#000;
+}
 #header {
 	width:990px;
 	height:99px;
@@ -52,6 +58,10 @@ a:hover {
 		position:relative;
 		height:24px;
 		background:#f8f8f8;
+	}
+	#navbar #searchbox {
+		float:right;
+		padding:2px;
 	}
 	#navbar #menu {
 		list-style:none;
@@ -116,7 +126,10 @@ a:hover {
 	#header_bar {
 		width:990px;
 		margin:5px auto;
+		font-size:11px;
+		color:#888;
 	}
+
 	#date {
 		float:left;
 	}
@@ -135,33 +148,23 @@ a:hover {
 	}
 		#content #featured {
 			position:relative;
-			margin-bottom:10px;
+			margin-bottom:20px;
 		}
 			#content #featured h2 {
-				position:absolute;
-				top:10px;
-				left:10px;
-				z-index:2;
-				color:#fff;
-				background:#000;
-				opacity:0.8;
-				padding:5px;
+				color:#000;
+				font-size:30px;
+				text-align:center;
+				margin-bottom:8px;
 			}
 			#content #featured h2 a {
-				color:#fff;
-			}
-			#content #featured img {
-				z-index:1;
+				color:#000;
 			}
 			#content #featured #excerpt {
 				font-size:0.8em;
 				color:#fff;
 				background:#000;
 				padding:5px 10px;
-				opacity:0.8;
-				position:absolute;
-				bottom:0;
-				left:0;
+				width:614px;
 			}
 		#content #sub-content #left {
 			width:350px;
@@ -206,37 +209,51 @@ a:hover {
 			padding:9px 3px;
 		}
 		#sidebar .block {
-			margin-bottom:20px;
+			margin-bottom:30px;
 		}
+		/* ENLACES INTERNOS Y EXTERNOS */
+		#sidebar .links_list {
+			margin:10px 0px;
+		}
+			#sidebar .links_list dt {
+				font-size:17px;
+				margin-bottom:5px;
+			}
+				#sidebar .links_list dt a {
+					color:#000;
+				}
+			#sidebar .links_list dd {
+				color:#333333;
+				margin-bottom:10px;
+				line-height:19px;
+			}
+			
+			
 		/* TEMAS dESTACADOS*/
 		#sidebar #more-featured {
-			height:300px;
-			background:#000;
+			height:270px;
 			overflow:hidden;
-			text-align:center;
-			position:relative;
-			
+			position:relative;			
 		}
 			#sidebar #more-featured .featured-item {
 				position:absolute;
 				top:0;
+				margin-top:20px;
 				left:0;
-				height:300px;
-				background:#000;
+				height:250px;
+				background:#fff;
 			}
 			#sidebar #more-featured .featured-item h2 {
-				position:absolute;
-				top:5px;
-				left:5px;
-				z-index:2;
-				color:#fff;
-				background:#000;
-				opacity:0.8;
-				padding:5px;
-				font-size:0.8em;
+				color:#000;
+				background:#fff;
+				font-size:19px;
+				margin-top:8px;
+				height:40px;
+				font-weight:normal;
+				width:300px;
 			}
 			#sidebar #more-featured .featured-item h2 a {
-				color:#fff;
+				color:#000;
 			}
 			#sidebar #more-featured .featured-item.active {
 			    z-index:10;
@@ -246,46 +263,48 @@ a:hover {
 			    z-index:9;
 			}
 			
-			#sidebar #more-featured .buttons {
-				position:absolute;
-				top:250px;
-				z-index:11;
-				text-align:center;
-				width:310px;
-				padding:5px;
+			#sidebar #featureds .buttons {
+				float:right;
 			}
 			
-			#sidebar #more-featured .buttons .button {
-				padding:1px 5px;
+			#sidebar #featureds .buttons .button {
+				padding:2px 4px 0px 4px;
+				font-size:9px;
 				background:#fff;
 				border:1px solid #ccc;
 				margin:2px;
 			}
 			
-			#sidebar #more-featured .buttons .playstop {
-				width:32px;
-				height:32px;
+			#sidebar #featureds .buttons .playstop {
+				width:16px;
+				height:16px;
 				display:inline-block;
 				padding:0px;
-				margin:0px 0px -13px 0px;
+				margin:0px 0px -5px 0px;
 				text-indent:-99999px;
 				overflow:hidden;
 				border:none;
-				background:transparent url(images/stop.png) no-repeat;
+				background:transparent url("images/pause.png") no-repeat;
 			}
-			#sidebar #more-featured .buttons .playstop.pause {
-				background:transparent url(images/play.png) no-repeat;
+			#sidebar #featureds .buttons .playstop.pause {
+				background:transparent url("images/play.png") no-repeat;
 			}
 				
-			#sidebar #more-featured .buttons .button.active {
+			#sidebar #featureds .buttons .button.active {
 				background-color:#fcc;
 			}
 			
 	/* NOTICIAS INDIVIDUALES */
+	.article {
+		margin-bottom:30px;
+	}
 	.single-title {
 		font-size:30px;
 		font-weight:normal;
 		margin-bottom:10px;
+	}
+	.single-title a {
+		color:#000;
 	}
 	.subtitle {
 		color:#555;
@@ -294,10 +313,15 @@ a:hover {
 		margin:3px 10px 10px 20px;
 	}
 	#sign_and_date {
-		border-top:1px solid #e4e4e4;
 		border-bottom:1px solid #e4e4e4;
 		padding:3px;
-	}
+		font-size:10px;
+		font-style:italic;
+		color:#888;
+	}	
+		#sign_and_date strong {
+			color:#000;
+		}
 	#author {
 		float:left;
 	}
@@ -310,19 +334,32 @@ a:hover {
 		font-size:13px;
 		line-height:19px;
 	}
-	.entry img.alignleft {
+	.entry .alignleft {
 		float:left;
 		margin-right:10px;
 	}
-	.entry img.alignright {
+	.entry .alignright {
 		float:right;
 		margin-left:10px;
+	}
+	.entry .wp-caption-text {
+		margin:0px;
+		font-size:10px;
+		font-style:italic;
+		margin-right:10px;
+		background:#e4e4e4;
+		padding:3px;
 	}
 	#tags {
 		border-top:1px solid #e4e4e4;
 		border-bottom:1px solid #e4e4e4;
-		padding:3px;	
+		background:#f8f8f8;
+		padding:3px 3px;	
 	}	
+	#tags p {
+		height:16px;
+		margin:6px 0px;
+	}
 
 .recomended-links ul,
 .related_posts ul {
@@ -356,6 +393,61 @@ a:hover {
 	text-align:right;
 	float:right;
 }
+
+/* COMENTARIOS */
+#comments {
+	border-bottom:1px solid #111;
+	border-top:6px solid #333;
+	padding:9px 3px;
+	margin:30px 0px 10px 0px;
+	text-transform:uppercase;
+	font-size:18px;
+	font-weight:normal;
+}
+ol.commentlist { list-style:none; margin:0 0 1em; padding:0; text-indent:0; }
+ol.commentlist li { }
+ol.commentlist li.alt { }
+ol.commentlist li.bypostauthor {}
+ol.commentlist li.byuser {}
+ol.commentlist li.comment-author-admin {}
+ol.commentlist li.comment { border-bottom:1px dotted #666; padding:1em; }
+ol.commentlist li div.comment-author {}
+ol.commentlist li div.vcard { font-size:16px; }
+ol.commentlist li div.vcard cite.fn { font-weight:bold; font-style:normal; }
+ol.commentlist li div.vcard cite.fn a.url {}
+ol.commentlist li div.vcard img.avatar { border:5px solid #ccc; float:right; margin:0 0 1em 1em; }
+ol.commentlist li div.vcard img.avatar-32 {}
+ol.commentlist li div.vcard img.photo {}
+ol.commentlist li div.vcard span.says {}
+ol.commentlist li div.commentmetadata {}
+ol.commentlist li div.comment-meta { font-size:9px; }
+ol.commentlist li div.comment-meta a { color:#ccc; }
+ol.commentlist li p { font-size:12px; margin:1em 0 1em; }
+ol.commentlist li ul { font-size:11px; list-style:square; margin:0 0 1em 2em; }
+ol.commentlist li div.reply { font-size:11px; }
+ol.commentlist li div.reply a { font-weight:bold; }
+ol.commentlist li ul.children { list-style:none; margin:1em 0 0; text-indent:0; }
+ol.commentlist li ul.children li {}
+ol.commentlist li ul.children li.alt {}
+ol.commentlist li ul.children li.bypostauthor {}
+ol.commentlist li ul.children li.byuser {}
+ol.commentlist li ul.children li.comment {}
+ol.commentlist li ul.children li.comment-author-admin {}
+ol.commentlist li ul.children li.depth-2 { border-left:0px solid #555; border-bottom:0px; margin:0 0 .25em .25em; }
+ol.commentlist li ul.children li.depth-3 { border-left:0px solid #999; border-bottom:0px; margin:0 0 .25em .25em; }
+ol.commentlist li ul.children li.depth-4 { border-left:0px solid #bbb; border-bottom:0px; margin:0 0 .25em .25em; }
+ol.commentlist li ul.children li.depth-5 {}
+ol.commentlist li ul.children li.odd {}
+ol.commentlist li.even { background:#fff; }
+ol.commentlist li.odd { background:#f6f6f6; }
+ol.commentlist li.parent { border-left:0px solid #111; }
+ol.commentlist li.pingback { border-bottom:1px dotted #666; padding:1em; }
+ol.commentlist li.thread-alt { }
+ol.commentlist li.thread-even {}
+ol.commentlist li.thread-odd {}
+
+
+
 /* ----------------------------------------------------------------------------------------------------------------*/
 /* ---------->>> global settings needed for thickbox <<<-----------------------------------------------------------*/
 /* ----------------------------------------------------------------------------------------------------------------*/

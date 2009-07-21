@@ -15,7 +15,7 @@
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js" charset="utf-8"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_directory')?>/scripts/jquery.thickbox.js" charset="utf-8"></script>
 	<link rel="stylesheet" href="<?php bloginfo('template_directory')?>/scripts/jquery.thickbox.css" type="text/css" />
-
+	<? if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 	
 	<script type="text/javascript" charset="utf-8">
 		$(document).ready(function(){
@@ -43,6 +43,7 @@
 		<ul id="menu">
 			<? wp_list_categories('title_li=&hide_empty=0&exclude=24,25,26'); ?>
 		</ul>
+		<?php include (TEMPLATEPATH . '/searchform.php'); ?>
 	</div>
 	<div id="header_bar" class="clearfix">
 		<div id="date">
@@ -54,7 +55,7 @@
 				<? get_currentuserinfo(); ?>
 				¡Hola <strong><? echo $current_user->display_name; ?></strong>!  
 				<a href="/wp-admin">Accede al panel</a>  | 
-				<a href='<?php echo wp_logout_url(); ?>&amp;redirect_to=<? the_current_url() ?>'>Desconectar</a>
+				<a href='<?php echo wp_logout_url(); ?>&amp;redirect_to=<? the_current_url() ?>'>Desconecta</a>
 			<? } else { ?>
 				<a href="/iniciar-sesion/?height=220&amp;width=350&amp;redirect_to=<? the_current_url() ?>" class="thickbox" title="Iniciar sesión">Inicia sesión</a>  |  
 				<a href="#">Registrate</a>

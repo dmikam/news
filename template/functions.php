@@ -11,7 +11,7 @@ function get_single_image($size = 'thumbnail',$post_id=false) {
 	if ($post_id===false){
 		$post_id = $post->ID;
 	}
-	$images = get_children(array('post_parent' => $post->ID, 
+	$images = get_children(array('post_parent' => $post_id, 
 								'post_type' => 'attachment',
 								'post_mime_type' => 'image',
 								'orderby' => 'menu_order',
@@ -29,7 +29,7 @@ function get_single_image($size = 'thumbnail',$post_id=false) {
 
 function get_single_image_src($size = 'thumbnail') {
 	global $post;
-	$images = get_children(array('post_parent' => $post->ID, 
+	$images = get_children(array('post_parent' => $post_id, 
 								'post_type' => 'attachment',
 								'post_mime_type' => 'image',
 								'orderby' => 'menu_order',
@@ -214,5 +214,24 @@ function recomended_links(){
 	}
 	return $recomended;
 }
+
+
+if ( false === get_option("featureds_size_w") ) {
+	add_option("featureds_size_w", "300");
+	add_option("featureds_size_h", "200");
+	add_option("featureds_crop", "1");
+} else {
+	update_option("featureds_size_w", "300");
+	update_option("featureds_size_h", "200");
+	update_option("featureds_crop", "1");
+}
+
+function additional_image_sizes( $sizes )
+{
+	$sizes[] = "featureds";
+
+	return $sizes;
+}
+add_filter( 'intermediate_image_sizes', 'additional_image_sizes' );
 
 ?>
