@@ -118,9 +118,9 @@ function mss_get_rss($cat,$type){
 	foreach($rss as $item){
 		$rss_list[] = fetch_rss($item->url);
 	}
-/*$rss_list[]= fetch_rss('http://www.versvs.net/node/feed');
-	$rss_list[]= fetch_rss('http://www.error500.net/node/feed');
-*/	
+//$rss_list[]= fetch_rss('http://www.versvs.net/node/feed');
+//$rss_list[]= fetch_rss('http://www.error500.net/node/feed');
+	
 	
 
 	$all_rss = array();

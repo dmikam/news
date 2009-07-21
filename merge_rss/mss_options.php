@@ -8,15 +8,6 @@
 		$new_type	= mss_block($_POST['mss']['type']);
 		$new_url		= mss_block($_POST['mss']['url']);
 		
-/*		$sql = "
-			INSERT INTO 
-				$table_name
-				(url,type,cat)
-			VALUES
-				('$new_url','$new_type','$new_cat')
-		";
-		$wpdb->query($sql);
-*/
 		$wpdb->insert( $table_name, array( 'url' => $new_url, 'type' => $new_type, 'cat' => $new_cat ), array( '%s', '%s', '%s') );
 		$wpdb->print_error();
 	}
