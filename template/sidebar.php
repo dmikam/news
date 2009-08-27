@@ -25,26 +25,29 @@
 		</div>
 
 	</div>
-	<? endif;  // Fin de condición para mostrar solo si es portada ?>
-<div id="map">
-<!-- saved from url=(0013)about:internet -->
-<!-- ammap script-->
-  <script type="text/javascript" src="<?php echo bloginfo('template_url'); ?>/ammap/swfobject.js"></script>
-	<div id="flashcontent">
-		<strong>You need to upgrade your Flash Player</strong>
-	</div>
+	
+	<div id="map">
+	<!-- saved from url=(0013)about:internet -->
+	<!-- ammap script-->
+	  <script type="text/javascript" src="<?php echo bloginfo('template_url'); ?>/ammap/swfobject.js"></script>
+		<div id="flashcontent">
+			<strong>You need to upgrade your Flash Player</strong>
+		</div>
 
-	<script type="text/javascript">
-		// <![CDATA[		
-		var so = new SWFObject("<?php echo bloginfo('template_url'); ?>/ammap/ammap.swf", "ammap", "300", "200", "8", "#FFFFFF");
-		so.addVariable("path", "<?php echo bloginfo('template_url'); ?>/ammap/");
-		so.addVariable("settings_file", escape("<?php echo bloginfo('template_url'); ?>/ammap/ammap_settings.xml"));                  // you can set two or more different settings files here (separated by commas)
-		so.addVariable("data_file", escape("<?php echo bloginfo('template_url'); ?>/ammap/ammap_data.xml"));		
-		so.write("flashcontent");
-		// ]]>
-	</script>
-<!-- end of ammap script -->	
-</div>
+		<script type="text/javascript">
+			// <![CDATA[		
+			var so = new SWFObject("<?php echo bloginfo('template_url'); ?>/ammap/ammap.swf", "ammap", "300", "200", "8", "#FFFFFF");
+			so.addVariable("path", "<?php echo bloginfo('template_url'); ?>/ammap/");
+			so.addVariable("settings_file", escape("<?php echo bloginfo('template_url'); ?>/ammap/ammap_settings.xml"));                  // you can set two or more different settings files here (separated by commas)
+			so.addVariable("data_file", escape("<?php echo bloginfo('template_url'); ?>/ammap/ammap_data.xml"));		
+			so.write("flashcontent");
+			// ]]>
+		</script>
+	<!-- end of ammap script -->	
+	</div>
+	
+	<? endif;  // Fin de condición para mostrar solo si es portada ?>
+
 <?
 	if (is_single()){	
 		$recomended = recomended_links();
