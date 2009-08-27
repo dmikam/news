@@ -7,7 +7,7 @@
 	$cur_video = get_post(get_the_ID());
 ?>
 
-<div id="container" class="video">
+<div id="container" class="clearfix video">
 	<div id="content" class="clearfix">
 		<div id="video">
 			<div class="embed">

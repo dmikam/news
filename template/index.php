@@ -1,5 +1,5 @@
 <?php get_header() ?>
-<div id="container">
+<div id="container" class="clearfix">
 	<div id="content" class="clearfix">
 		<? $featured = get_posts("category=" . get_category_featured_id() . "&numberposts=1"); ?>
 		<? if (!empty($featured)) : ?>

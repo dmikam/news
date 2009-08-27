@@ -46,15 +46,22 @@ strong {
 #header {
 	width:990px;
 	height:99px;
+	padding-top:1px;
 	margin:10px auto 0px auto;
-	border:1px solid #bbb;
+	background:#980000;
 }
+	#header h1 {
+		margin:20px;
+		font-size:40px;
+		text-transform:uppercase;
+	}
+		#header h1 a {
+			color:#fff;
+		}
 	#navbar {
 		width:990px;
 		margin:0px auto;
 		border-bottom:1px solid #bbb;
-		border-left:1px solid #bbb;
-		border-right:1px solid #bbb;		
 		position:relative;
 		height:24px;
 		background:#f8f8f8;
@@ -206,6 +213,7 @@ strong {
 			border-bottom:1px solid #111;
 			border-top:6px solid #333;
 			margin:0px 0px 15px 0px;
+			color:#980000;
 			padding:9px 3px;
 		}
 		#sidebar .block {
@@ -379,8 +387,25 @@ strong {
 		}
 
 #footer {
-	
+	width:990px;
+	margin:10px auto;
+	border-bottom:1px solid #111;
 }
+	#footer .block h3 {
+		text-transform:uppercase;
+		border-bottom:1px solid #111;
+		border-top:6px solid #333;
+		margin:0px 0px 15px 0px;
+		color:#980000;
+		padding:9px 3px;
+	}
+	
+	#footer #foot_links ul li {
+		list-style:none;
+		float:left;
+		width:100px;
+		margin:5px;
+	}
 
 /* Inicio sesión */
 #user_pass, #user_login {

@@ -1,5 +1,5 @@
 <?php get_header() ?>
-<div id="container">
+<div id="container" class="clearfix">
 	<div id="content" class="clearfix">
 		<? $featured_cat = get_category_featured_id(intval(get_query_var('cat'))); ?>
 		<? if (!empty($featured_cat)) : ?>
