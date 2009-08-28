@@ -5,7 +5,7 @@
   <width></width>                                             <!-- [] (Number) if empty, will be equal to width of your flash movie -->
   <height></height>                                           <!-- [] (Number) if empty, will be equal to height of your flash movie -->
   <font>Tahoma</font>                                         <!-- [Tahoma] (font name) use device fonts, such as Tahoma, Times New Roman, Tahoma, Verdana... -->
-  <text_size>13</text_size>                                   <!-- [11] (Number) text size of all texts. Every text size can be set individually in the settings below -->
+  <text_size>8</text_size>                                   <!-- [11] (Number) text size of all texts. Every text size can be set individually in the settings below -->
   <text_color></text_color>                                   <!-- [#000000] (hex color code) main text color. Every text color can be set individually in the settings below-->
   <decimals_separator></decimals_separator>                   <!-- [,] (string) decimal separator. Note, that this is for displaying data only. Decimals in data xml file must be separated with a dot -->
   <thousands_separator></thousands_separator>                 <!-- [ ] (string) thousand separator -->
