@@ -1,228 +1,226 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map map_file="maps/world.swf" zoom="330%" zoom_x="-124.85%" zoom_y="-87.05%" tl_long="-168.49" tl_lat="83.63" br_long="190.3" br_lat="-55.58">
+<map map_file="maps/world.swf" tl_long="-168.49" tl_lat="83.63" br_long="190.3" br_lat="-55.58" zoom_x="0%" zoom_y="0%" zoom="100%">
   <areas>
-      <area title="ALAND ISLANDS" mc_name="AX"></area>
-      <area title="ALBANIA" mc_name="AL"></area>
-      <area title="ANDORRA" mc_name="AD"></area>
-      <area title="AUSTRIA" 			oid="AT" mc_name="AT"></area>
-      <area title="BELARUS" 			oid="BY" mc_name="BY"></area>
-      <area title="BELGIUM" 			oid="BE" mc_name="BE"></area>
-      <area title="BOSNIA AND HERZEGOVINA" oid="BA" mc_name="BA"></area>
-      <area title="BULGARIA" 			oid="BG" mc_name="BG"></area>
-      <area title="CROATIA" 			oid="HR" mc_name="HR"></area>
-      <area title="CYPRUS" 			oid="CY" mc_name="CY"></area>
-      <area title="CZECH REPUBLIC" 	oid="CZ" mc_name="CZ"></area>
-      <area title="DENMARK" 			oid="DK" mc_name="DK"></area>
-      <area title="ESTONIA" 			oid="EE" mc_name="EE"></area>
-      <area title="FAEROE ISLANDS" 	oid="FO" mc_name="FO"></area>
-      <area title="FINLAND" 			oid="FI" mc_name="FI"></area>
-      <area title="FRANCE" 			oid="FR" mc_name="FR"></area>
-      <area title="GERMANY" 			oid="DE" mc_name="DE"></area>
-      <area title="GREECE" 			oid="GR" mc_name="GR"></area>
-      <area title="GREENLAND" 		oid="GL" mc_name="GL"></area>
-      <area title="HUNGARY" 			oid="HU" mc_name="HU"></area>
-      <area title="ICELAND" 			oid="IS" mc_name="IS"></area>
-      <area title="IRELAND" 			oid="IE" mc_name="IE"></area>
-      <area title="ITALY" 				oid="IT" mc_name="IT"></area>
-      <area title="LATVIA" 			oid="LV" mc_name="LV"></area>
-      <area title="LIECHTENSTEIN" 	oid="LI" mc_name="LI"></area>
-      <area title="LITHUANIA" 		oid="LT" mc_name="LT"></area>
-      <area title="LUXEMBOURG" 		oid="LU" mc_name="LU"></area>
-      <area title="MACEDONIA" 		oid="MK" mc_name="MK"></area>
-      <area title="MALTA" 				oid="MT" mc_name="MT"></area>
-      <area title="MOLDOVA" 			oid="MD" mc_name="MD"></area>
-      <area title="MONTENEGRO" 		oid="ME" mc_name="ME"></area>
-      <area title="NETHERLANDS" 		oid="NL" mc_name="NL"></area>
-      <area title="NORWAY" 			oid="NO" mc_name="NO"></area>
-      <area title="POLAND" 			oid="PL" mc_name="PL"></area>
-      <area title="PORTUGAL" 			oid="PT" mc_name="PT"></area>
-      <area title="ROMANIA" 			oid="RO" mc_name="RO"></area>
-      <area title="SERBIA" 			oid="RS" mc_name="RS"></area>
-      <area title="SLOVAKIA" 			oid="SK" mc_name="SK"></area>
-      <area title="SLOVENIA" 			oid="SI" mc_name="SI"></area>
-      <area title="SPAIN" 				oid="ES" mc_name="ES"></area>
-      <area title="SVALBARD AND JAN MAYEN" mc_name="SJ"></area>
-      <area title="SWEDEN" 			oid="SE" mc_name="SE"></area>
-      <area title="SWITZERLAND" 		oid="CH" mc_name="CH"></area>
-      <area title="UKRAINE" 			oid="UA" mc_name="UA"></area>
-      <area title="UNITED KINGDOM" 	oid="GB" mc_name="GB"></area>
-
-
-  
-  
+      <area title="ALAND ISLANDS" 	oid="AX" mc_name="AX" link_with="AX,AL,AD,AT,BY,BE,BA,BG,HR,CY,CZ,DK,EE,FO,FI,FR,DE,GR,GL,HU,IS,IE,IT,LV,LI,LT,LU,MK,MT,MD,ME,NL,NO,PL,PT,RO,RS,SK,SI,ES,SJ,SE,CH,UA,GB" url="/seccion/europa/"></area>
+      <area title="ALBANIA" 			oid="AL" mc_name="AL" link_with="AX,AL,AD,AT,BY,BE,BA,BG,HR,CY,CZ,DK,EE,FO,FI,FR,DE,GR,GL,HU,IS,IE,IT,LV,LI,LT,LU,MK,MT,MD,ME,NL,NO,PL,PT,RO,RS,SK,SI,ES,SJ,SE,CH,UA,GB" url="/seccion/europa/"></area>
+      <area title="ANDORRA" 			oid="AD" mc_name="AD" link_with="AX,AL,AD,AT,BY,BE,BA,BG,HR,CY,CZ,DK,EE,FO,FI,FR,DE,GR,GL,HU,IS,IE,IT,LV,LI,LT,LU,MK,MT,MD,ME,NL,NO,PL,PT,RO,RS,SK,SI,ES,SJ,SE,CH,UA,GB" url="/seccion/europa/"></area>
+      <area title="AUSTRIA" 			oid="AT" mc_name="AT" link_with="AX,AL,AD,AT,BY,BE,BA,BG,HR,CY,CZ,DK,EE,FO,FI,FR,DE,GR,GL,HU,IS,IE,IT,LV,LI,LT,LU,MK,MT,MD,ME,NL,NO,PL,PT,RO,RS,SK,SI,ES,SJ,SE,CH,UA,GB" url="/seccion/europa/"></area>
+      <area title="BELARUS" 			oid="BY" mc_name="BY" link_with="AX,AL,AD,AT,BY,BE,BA,BG,HR,CY,CZ,DK,EE,FO,FI,FR,DE,GR,GL,HU,IS,IE,IT,LV,LI,LT,LU,MK,MT,MD,ME,NL,NO,PL,PT,RO,RS,SK,SI,ES,SJ,SE,CH,UA,GB" url="/seccion/europa/"></area>
+      <area title="BELGIUM" 			oid="BE" mc_name="BE" link_with="AX,AL,AD,AT,BY,BE,BA,BG,HR,CY,CZ,DK,EE,FO,FI,FR,DE,GR,GL,HU,IS,IE,IT,LV,LI,LT,LU,MK,MT,MD,ME,NL,NO,PL,PT,RO,RS,SK,SI,ES,SJ,SE,CH,UA,GB" url="/seccion/europa/"></area>
+      <area title="BOSNIA AND HERZEGOVINA" oid="BA" mc_name="BA" link_with="AX,AL,AD,AT,BY,BE,BA,BG,HR,CY,CZ,DK,EE,FO,FI,FR,DE,GR,GL,HU,IS,IE,IT,LV,LI,LT,LU,MK,MT,MD,ME,NL,NO,PL,PT,RO,RS,SK,SI,ES,SJ,SE,CH,UA,GB" url="/seccion/europa/"></area>
+      <area title="BULGARIA" 			oid="BG" mc_name="BG" link_with="AX,AL,AD,AT,BY,BE,BA,BG,HR,CY,CZ,DK,EE,FO,FI,FR,DE,GR,GL,HU,IS,IE,IT,LV,LI,LT,LU,MK,MT,MD,ME,NL,NO,PL,PT,RO,RS,SK,SI,ES,SJ,SE,CH,UA,GB" url="/seccion/europa/"></area>
+      <area title="CROATIA" 			oid="HR" mc_name="HR" link_with="AX,AL,AD,AT,BY,BE,BA,BG,HR,CY,CZ,DK,EE,FO,FI,FR,DE,GR,GL,HU,IS,IE,IT,LV,LI,LT,LU,MK,MT,MD,ME,NL,NO,PL,PT,RO,RS,SK,SI,ES,SJ,SE,CH,UA,GB" url="/seccion/europa/"></area>
+      <area title="CYPRUS" 			oid="CY" mc_name="CY" link_with="AX,AL,AD,AT,BY,BE,BA,BG,HR,CY,CZ,DK,EE,FO,FI,FR,DE,GR,GL,HU,IS,IE,IT,LV,LI,LT,LU,MK,MT,MD,ME,NL,NO,PL,PT,RO,RS,SK,SI,ES,SJ,SE,CH,UA,GB" url="/seccion/europa/"></area>
+      <area title="CZECH REPUBLIC" 	oid="CZ" mc_name="CZ" link_with="AX,AL,AD,AT,BY,BE,BA,BG,HR,CY,CZ,DK,EE,FO,FI,FR,DE,GR,GL,HU,IS,IE,IT,LV,LI,LT,LU,MK,MT,MD,ME,NL,NO,PL,PT,RO,RS,SK,SI,ES,SJ,SE,CH,UA,GB" url="/seccion/europa/"></area>
+      <area title="DENMARK" 			oid="DK" mc_name="DK" link_with="AX,AL,AD,AT,BY,BE,BA,BG,HR,CY,CZ,DK,EE,FO,FI,FR,DE,GR,GL,HU,IS,IE,IT,LV,LI,LT,LU,MK,MT,MD,ME,NL,NO,PL,PT,RO,RS,SK,SI,ES,SJ,SE,CH,UA,GB" url="/seccion/europa/"></area>
+      <area title="ESTONIA" 			oid="EE" mc_name="EE" link_with="AX,AL,AD,AT,BY,BE,BA,BG,HR,CY,CZ,DK,EE,FO,FI,FR,DE,GR,GL,HU,IS,IE,IT,LV,LI,LT,LU,MK,MT,MD,ME,NL,NO,PL,PT,RO,RS,SK,SI,ES,SJ,SE,CH,UA,GB" url="/seccion/europa/"></area>
+      <area title="FAEROE ISLANDS" 	oid="FO" mc_name="FO" link_with="AX,AL,AD,AT,BY,BE,BA,BG,HR,CY,CZ,DK,EE,FO,FI,FR,DE,GR,GL,HU,IS,IE,IT,LV,LI,LT,LU,MK,MT,MD,ME,NL,NO,PL,PT,RO,RS,SK,SI,ES,SJ,SE,CH,UA,GB" url="/seccion/europa/"></area>
+      <area title="FINLAND" 			oid="FI" mc_name="FI" link_with="AX,AL,AD,AT,BY,BE,BA,BG,HR,CY,CZ,DK,EE,FO,FI,FR,DE,GR,GL,HU,IS,IE,IT,LV,LI,LT,LU,MK,MT,MD,ME,NL,NO,PL,PT,RO,RS,SK,SI,ES,SJ,SE,CH,UA,GB" url="/seccion/europa/"></area>
+      <area title="FRANCE" 			oid="FR" mc_name="FR" link_with="AX,AL,AD,AT,BY,BE,BA,BG,HR,CY,CZ,DK,EE,FO,FI,FR,DE,GR,GL,HU,IS,IE,IT,LV,LI,LT,LU,MK,MT,MD,ME,NL,NO,PL,PT,RO,RS,SK,SI,ES,SJ,SE,CH,UA,GB" url="/seccion/europa/"></area>
+      <area title="GERMANY" 			oid="DE" mc_name="DE" link_with="AX,AL,AD,AT,BY,BE,BA,BG,HR,CY,CZ,DK,EE,FO,FI,FR,DE,GR,GL,HU,IS,IE,IT,LV,LI,LT,LU,MK,MT,MD,ME,NL,NO,PL,PT,RO,RS,SK,SI,ES,SJ,SE,CH,UA,GB" url="/seccion/europa/"></area>
+      <area title="GREECE" 			oid="GR" mc_name="GR" link_with="AX,AL,AD,AT,BY,BE,BA,BG,HR,CY,CZ,DK,EE,FO,FI,FR,DE,GR,GL,HU,IS,IE,IT,LV,LI,LT,LU,MK,MT,MD,ME,NL,NO,PL,PT,RO,RS,SK,SI,ES,SJ,SE,CH,UA,GB" url="/seccion/europa/"></area>
+      <area title="GREENLAND" 		oid="GL" mc_name="GL" link_with="AX,AL,AD,AT,BY,BE,BA,BG,HR,CY,CZ,DK,EE,FO,FI,FR,DE,GR,GL,HU,IS,IE,IT,LV,LI,LT,LU,MK,MT,MD,ME,NL,NO,PL,PT,RO,RS,SK,SI,ES,SJ,SE,CH,UA,GB" url="/seccion/europa/"></area>
+      <area title="HUNGARY" 			oid="HU" mc_name="HU" link_with="AX,AL,AD,AT,BY,BE,BA,BG,HR,CY,CZ,DK,EE,FO,FI,FR,DE,GR,GL,HU,IS,IE,IT,LV,LI,LT,LU,MK,MT,MD,ME,NL,NO,PL,PT,RO,RS,SK,SI,ES,SJ,SE,CH,UA,GB" url="/seccion/europa/"></area>
+      <area title="ICELAND" 			oid="IS" mc_name="IS" link_with="AX,AL,AD,AT,BY,BE,BA,BG,HR,CY,CZ,DK,EE,FO,FI,FR,DE,GR,GL,HU,IS,IE,IT,LV,LI,LT,LU,MK,MT,MD,ME,NL,NO,PL,PT,RO,RS,SK,SI,ES,SJ,SE,CH,UA,GB" url="/seccion/europa/"></area>
+      <area title="IRELAND" 			oid="IE" mc_name="IE" link_with="AX,AL,AD,AT,BY,BE,BA,BG,HR,CY,CZ,DK,EE,FO,FI,FR,DE,GR,GL,HU,IS,IE,IT,LV,LI,LT,LU,MK,MT,MD,ME,NL,NO,PL,PT,RO,RS,SK,SI,ES,SJ,SE,CH,UA,GB" url="/seccion/europa/"></area>
+      <area title="ITALY" 				oid="IT" mc_name="IT" link_with="AX,AL,AD,AT,BY,BE,BA,BG,HR,CY,CZ,DK,EE,FO,FI,FR,DE,GR,GL,HU,IS,IE,IT,LV,LI,LT,LU,MK,MT,MD,ME,NL,NO,PL,PT,RO,RS,SK,SI,ES,SJ,SE,CH,UA,GB" url="/seccion/europa/"></area>
+      <area title="LATVIA" 			oid="LV" mc_name="LV" link_with="AX,AL,AD,AT,BY,BE,BA,BG,HR,CY,CZ,DK,EE,FO,FI,FR,DE,GR,GL,HU,IS,IE,IT,LV,LI,LT,LU,MK,MT,MD,ME,NL,NO,PL,PT,RO,RS,SK,SI,ES,SJ,SE,CH,UA,GB" url="/seccion/europa/"></area>
+      <area title="LIECHTENSTEIN" 	oid="LI" mc_name="LI" link_with="AX,AL,AD,AT,BY,BE,BA,BG,HR,CY,CZ,DK,EE,FO,FI,FR,DE,GR,GL,HU,IS,IE,IT,LV,LI,LT,LU,MK,MT,MD,ME,NL,NO,PL,PT,RO,RS,SK,SI,ES,SJ,SE,CH,UA,GB" url="/seccion/europa/"></area>
+      <area title="LITHUANIA" 		oid="LT" mc_name="LT" link_with="AX,AL,AD,AT,BY,BE,BA,BG,HR,CY,CZ,DK,EE,FO,FI,FR,DE,GR,GL,HU,IS,IE,IT,LV,LI,LT,LU,MK,MT,MD,ME,NL,NO,PL,PT,RO,RS,SK,SI,ES,SJ,SE,CH,UA,GB" url="/seccion/europa/"></area>
+      <area title="LUXEMBOURG" 		oid="LU" mc_name="LU" link_with="AX,AL,AD,AT,BY,BE,BA,BG,HR,CY,CZ,DK,EE,FO,FI,FR,DE,GR,GL,HU,IS,IE,IT,LV,LI,LT,LU,MK,MT,MD,ME,NL,NO,PL,PT,RO,RS,SK,SI,ES,SJ,SE,CH,UA,GB" url="/seccion/europa/"></area>
+      <area title="MACEDONIA" 		oid="MK" mc_name="MK" link_with="AX,AL,AD,AT,BY,BE,BA,BG,HR,CY,CZ,DK,EE,FO,FI,FR,DE,GR,GL,HU,IS,IE,IT,LV,LI,LT,LU,MK,MT,MD,ME,NL,NO,PL,PT,RO,RS,SK,SI,ES,SJ,SE,CH,UA,GB" url="/seccion/europa/"></area>
+      <area title="MALTA" 				oid="MT" mc_name="MT" link_with="AX,AL,AD,AT,BY,BE,BA,BG,HR,CY,CZ,DK,EE,FO,FI,FR,DE,GR,GL,HU,IS,IE,IT,LV,LI,LT,LU,MK,MT,MD,ME,NL,NO,PL,PT,RO,RS,SK,SI,ES,SJ,SE,CH,UA,GB" url="/seccion/europa/"></area>
+      <area title="MOLDOVA" 			oid="MD" mc_name="MD" link_with="AX,AL,AD,AT,BY,BE,BA,BG,HR,CY,CZ,DK,EE,FO,FI,FR,DE,GR,GL,HU,IS,IE,IT,LV,LI,LT,LU,MK,MT,MD,ME,NL,NO,PL,PT,RO,RS,SK,SI,ES,SJ,SE,CH,UA,GB" url="/seccion/europa/"></area>
+      <area title="MONTENEGRO" 		oid="ME" mc_name="ME" link_with="AX,AL,AD,AT,BY,BE,BA,BG,HR,CY,CZ,DK,EE,FO,FI,FR,DE,GR,GL,HU,IS,IE,IT,LV,LI,LT,LU,MK,MT,MD,ME,NL,NO,PL,PT,RO,RS,SK,SI,ES,SJ,SE,CH,UA,GB" url="/seccion/europa/"></area>
+      <area title="NETHERLANDS" 		oid="NL" mc_name="NL" link_with="AX,AL,AD,AT,BY,BE,BA,BG,HR,CY,CZ,DK,EE,FO,FI,FR,DE,GR,GL,HU,IS,IE,IT,LV,LI,LT,LU,MK,MT,MD,ME,NL,NO,PL,PT,RO,RS,SK,SI,ES,SJ,SE,CH,UA,GB" url="/seccion/europa/"></area>
+      <area title="NORWAY" 			oid="NO" mc_name="NO" link_with="AX,AL,AD,AT,BY,BE,BA,BG,HR,CY,CZ,DK,EE,FO,FI,FR,DE,GR,GL,HU,IS,IE,IT,LV,LI,LT,LU,MK,MT,MD,ME,NL,NO,PL,PT,RO,RS,SK,SI,ES,SJ,SE,CH,UA,GB" url="/seccion/europa/"></area>
+      <area title="POLAND" 			oid="PL" mc_name="PL" link_with="AX,AL,AD,AT,BY,BE,BA,BG,HR,CY,CZ,DK,EE,FO,FI,FR,DE,GR,GL,HU,IS,IE,IT,LV,LI,LT,LU,MK,MT,MD,ME,NL,NO,PL,PT,RO,RS,SK,SI,ES,SJ,SE,CH,UA,GB" url="/seccion/europa/"></area>
+      <area title="PORTUGAL" 			oid="PT" mc_name="PT" link_with="AX,AL,AD,AT,BY,BE,BA,BG,HR,CY,CZ,DK,EE,FO,FI,FR,DE,GR,GL,HU,IS,IE,IT,LV,LI,LT,LU,MK,MT,MD,ME,NL,NO,PL,PT,RO,RS,SK,SI,ES,SJ,SE,CH,UA,GB" url="/seccion/europa/"></area>
+      <area title="ROMANIA" 			oid="RO" mc_name="RO" link_with="AX,AL,AD,AT,BY,BE,BA,BG,HR,CY,CZ,DK,EE,FO,FI,FR,DE,GR,GL,HU,IS,IE,IT,LV,LI,LT,LU,MK,MT,MD,ME,NL,NO,PL,PT,RO,RS,SK,SI,ES,SJ,SE,CH,UA,GB" url="/seccion/europa/"></area>
+      <area title="SERBIA" 			oid="RS" mc_name="RS" link_with="AX,AL,AD,AT,BY,BE,BA,BG,HR,CY,CZ,DK,EE,FO,FI,FR,DE,GR,GL,HU,IS,IE,IT,LV,LI,LT,LU,MK,MT,MD,ME,NL,NO,PL,PT,RO,RS,SK,SI,ES,SJ,SE,CH,UA,GB" url="/seccion/europa/"></area>
+      <area title="SLOVAKIA" 			oid="SK" mc_name="SK" link_with="AX,AL,AD,AT,BY,BE,BA,BG,HR,CY,CZ,DK,EE,FO,FI,FR,DE,GR,GL,HU,IS,IE,IT,LV,LI,LT,LU,MK,MT,MD,ME,NL,NO,PL,PT,RO,RS,SK,SI,ES,SJ,SE,CH,UA,GB" url="/seccion/europa/"></area>
+      <area title="SLOVENIA" 			oid="SI" mc_name="SI" link_with="AX,AL,AD,AT,BY,BE,BA,BG,HR,CY,CZ,DK,EE,FO,FI,FR,DE,GR,GL,HU,IS,IE,IT,LV,LI,LT,LU,MK,MT,MD,ME,NL,NO,PL,PT,RO,RS,SK,SI,ES,SJ,SE,CH,UA,GB" url="/seccion/europa/"></area>
+      <area title="SPAIN" 				oid="ES" mc_name="ES" url="/seccion/spain/"></area>
+      <area title="SVALBARD AND JAN MAYEN" oid="SJ" mc_name="SJ" link_with="AX,AL,AD,AT,BY,BE,BA,BG,HR,CY,CZ,DK,EE,FO,FI,FR,DE,GR,GL,HU,IS,IE,IT,LV,LI,LT,LU,MK,MT,MD,ME,NL,NO,PL,PT,RO,RS,SK,SI,ES,SJ,SE,CH,UA,GB" url="/seccion/europa/"></area>
+      <area title="SWEDEN" 			oid="SE" mc_name="SE" link_with="AX,AL,AD,AT,BY,BE,BA,BG,HR,CY,CZ,DK,EE,FO,FI,FR,DE,GR,GL,HU,IS,IE,IT,LV,LI,LT,LU,MK,MT,MD,ME,NL,NO,PL,PT,RO,RS,SK,SI,ES,SJ,SE,CH,UA,GB" url="/seccion/europa/"></area>
+      <area title="SWITZERLAND" 		oid="CH" mc_name="CH" link_with="AX,AL,AD,AT,BY,BE,BA,BG,HR,CY,CZ,DK,EE,FO,FI,FR,DE,GR,GL,HU,IS,IE,IT,LV,LI,LT,LU,MK,MT,MD,ME,NL,NO,PL,PT,RO,RS,SK,SI,ES,SJ,SE,CH,UA,GB" url="/seccion/europa/"></area>
+      <area title="UKRAINE" 			oid="UA" mc_name="UA" link_with="AX,AL,AD,AT,BY,BE,BA,BG,HR,CY,CZ,DK,EE,FO,FI,FR,DE,GR,GL,HU,IS,IE,IT,LV,LI,LT,LU,MK,MT,MD,ME,NL,NO,PL,PT,RO,RS,SK,SI,ES,SJ,SE,CH,UA,GB" url="/seccion/europa/"></area>
+      <area title="UNITED KINGDOM" 	oid="GB" mc_name="GB" link_with="AX,AL,AD,AT,BY,BE,BA,BG,HR,CY,CZ,DK,EE,FO,FI,FR,DE,GR,GL,HU,IS,IE,IT,LV,LI,LT,LU,MK,MT,MD,ME,NL,NO,PL,PT,RO,RS,SK,SI,ES,SJ,SE,CH,UA,GB" url="/seccion/europa/"></area>
       
 <!--AMERICA -->
-      <area title="ANGUILLA" mc_name="AI"></area>
-      <area title="ANTIGUA AND BARBUDA" mc_name="AG"></area>
-      <area title="BAHAMAS" mc_name="BS"></area>
-      <area title="BELIZE" mc_name="BZ"></area>
-      <area title="BERMUDA" mc_name="BM"></area>
-      <area title="CANADA" mc_name="CA"></area>
-      <area title="COSTA RICA" mc_name="CR"></area>
-      <area title="EL SALVADOR" mc_name="SV"></area>
-      <area title="HAITI" mc_name="HT"></area>
-      <area title="HONDURAS" mc_name="HN"></area>
-      <area title="JAMAICA" mc_name="JM"></area>
-      <area title="MEXICO" mc_name="MX"></area>
-      <area title="MONTSERRAT" mc_name="MS"></area>
-      <area title="NICARAGUA" mc_name="NI"></area>
-      <area title="PUERTO RICO" mc_name="PR"></area>
-      <area title="SAINT KITTS AND NEVIS" mc_name="KN"></area>
-      <area title="SAINT LUCIA" mc_name="LC"></area>
-      <area title="TURKS AND CAICOS ISLANDS" mc_name="TC"></area>
-      <area title="UNITED STATES" mc_name="US"></area>
-      <area title="VIRGIN ISLANDS, BRITISH" mc_name="VG"></area>
+      <area title="ANGUILLA" 						oid="AI" mc_name="AI" link_with="AI,AG,BS,BZ,BM,CA,CR,SV,HT,HN,JM,MX,MS,NI,PR,KN,LC,TC,US,VG" url="/seccion/america/"></area>
+      <area title="ANTIGUA AND BARBUDA" 		oid="AG" mc_name="AG" link_with="AI,AG,BS,BZ,BM,CA,CR,SV,HT,HN,JM,MX,MS,NI,PR,KN,LC,TC,US,VG" url="/seccion/america/"></area>
+      <area title="BAHAMAS" 						oid="BS" mc_name="BS" link_with="AI,AG,BS,BZ,BM,CA,CR,SV,HT,HN,JM,MX,MS,NI,PR,KN,LC,TC,US,VG" url="/seccion/america/"></area>
+      <area title="BELIZE" 						oid="BZ" mc_name="BZ" link_with="AI,AG,BS,BZ,BM,CA,CR,SV,HT,HN,JM,MX,MS,NI,PR,KN,LC,TC,US,VG" url="/seccion/america/"></area>
+      <area title="BERMUDA" 						oid="BM" mc_name="BM" link_with="AI,AG,BS,BZ,BM,CA,CR,SV,HT,HN,JM,MX,MS,NI,PR,KN,LC,TC,US,VG" url="/seccion/america/"></area>
+      <area title="CANADA" 						oid="CA" mc_name="CA" link_with="AI,AG,BS,BZ,BM,CA,CR,SV,HT,HN,JM,MX,MS,NI,PR,KN,LC,TC,US,VG" url="/seccion/america/"></area>
+      <area title="COSTA RICA" 					oid="CR" mc_name="CR" link_with="AI,AG,BS,BZ,BM,CA,CR,SV,HT,HN,JM,MX,MS,NI,PR,KN,LC,TC,US,VG" url="/seccion/america/"></area>
+      <area title="EL SALVADOR" 					oid="SV" mc_name="SV" link_with="AI,AG,BS,BZ,BM,CA,CR,SV,HT,HN,JM,MX,MS,NI,PR,KN,LC,TC,US,VG" url="/seccion/america/"></area>
+      <area title="HAITI" 							oid="HT" mc_name="HT" link_with="AI,AG,BS,BZ,BM,CA,CR,SV,HT,HN,JM,MX,MS,NI,PR,KN,LC,TC,US,VG" url="/seccion/america/"></area>
+      <area title="HONDURAS" 						oid="HN" mc_name="HN" link_with="AI,AG,BS,BZ,BM,CA,CR,SV,HT,HN,JM,MX,MS,NI,PR,KN,LC,TC,US,VG" url="/seccion/america/"></area>
+      <area title="JAMAICA" 						oid="JM" mc_name="JM" link_with="AI,AG,BS,BZ,BM,CA,CR,SV,HT,HN,JM,MX,MS,NI,PR,KN,LC,TC,US,VG" url="/seccion/america/"></area>
+      <area title="MEXICO" 						oid="MX" mc_name="MX" link_with="AI,AG,BS,BZ,BM,CA,CR,SV,HT,HN,JM,MX,MS,NI,PR,KN,LC,TC,US,VG" url="/seccion/america/"></area>
+      <area title="MONTSERRAT" 					oid="MS" mc_name="MS" link_with="AI,AG,BS,BZ,BM,CA,CR,SV,HT,HN,JM,MX,MS,NI,PR,KN,LC,TC,US,VG" url="/seccion/america/"></area>
+      <area title="NICARAGUA" 					oid="NI" mc_name="NI" link_with="AI,AG,BS,BZ,BM,CA,CR,SV,HT,HN,JM,MX,MS,NI,PR,KN,LC,TC,US,VG" url="/seccion/america/"></area>
+      <area title="PUERTO RICO" 					oid="PR" mc_name="PR" link_with="AI,AG,BS,BZ,BM,CA,CR,SV,HT,HN,JM,MX,MS,NI,PR,KN,LC,TC,US,VG" url="/seccion/america/"></area>
+      <area title="SAINT KITTS AND NEVIS" 	oid="KN" mc_name="KN" link_with="AI,AG,BS,BZ,BM,CA,CR,SV,HT,HN,JM,MX,MS,NI,PR,KN,LC,TC,US,VG" url="/seccion/america/"></area>
+      <area title="SAINT LUCIA" 					oid="LC" mc_name="LC" link_with="AI,AG,BS,BZ,BM,CA,CR,SV,HT,HN,JM,MX,MS,NI,PR,KN,LC,TC,US,VG" url="/seccion/america/"></area>
+      <area title="TURKS AND CAICOS ISLANDS" oid="TC" mc_name="TC" link_with="AI,AG,BS,BZ,BM,CA,CR,SV,HT,HN,JM,MX,MS,NI,PR,KN,LC,TC,US,VG" url="/seccion/america/"></area>
+      <area title="UNITED STATES" 				oid="US" mc_name="US" link_with="AI,AG,BS,BZ,BM,CA,CR,SV,HT,HN,JM,MX,MS,NI,PR,KN,LC,TC,US,VG" url="/seccion/america/"></area>
+      <area title="VIRGIN ISLANDS, BRITISH" 	oid="VG" mc_name="VG" link_with="AI,AG,BS,BZ,BM,CA,CR,SV,HT,HN,JM,MX,MS,NI,PR,KN,LC,TC,US,VG" url="/seccion/america/"></area>
 
 <!--LAMERICA-->
-      <area title="ARGENTINA" mc_name="AR"></area>
-      <area title="ARUBA" mc_name="AW"></area>
-      <area title="BARBADOS" mc_name="BB"></area>
-      <area title="BOLIVIA" mc_name="BO"></area>
-      <area title="BRAZIL" mc_name="BR"></area>
-      <area title="CHILE" mc_name="CL"></area>
-      <area title="COLOMBIA" mc_name="CO"></area>
-      <area title="CUBA" mc_name="CU"></area>
-      <area title="DOMINICA" mc_name="DM"></area>
-      <area title="DOMINICAN REPUBLIC" mc_name="DO"></area>
-      <area title="ECUADOR" mc_name="EC"></area>
-      <area title="FALKLAND ISLANDS" mc_name="FK"></area>
-      <area title="FRENCH GUIANA" mc_name="GF"></area>
-      <area title="GRENADA" mc_name="GD"></area>
-      <area title="GUADELOUPE" mc_name="GP"></area>
-      <area title="GUATEMALA" mc_name="GT"></area>
-      <area title="GUYANA" mc_name="GY"></area>
-      <area title="MARTINIQUE" mc_name="MQ"></area>
-      <area title="PARAGUAY" mc_name="PY"></area>
-      <area title="PERU" mc_name="PE"></area>
-      <area title="SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS" mc_name="GS"></area>
-      <area title="SURINAME" mc_name="SR"></area>
-      <area title="TRINIDAD AND TOBAGO" mc_name="TT"></area>
-      <area title="URUGUAY" mc_name="UY"></area>
-      <area title="VENEZUELA" mc_name="VE"></area>
+      <area title="ARGENTINA" 				oid="AR" mc_name="AR" link_with="AR,AW,BB,BO,BR,CL,CO,CU,DM,DO,EC,FK,GF,GD,GP,GT,GY,MQ,PY,PE,GS,SR,TT,UY,VE" url="/seccion/lamerica/"></area>
+      <area title="ARUBA" 						oid="AW" mc_name="AW" link_with="AR,AW,BB,BO,BR,CL,CO,CU,DM,DO,EC,FK,GF,GD,GP,GT,GY,MQ,PY,PE,GS,SR,TT,UY,VE" url="/seccion/lamerica/"></area>
+      <area title="BARBADOS" 					oid="BB" mc_name="BB" link_with="AR,AW,BB,BO,BR,CL,CO,CU,DM,DO,EC,FK,GF,GD,GP,GT,GY,MQ,PY,PE,GS,SR,TT,UY,VE" url="/seccion/lamerica/"></area>
+      <area title="BOLIVIA" 					oid="BO" mc_name="BO" link_with="AR,AW,BB,BO,BR,CL,CO,CU,DM,DO,EC,FK,GF,GD,GP,GT,GY,MQ,PY,PE,GS,SR,TT,UY,VE" url="/seccion/lamerica/"></area>
+      <area title="BRAZIL" 					oid="BR" mc_name="BR" link_with="AR,AW,BB,BO,BR,CL,CO,CU,DM,DO,EC,FK,GF,GD,GP,GT,GY,MQ,PY,PE,GS,SR,TT,UY,VE" url="/seccion/lamerica/"></area>
+      <area title="CHILE" 						oid="CL" mc_name="CL" link_with="AR,AW,BB,BO,BR,CL,CO,CU,DM,DO,EC,FK,GF,GD,GP,GT,GY,MQ,PY,PE,GS,SR,TT,UY,VE" url="/seccion/lamerica/"></area>
+      <area title="COLOMBIA" 					oid="CO" mc_name="CO" link_with="AR,AW,BB,BO,BR,CL,CO,CU,DM,DO,EC,FK,GF,GD,GP,GT,GY,MQ,PY,PE,GS,SR,TT,UY,VE" url="/seccion/lamerica/"></area>
+      <area title="CUBA" 						oid="CU" mc_name="CU" link_with="AR,AW,BB,BO,BR,CL,CO,CU,DM,DO,EC,FK,GF,GD,GP,GT,GY,MQ,PY,PE,GS,SR,TT,UY,VE" url="/seccion/lamerica/"></area>
+      <area title="DOMINICA" 					oid="DM" mc_name="DM" link_with="AR,AW,BB,BO,BR,CL,CO,CU,DM,DO,EC,FK,GF,GD,GP,GT,GY,MQ,PY,PE,GS,SR,TT,UY,VE" url="/seccion/lamerica/"></area>
+      <area title="DOMINICAN REPUBLIC" 	oid="DO" mc_name="DO" link_with="AR,AW,BB,BO,BR,CL,CO,CU,DM,DO,EC,FK,GF,GD,GP,GT,GY,MQ,PY,PE,GS,SR,TT,UY,VE" url="/seccion/lamerica/"></area>
+      <area title="ECUADOR" 					oid="EC" mc_name="EC" link_with="AR,AW,BB,BO,BR,CL,CO,CU,DM,DO,EC,FK,GF,GD,GP,GT,GY,MQ,PY,PE,GS,SR,TT,UY,VE" url="/seccion/lamerica/"></area>
+      <area title="FALKLAND ISLANDS" 		oid="FK" mc_name="FK" link_with="AR,AW,BB,BO,BR,CL,CO,CU,DM,DO,EC,FK,GF,GD,GP,GT,GY,MQ,PY,PE,GS,SR,TT,UY,VE" url="/seccion/lamerica/"></area>
+      <area title="FRENCH GUIANA" 			oid="GF" mc_name="GF" link_with="AR,AW,BB,BO,BR,CL,CO,CU,DM,DO,EC,FK,GF,GD,GP,GT,GY,MQ,PY,PE,GS,SR,TT,UY,VE" url="/seccion/lamerica/"></area>
+      <area title="GRENADA" 					oid="GD" mc_name="GD" link_with="AR,AW,BB,BO,BR,CL,CO,CU,DM,DO,EC,FK,GF,GD,GP,GT,GY,MQ,PY,PE,GS,SR,TT,UY,VE" url="/seccion/lamerica/"></area>
+      <area title="GUADELOUPE" 				oid="GP" mc_name="GP" link_with="AR,AW,BB,BO,BR,CL,CO,CU,DM,DO,EC,FK,GF,GD,GP,GT,GY,MQ,PY,PE,GS,SR,TT,UY,VE" url="/seccion/lamerica/"></area>
+      <area title="GUATEMALA" 				oid="GT" mc_name="GT" link_with="AR,AW,BB,BO,BR,CL,CO,CU,DM,DO,EC,FK,GF,GD,GP,GT,GY,MQ,PY,PE,GS,SR,TT,UY,VE" url="/seccion/lamerica/"></area>
+      <area title="GUYANA" 					oid="GY" mc_name="GY" link_with="AR,AW,BB,BO,BR,CL,CO,CU,DM,DO,EC,FK,GF,GD,GP,GT,GY,MQ,PY,PE,GS,SR,TT,UY,VE" url="/seccion/lamerica/"></area>
+      <area title="MARTINIQUE" 				oid="MQ" mc_name="MQ" link_with="AR,AW,BB,BO,BR,CL,CO,CU,DM,DO,EC,FK,GF,GD,GP,GT,GY,MQ,PY,PE,GS,SR,TT,UY,VE" url="/seccion/lamerica/"></area>
+      <area title="PARAGUAY" 					oid="PY" mc_name="PY" link_with="AR,AW,BB,BO,BR,CL,CO,CU,DM,DO,EC,FK,GF,GD,GP,GT,GY,MQ,PY,PE,GS,SR,TT,UY,VE" url="/seccion/lamerica/"></area>
+      <area title="PERU" 						oid="PE" mc_name="PE" link_with="AR,AW,BB,BO,BR,CL,CO,CU,DM,DO,EC,FK,GF,GD,GP,GT,GY,MQ,PY,PE,GS,SR,TT,UY,VE" url="/seccion/lamerica/"></area>
+      <area title="SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS" oid="GS" mc_name="GS" link_with="AR,AW,BB,BO,BR,CL,CO,CU,DM,DO,EC,FK,GF,GD,GP,GT,GY,MQ,PY,PE,GS,SR,TT,UY,VE" url="/seccion/lamerica/"></area>
+      <area title="SURINAME" 					oid="SR" mc_name="SR" link_with="AR,AW,BB,BO,BR,CL,CO,CU,DM,DO,EC,FK,GF,GD,GP,GT,GY,MQ,PY,PE,GS,SR,TT,UY,VE" url="/seccion/lamerica/"></area>
+      <area title="TRINIDAD AND TOBAGO" 	oid="TT" mc_name="TT" link_with="AR,AW,BB,BO,BR,CL,CO,CU,DM,DO,EC,FK,GF,GD,GP,GT,GY,MQ,PY,PE,GS,SR,TT,UY,VE" url="/seccion/lamerica/"></area>
+      <area title="URUGUAY" 					oid="UY" mc_name="UY" link_with="AR,AW,BB,BO,BR,CL,CO,CU,DM,DO,EC,FK,GF,GD,GP,GT,GY,MQ,PY,PE,GS,SR,TT,UY,VE" url="/seccion/lamerica/"></area>
+      <area title="VENEZUELA" 				oid="VE" mc_name="VE" link_with="AR,AW,BB,BO,BR,CL,CO,CU,DM,DO,EC,FK,GF,GD,GP,GT,GY,MQ,PY,PE,GS,SR,TT,UY,VE" url="/seccion/lamerica/"></area>
+
 
 <!--  ASIA  -->
-      <area title="AFGHANISTAN" mc_name="AF"></area>
-      <area title="ARMENIA" mc_name="AM"></area>
-      <area title="AZERBAIJAN" mc_name="AZ"></area>
-      <area title="BAHRAIN" mc_name="BH"></area>
-      <area title="BANGLADESH" mc_name="BD"></area>
-      <area title="BHUTAN" mc_name="BT"></area>
-      <area title="BRUNEI DARUSSALAM" mc_name="BN"></area>
-      <area title="CAMBODIA" mc_name="KH"></area>
-      <area title="CHINA" mc_name="CN"></area>
-      <area title="GEORGIA" mc_name="GE"></area>
-      <area title="GHANA" mc_name="GH"></area>
-      <area title="HONG KONG" mc_name="HK"></area>
-      <area title="INDIA" mc_name="IN"></area>
-      <area title="INDONESIA" mc_name="ID"></area>
-      <area title="IRAN" mc_name="IR"></area>
-      <area title="IRAQ" mc_name="IQ"></area>
-      <area title="ISRAEL" mc_name="IL"></area>
-      <area title="JAPAN" mc_name="JP"></area>
-      <area title="JORDAN" mc_name="JO"></area>
-      <area title="KAZAKHSTAN" mc_name="KZ"></area>
-      <area title="NORTH KOREA" mc_name="KP"></area>
-      <area title="SOUTH KOREA" mc_name="KR"></area>
-      <area title="KUWAIT" mc_name="KW"></area>
-      <area title="KYRGYZSTAN" mc_name="KG"></area>
-      <area title="LAO PEOPLE'S DEMOCRATIC REPUBLIC" mc_name="LA"></area>
-      <area title="LEBANON" mc_name="LB"></area>
-      <area title="MALAYSIA" mc_name="MY"></area>
-      <area title="MONGOLIA" mc_name="MN"></area>
-      <area title="MYANMAR" mc_name="MM"></area>
-      <area title="NEPAL" mc_name="NP"></area>
-      <area title="NEW CALEDONIA" mc_name="NC"></area>
-      <area title="NEW ZEALAND" mc_name="NZ"></area>
-      <area title="OMAN" mc_name="OM"></area>
-      <area title="PAKISTAN" mc_name="PK"></area>
-      <area title="PALAU" mc_name="PW"></area>
-      <area title="PALESTINIAN TERRITORIES" mc_name="PS"></area>
-      <area title="PANAMA" mc_name="PA"></area>
-      <area title="PAPUA NEW GUINEA" mc_name="PG"></area>
-      <area title="PHILIPPINES" mc_name="PH"></area>
-      <area title="QATAR" mc_name="QA"></area>
-      <area title="RUSSIAN FEDERATION" mc_name="RU"></area>
-      <area title="SAMOA" mc_name="WS"></area>
-      <area title="SAUDI ARABIA" mc_name="SA"></area>
-      <area title="SINGAPORE" mc_name="SG"></area>
-      <area title="SOLOMON ISLANDS" mc_name="SB"></area>
-      <area title="SRI LANKA" mc_name="LK"></area>
-      <area title="SYRIAN ARAB REPUBLIC" mc_name="SY"></area>
-      <area title="TAIWAN" mc_name="TW"></area>
-      <area title="TAJIKISTAN" mc_name="TJ"></area>
-      <area title="THAILAND" mc_name="TH"></area>
-      <area title="TIMOR-LESTE" mc_name="TL"></area>
-      <area title="TONGA" mc_name="TO"></area>
-      <area title="TURKEY" mc_name="TR"></area>
-      <area title="TURKMENISTAN" mc_name="TM"></area>
-      <area title="UNITED ARAB EMIRATES" mc_name="AE"></area>
-      <area title="UZBEKISTAN" mc_name="UZ"></area>
-      <area title="VANUATU" mc_name="VU"></area>
-      <area title="YEMEN" mc_name="YE"></area>
+      <area title="AFGHANISTAN" 				oid="AF" mc_name="AF" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="ARMENIA" 					oid="AM"	mc_name="AM" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="AZERBAIJAN" 				oid="AZ"	mc_name="AZ" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="BAHRAIN" 					oid="BH"	mc_name="BH" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="BANGLADESH" 				oid="BD"	mc_name="BD" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="BHUTAN" 					oid="BT"	mc_name="BT" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="BRUNEI DARUSSALAM" 		oid="BN"	mc_name="BN" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="CAMBODIA" 					oid="KH"	mc_name="KH" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="CHINA" 						oid="CN"	mc_name="CN" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="GEORGIA" 					oid="GE"	mc_name="GE" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="HONG KONG" 				oid="HK"	mc_name="HK" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="INDIA" 						oid="IN"	mc_name="IN" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="INDONESIA" 				oid="ID"	mc_name="ID" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="IRAN" 						oid="IR"	mc_name="IR" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="IRAQ" 						oid="IQ"	mc_name="IQ" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="ISRAEL" 					oid="IL"	mc_name="IL" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="JAPAN" 						oid="JP"	mc_name="JP" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="JORDAN" 					oid="JO"	mc_name="JO" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="KAZAKHSTAN" 				oid="KZ"	mc_name="KZ" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="NORTH KOREA" 				oid="KP"	mc_name="KP" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="SOUTH KOREA" 				oid="KR"	mc_name="KR" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="KUWAIT" 					oid="KW"	mc_name="KW" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="KYRGYZSTAN" 				oid="KG"	mc_name="KG" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="LAO PEOPLE'S DEMOCRATIC REPUBLIC" oid="LA"	mc_name="LA" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="LEBANON" 					oid="LB"	mc_name="LB" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="MALAYSIA" 					oid="MY"	mc_name="MY" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="MONGOLIA" 					oid="MN"	mc_name="MN" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="MYANMAR" 					oid="MM"	mc_name="MM" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="NEPAL" 						oid="NP"	mc_name="NP" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="NEW CALEDONIA" 			oid="NC"	mc_name="NC" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="OMAN" 						oid="OM"	mc_name="OM" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="PAKISTAN" 					oid="PK"	mc_name="PK" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="PALAU" 						oid="PW"	mc_name="PW" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="PALESTINIAN TERRITORIES"	oid="PS" mc_name="PS" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="PANAMA" 					oid="PA"	mc_name="PA" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="PAPUA NEW GUINEA" 		oid="PG"	mc_name="PG" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="PHILIPPINES" 				oid="PH"	mc_name="PH" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="QATAR" 						oid="QA"	mc_name="QA" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="RUSSIAN FEDERATION" 	oid="RU"	mc_name="RU" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="SAMOA" 						oid="WS"	mc_name="WS" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="SAUDI ARABIA" 			oid="SA"	mc_name="SA" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="SINGAPORE" 				oid="SG"	mc_name="SG" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="SOLOMON ISLANDS" 		oid="SB"	mc_name="SB" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="SRI LANKA" 				oid="LK"	mc_name="LK" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="SYRIAN ARAB REPUBLIC"	oid="SY"	mc_name="SY" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="TAIWAN" 					oid="TW"	mc_name="TW" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="TAJIKISTAN" 				oid="TJ"	mc_name="TJ" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="THAILAND" 					oid="TH"	mc_name="TH" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="TIMOR-LESTE" 				oid="TL"	mc_name="TL" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="TONGA" 						oid="TO"	mc_name="TO" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="TURKEY" 					oid="TR"	mc_name="TR" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="TURKMENISTAN" 			oid="TM"	mc_name="TM" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="UNITED ARAB EMIRATES"	oid="AE"	mc_name="AE" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="UZBEKISTAN" 				oid="UZ"	mc_name="UZ" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="VANUATU" 					oid="VU"	mc_name="VU" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="VIET NAM" 					oid="VN"	mc_name="VN" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
+      <area title="YEMEN" 						oid="YE"	mc_name="YE" link_with="AF,AM,AZ,BH,BD,BT,BN,KH,CN,GE,HK,IN,ID,IR,IQ,IL,JP,JO,KZ,KP,KR,KW,KG,LA,LB,MY,MN,MM,NP,NC,OM,PK,PW,PS,PA,PG,PH,QA,RU,WS,SA,SG,SB,LK,SY,TW,TJ,TH,TL,TO,TR,TM,AE,UZ,VU,YE,VN" url="/seccion/asia/"></area>
 
 <!-- AFRICA -->
-      <area title="ALGERIA" mc_name="DZ"></area>
-      <area title="ANGOLA" mc_name="AO"></area>
-      <area title="BENIN" mc_name="BJ"></area>
-      <area title="BOTSWANA" mc_name="BW"></area>
-      <area title="BURKINA FASO" mc_name="BF"></area>
-      <area title="BURUNDI" mc_name="BI"></area>
-      <area title="CAMEROON" mc_name="CM"></area>
-      <area title="CAPE VERDE" mc_name="CV"></area>
-      <area title="CENTRAL AFRICAN REPUBLIC" mc_name="CF"></area>
-      <area title="CHAD" mc_name="TD"></area>
-      <area title="COMOROS" mc_name="KM"></area>
-      <area title="REPUBLIC OF CONGO" mc_name="CG"></area>
-      <area title="THE DEMOCRATIC REPUBLIC OF THE CONGO" mc_name="CD"></area>
-      <area title="COTE D'IVOIRE" mc_name="CI"></area>
-      <area title="DJIBOUTI" mc_name="DJ"></area>
-      <area title="EGYPT" mc_name="EG"></area>
-      <area title="EQUATORIAL GUINEA" mc_name="GQ"></area>
-      <area title="ERITREA" mc_name="ER"></area>
-      <area title="ETHIOPIA" mc_name="ET"></area>
-      <area title="GABON" mc_name="GA"></area>
-      <area title="GAMBIA" mc_name="GM"></area>
-      <area title="GUINEA" mc_name="GN"></area>
-      <area title="GUINEA-BISSAU" mc_name="GW"></area>
-      <area title="KENYA" mc_name="KE"></area>
-      <area title="LESOTHO" mc_name="LS"></area>
-      <area title="LIBERIA" mc_name="LR"></area>
-      <area title="LIBYA" mc_name="LY"></area>
-      <area title="MADAGASCAR" mc_name="MG"></area>
-      <area title="MALAWI" mc_name="MW"></area>
-      <area title="MALI" mc_name="ML"></area>
-      <area title="MAURITANIA" mc_name="MR"></area>
-      <area title="MAURITIUS" mc_name="MU"></area>
-      <area title="MOROCCO" mc_name="MA"></area>
-      <area title="MOZAMBIQUE" mc_name="MZ"></area>
-      <area title="NAMIBIA" mc_name="NA"></area>
-      <area title="NIGER" mc_name="NE"></area>
-      <area title="NIGERIA" mc_name="NG"></area>
-      <area title="REUNION" mc_name="RE"></area>
-      <area title="RWANDA" mc_name="RW"></area>
-      <area title="SAO TOME AND PRINCIPE" mc_name="ST"></area>
-      <area title="SENEGAL" mc_name="SN"></area>
-      <area title="SIERRA LEONE" mc_name="SL"></area>
-      <area title="SOMALIA" mc_name="SO"></area>
-      <area title="SOUTH AFRICA" mc_name="ZA"></area>
-      <area title="SUDAN" mc_name="SD"></area>
-      <area title="SWAZILAND" mc_name="SZ"></area>
-      <area title="TANZANIA" mc_name="TZ"></area>
-      <area title="TOGO" mc_name="TG"></area>
-      <area title="TUNISIA" mc_name="TN"></area>
-      <area title="UGANDA" mc_name="UG"></area>
-      <area title="VIET NAM" mc_name="VN"></area>
-      <area title="WESTERN SAHARA" mc_name="EH"></area>
-      <area title="ZAMBIA" mc_name="ZM"></area>
-      <area title="ZIMBABWE" mc_name="ZW"></area>
+
+      <area title="ALGERIA" 					oid="DZ"	mc_name="DZ" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="ANGOLA" 					oid="AO"	mc_name="AO" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="BENIN" 						oid="BJ"	mc_name="BJ" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="BOTSWANA" 					oid="BW"	mc_name="BW" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="BURKINA FASO" 			oid="BF"	mc_name="BF" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="BURUNDI" 					oid="BI"	mc_name="BI" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="CAMEROON" 					oid="CM"	mc_name="CM" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="CAPE VERDE" 				oid="CV"	mc_name="CV" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="CENTRAL AFRICAN REPUBLIC"	oid="CF"	mc_name="CF" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="CHAD" 						oid="TD"	mc_name="TD" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="COMOROS" 					oid="KM"	mc_name="KM" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="REPUBLIC OF CONGO" 		oid="CG"	mc_name="CG" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="THE DEMOCRATIC REPUBLIC OF THE CONGO"	oid="CD"	mc_name="CD" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="COTE D'IVOIRE" 			oid="CI"	mc_name="CI" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="DJIBOUTI" 					oid="DJ"	mc_name="DJ" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="EGYPT" 						oid="EG"	mc_name="EG" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="EQUATORIAL GUINEA" 		oid="GQ"	mc_name="GQ" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="ERITREA" 					oid="ER"	mc_name="ER" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="ETHIOPIA" 					oid="ET"	mc_name="ET" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="GABON" 						oid="GA"	mc_name="GA" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="GAMBIA" 					oid="GM"	mc_name="GM" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="GHANA" 						oid="GH"	mc_name="GH" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="GUINEA" 					oid="GN"	mc_name="GN" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="GUINEA-BISSAU" 			oid="GW"	mc_name="GW" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="KENYA" 						oid="KE"	mc_name="KE" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="LESOTHO" 					oid="LS"	mc_name="LS" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="LIBERIA" 					oid="LR"	mc_name="LR" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="LIBYA" 						oid="LY"	mc_name="LY" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="MADAGASCAR" 				oid="MG"	mc_name="MG" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="MALAWI" 					oid="MW"	mc_name="MW" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="MALI" 						oid="ML"	mc_name="ML" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="MAURITANIA" 				oid="MR"	mc_name="MR" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="MAURITIUS" 				oid="MU"	mc_name="MU" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="MOROCCO" 					oid="MA"	mc_name="MA" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="MOZAMBIQUE" 				oid="MZ"	mc_name="MZ" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="NAMIBIA" 					oid="NA"	mc_name="NA" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="NIGER" 						oid="NE"	mc_name="NE" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="NIGERIA" 					oid="NG"	mc_name="NG" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="REUNION" 					oid="RE"	mc_name="RE" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="RWANDA" 					oid="RW"	mc_name="RW" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="SAO TOME AND PRINCIPE"	oid="ST"	mc_name="ST" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="SENEGAL" 					oid="SN"	mc_name="SN" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="SIERRA LEONE" 			oid="SL"	mc_name="SL" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="SOMALIA" 					oid="SO"	mc_name="SO" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="SOUTH AFRICA" 			oid="ZA"	mc_name="ZA" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="SUDAN" 						oid="SD"	mc_name="SD" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="SWAZILAND" 				oid="SZ"	mc_name="SZ" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="TANZANIA" 					oid="TZ"	mc_name="TZ" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="TOGO" 						oid="TG"	mc_name="TG" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="TUNISIA" 					oid="TN"	mc_name="TN" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="UGANDA" 					oid="UG"	mc_name="UG" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="WESTERN SAHARA" 			oid="EH"	mc_name="EH" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="ZAMBIA" 					oid="ZM"	mc_name="ZM" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
+      <area title="ZIMBABWE" 					oid="ZW"	mc_name="ZW" link_with="DZ,AO,BJ,BW,BF,BI,CM,CV,CF,TD,KM,CG,CD,CI,DJ,EG,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RE,RW,ST,SN,SL,SO,ZA,SD,SZ,TZ,TG,TN,UG,EH,ZM,ZW" url="/seccion/africa/"></area>
 
 
 
       
 
 
-      <area title="AUSTRALIA" mc_name="AU"></area>
-      <area title="FIJI" mc_name="FJ"></area>
+      <area title="AUSTRALIA" 				oid="AU" mc_name="AU" link_with="AU,FJ,NZ" url="/seccion/australia/"></area>
+      <area title="FIJI" 						oid="FJ" mc_name="FJ" link_with="AU,FJ,NZ" url="/seccion/australia/"></area>
+      <area title="NEW ZEALAND" 				oid="NZ"	mc_name="NZ" link_with="AU,FJ,NZ" url="/seccion/australia/"></area>
 
   </areas>
 </map>
