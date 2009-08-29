@@ -16,7 +16,7 @@
   <color_change_time_start>0.5</color_change_time_start>      <!-- [2] (Number) How fast areas should change color after map is loaded -->
   <color_change_time_hover>0.1</color_change_time_hover>      <!-- [0.2] (Number) How fast areas and movies should change color on roll out -->
   <fit_to_screen></fit_to_screen>                             <!-- [true] (true / false) whether to resize map or not to fit it on screen -->
-  <drag_map>false</drag_map>                                  <!-- [true] (true / false) whether map is dragable or not -->
+  <drag_map>true</drag_map>                                   <!-- [true] (true / false) whether map is dragable or not -->
   <mask></mask>                                               <!-- [true] (true / false) this is important if you use print or printAsBitmap JavaScript function and want only visible part of a map to be printed. Also, if you load the map into another swf movie. -->
   
   <background>                                                <!-- background -->
