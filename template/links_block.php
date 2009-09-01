@@ -11,7 +11,7 @@
 	if (is_home()) {
 		$res = &get_bicat_links('portada','enlaces-propios');
 	} else {
-		$res = &get_bicat_links(intval(get_query_var('cat')),'enlaces-propios');
+		//$res = &get_bicat_links(intval(get_query_var('cat')),'enlaces-propios');
 	}
 	if ($res){
 ?>
@@ -42,7 +42,7 @@
 	if (is_home()) {
 		$res = &get_bicat_links('portada','enlaces-externos');
 	} else {
-		$res = &get_bicat_links(intval(get_query_var('cat')),'enlaces-externos');
+		//$res = &get_bicat_links(intval(get_query_var('cat')),'enlaces-externos');
 	}
 	if ($res){
 ?>
