@@ -12,7 +12,7 @@
 		<title>Inicia sesión</title>
 	</head>
 	<body>
-		<form name="loginform" id="loginform" action="http://enfoque19.com/wp-login.php" method="post">
+		<form name="loginform" id="loginform" action="http://periodismohumano.com/wp-login.php" method="post">
 			<p>
 				<label>Usuario<br />
 				<input type="text" name="log" id="user_login" class="input" value="" size="20" tabindex="10" /></label>
@@ -25,7 +25,7 @@
 			<div class="clearfix">
 				<div id="nav">
 				<p class="forgetmenot"><label><input name="rememberme" type="checkbox" id="rememberme" value="forever" tabindex="90" /> Recuerdame</label></p>
-				<p><a href="http://enfoque19.com/wp-login.php?action=lostpassword" title="Recuperar contraseña">¿No recuerdas tu contraseña?</a>
+				<p><a href="http://periodismohumano.com/wp-login.php?action=lostpassword" title="Recuperar contraseña">¿No recuerdas tu contraseña?</a>
 				</p>
 				</div>
 				<p class="submit">
