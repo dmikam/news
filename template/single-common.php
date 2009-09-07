@@ -16,6 +16,10 @@
 				<? if (!empty($subtitle2)) : ?>
 					<h3 class="subtitle"><? echo $subtitle2; ?></h3>
 				<? endif; ?>
+				<? $subtitle3 = get_meta('subtitle-3'); ?>
+				<? if (!empty($subtitle3)) : ?>
+					<h4 class="subtitle"><? echo $subtitle3; ?></h4>
+				<? endif; ?>
 			</div>
 			<div id="sign_and_date" class="clearfix">
 				<div id="author">
