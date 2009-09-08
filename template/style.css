@@ -650,4 +650,10 @@ margin-top: expression(0 - parseInt(this.offsetHeight / 2) + (TBWindowMargin = d
 	_margin-bottom:1px;
 }
 
-	
+.mss_item_image {
+	text-align:center;
+}
+	.mss_item_image img {
+		max-width:250px;
+		max-height:150px;
+	}

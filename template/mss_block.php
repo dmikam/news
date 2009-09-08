@@ -14,7 +14,15 @@ if (is_category() || is_home()){
 		<div id="external_rss" class="block">
 			<dl class="links_list rss_list">
 <?php		foreach ($mss as $item){		?>
-				<dt><a href="<?php echo $item['link']; ?>" target="_blank"><?php echo $item['title']; ?></a></dt>
+				<dt>
+					<a href="<?php echo $item['link']; ?>" target="_blank"><?php echo $item['title']; ?></a>
+<?php				if (!empty($item['rss_title'])){			?>
+					<div class="mss_item_title"><?php echo $item['rss_title'] ?></div>
+<?					} 		?>
+<?php				if (!empty($item['image_url'])){			?>
+					<div class="mss_item_image"><img src="<?php echo $item['image_url'] ?>" alt="image" /></div>
+<?					} 		?>
+				</dt>
 				<dd><?php echo excerpt(strip_tags($item['description']),300); ?></dd>
 <?php		}		?>
 			</dl>
@@ -30,8 +38,16 @@ if (is_category() || is_home()){
 			</h3>
 			<div id="external_rss" class="block">
 				<dl class="links_list rss_list">
-	<?php		foreach ($mss as $item){		?>
-					<dt><a href="<?php echo $item['link']; ?>" target="_blank"><?php echo $item['title']; ?></a></dt>
+<?php			foreach ($mss as $item){		?>
+					<dt>
+						<a href="<?php echo $item['link']; ?>" target="_blank"><?php echo $item['title']; ?></a>
+<?php				if (!empty($item['rss_title'])){			?>
+					<div class="mss_item_title"><?php echo $item['rss_title'] ?></div>
+<?					} 		?>
+<?php				if (!empty($item['image_url'])){			?>
+					<div class="mss_item_image"><img src="<?php echo $item['image_url'] ?>" alt="image" /></div>
+<?					} 		?>						
+					</dt>
 					<dd><?php echo excerpt(strip_tags($item['description']),300); ?></dd>
 	<?php		}		?>
 				</dl>
@@ -48,7 +64,16 @@ if (is_category() || is_home()){
 				<div id="external_rss" class="block">
 					<dl class="links_list rss_list">
 		<?php		foreach ($mss as $item){		?>
-						<dt><a href="<?php echo $item['link']; ?>" target="_blank"><?php echo $item['title']; ?></a></dt>
+						<dt>
+							<a href="<?php echo $item['link']; ?>" target="_blank"><?php echo $item['title']; ?></a>
+<?php				if (!empty($item['rss_title'])){			?>
+					<div class="mss_item_title"><?php echo $item['rss_title'] ?></div>
+<?					} 		?>
+<?php				if (!empty($item['image_url'])){			?>
+					<div class="mss_item_image"><img src="<?php echo $item['image_url'] ?>" alt="image" /></div>
+<?					} 		?>
+
+						</dt>
 						<dd><?php echo excerpt(strip_tags($item['description']),300); ?></dd>
 		<?php		}		?>
 					</dl>

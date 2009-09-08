@@ -3,7 +3,7 @@
 Plugin Name: Merge RSS
 Plugin URI: 
 Description: This plugin permit subscribe a various RSS lists and merge them into one
-Version: 0.1
+Version: 0.2
 Author: dmikam
 Author URI: http://shockinfo.blogspot.com
 */
@@ -37,6 +37,8 @@ function mss_install() {
 			  url VARCHAR(255) NOT NULL,
 			  type VARCHAR(25) NOT NULL,
 			  cat VARCHAR(100) NOT NULL,
+			  title VARCHAR(100) NOT NULL,
+			  image_url VARCHAR(100) NOT NULL,
 			  PRIMARY KEY  id (id)
 			);";
 
@@ -104,7 +106,7 @@ function mss_get_rss($cat,$type){
 	$where = 'WHERE ('.implode(') AND (',$where_array).')';
 	$sql = "
 		SELECT
-			id,url,type,cat
+			id,url,type,cat,title,image_url
 		FROM
 			$table_name
 		$where
@@ -116,7 +118,12 @@ function mss_get_rss($cat,$type){
 //	dump($rss);
 	$rss_list = array();
 	foreach($rss as $item){
-		$rss_list[] = fetch_rss($item->url);
+		$new_item = fetch_rss($item->url);
+		foreach($new_item->items as $key=>$nitem){
+			$new_item->items[$key]['rss_title'] = $item->title;
+			$new_item->items[$key]['image_url'] = $item->image_url;
+		}
+		$rss_list[] = $new_item;
 	}
 //$rss_list[]= fetch_rss('http://www.versvs.net/node/feed');
 //$rss_list[]= fetch_rss('http://www.error500.net/node/feed');
