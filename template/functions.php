@@ -2,6 +2,24 @@
 
 add_shortcode('linea', 'add_clearfix');
 
+if ( function_exists('register_sidebar') )
+    register_sidebar(array(
+        'before_widget' => '<div class="block">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>',
+		  'name' => 'Lateral',
+    ));
+if ( function_exists('register_sidebar') )
+    register_sidebar(array(
+        'before_widget' => '<div class="block">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>',
+		  'name' => 'Pie',
+    ));
+
+
 function add_clearfix() {
 	return "<div style=\"clear:both\"></div>";
 }

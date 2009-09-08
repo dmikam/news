@@ -46,6 +46,8 @@
 	<!-- end of ammap script -->	
 	</div>
 	
+	<?php dynamic_sidebar("Lateral"); ?> 
+	
 	<? endif;  // Fin de condición para mostrar solo si es portada ?>
 
 <?

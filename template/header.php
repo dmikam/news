@@ -41,7 +41,7 @@
 	</div>
 	<div id="navbar" class="clearfix">
 		<ul id="menu">
-			<? wp_list_categories('title_li=&hide_empty=0&exclude=24,25,26,310,311,313,314,309,40'); ?>
+			<? wp_list_categories('title_li=&hide_empty=0&orderby=term_order&include=1,13,20,19,23,18,21&exclude=39,24,25,26,310,311,313,314,309,40'); ?>
 		</ul>
 		<?php include (TEMPLATEPATH . '/searchform.php'); ?>
 	</div>

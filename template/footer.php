@@ -1,4 +1,5 @@
 	<div id="footer" class="clearfix">
+		 <?php dynamic_sidebar("Pie"); ?> 
 		<div id="foot_links" class="block">
 			<h3>Más en Periodismo Humano</h3>
 			<ul>
