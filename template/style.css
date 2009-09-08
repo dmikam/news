@@ -156,6 +156,7 @@ strong {
 		#content #featured {
 			position:relative;
 			margin-bottom:20px;
+			text-align:center;
 		}
 			#content #featured h2 {
 				color:#000;

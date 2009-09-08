@@ -10,7 +10,7 @@
 			    	<? setup_postdata($post); ?>
 					<? $featured_post_id = get_the_ID(); ?>
 			 		<h2><a href="<?php the_permalink(); ?>" id="post-<?php the_ID(); ?>"><?php the_title(); ?></a></h2>
-					<? echo get_single_image("large"); ?>
+					<a href="<?php the_permalink(); ?>" title="<? the_title(); ?>">	<? echo get_single_image("large"); ?></a>
 					<div id="excerpt">
 						<? the_excerpt(); ?>
 					</div>
@@ -29,7 +29,7 @@
 							<div class="entry">
 								<? $wimage = get_meta('image'); ?>
 								<? if (!empty($wimage)) :  ?>
-									<? echo get_single_image(array(630,630)); ?>
+									<a href="<?php the_permalink(); ?>" title="<? the_title(); ?>">	<? echo get_single_image(array(630,630)); ?></a>
 								<? endif; ?>
 								<?php the_excerpt(); ?>
 							</div>

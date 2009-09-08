@@ -4,10 +4,11 @@
 		<h2 class="title" id="title-<? the_ID(); ?>">
 			<a href="<?php the_permalink() ?>" title="Enlace a <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
 		</h2>
+		<?php edit_post_link('Editar', '', ''); ?>
 		<div class="entry">
 			<? $wimage = get_meta('image'); ?>
 			<? if (!empty($wimage)) :  ?>
-				<? echo get_single_image(array($width,$width)); ?>
+				<a href="<?php the_permalink(); ?>" title="<? the_title(); ?>">	<? echo get_single_image(array($width,$width)); ?></a>
 			<? endif; ?>
 			<?php the_excerpt(); ?>
 		</div>

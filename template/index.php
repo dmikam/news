@@ -7,7 +7,7 @@
 		 	<? foreach($featured as $post) : ?>
 		    	<? setup_postdata($post); ?>
 		 		<h2><a href="<?php the_permalink(); ?>" id="post-<?php the_ID(); ?>"><?php the_title(); ?></a></h2>
-				<? echo get_single_image("large"); ?>
+				<a href="<?php the_permalink(); ?>" title="<? the_title(); ?>">	<? echo get_single_image("large"); ?> </a>
 				<div id="excerpt">
 					<? the_excerpt(); ?>
 				</div>
