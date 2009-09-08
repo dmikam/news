@@ -1,5 +1,5 @@
 <?php
-if (is_category() && is_home()){
+if (is_category() || is_home()){
 		if (is_home()){
 			$cat = get_category_by_slug('home');
 		}else{
