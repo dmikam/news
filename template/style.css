@@ -657,3 +657,7 @@ margin-top: expression(0 - parseInt(this.offsetHeight / 2) + (TBWindowMargin = d
 		max-width:250px;
 		max-height:150px;
 	}
+.mss_item_title {
+	color:#888888;
+	text-align:right;
+}
