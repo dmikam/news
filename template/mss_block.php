@@ -1,6 +1,10 @@
 <?php
-	if (is_category()){
-		$cat = get_category(intval(get_query_var('cat')));
+if (is_category() && is_home()){
+		if (is_home()){
+			$cat = get_category_by_slug('home');
+		}else{
+			$cat = get_category(intval(get_query_var('cat')));
+		}
 		$mss = mss_get_rss($cat->slug,'external');
 		if (!empty($mss)){
 ?>
