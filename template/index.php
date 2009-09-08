@@ -5,12 +5,17 @@
 		<? if (!empty($featured)) : ?>
 		<div id="featured" class="clearfix">
 		 	<? foreach($featured as $post) : ?>
+				<? $raw_content =  get_meta('raw'); ?>
 		    	<? setup_postdata($post); ?>
-		 		<h2><a href="<?php the_permalink(); ?>" id="post-<?php the_ID(); ?>"><?php the_title(); ?></a></h2>
-				<a href="<?php the_permalink(); ?>" title="<? the_title(); ?>">	<? echo get_single_image("large"); ?> </a>
-				<div id="excerpt">
-					<? the_excerpt(); ?>
-				</div>
+				<? if (empty($raw_content)) : ?>
+			 		<h2><a href="<?php the_permalink(); ?>" id="post-<?php the_ID(); ?>"><?php the_title(); ?></a></h2>
+					<a href="<?php the_permalink(); ?>" title="<? the_title(); ?>">	<? echo get_single_image("large"); ?> </a>
+					<div id="excerpt">
+						<? the_excerpt(); ?>
+					</div>
+				<? else : ?>
+					<? echo apply_filters( 'the_content', $raw_content); ?>
+				<? endif; ?>
 		 	<?php endforeach; ?>
 		</div>
 		<? endif; // Si no hay posts destacado, no se muestra nada ?>
