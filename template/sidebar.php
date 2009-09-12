@@ -1,67 +1,89 @@
 <div id="sidebar">
-	<? if (is_home()) :  // solo se mostrará el bloque en la portada?>
-	<h3>Temas destacados</h3>
-	<div id="featureds" class="block">
-		<div id="more-featured">
-			<? $featureds = get_posts("category=26&numberposts=10"); ?>
-			<? $cnt = 0; ?>
-			<? $buttons = "";?>
-		 	<? foreach($featureds as $post) : ?>
-				<? setup_postdata($post); ?>
-				<? $id = get_the_ID(); ?>
-				<div id="post-<?php the_ID(); ?>" class="featured-item <? echo $cnt==0 ? "active" : ""; ?> post-<?php the_ID(); ?>">
-					<a href="<?php the_permalink(); ?>" title="<? the_title(); ?>">
-					<? echo get_single_image("featureds",$post->ID); ?>
-					</a>
-					<h2><a href="<?php the_permalink(); ?>" id="post-<?php the_ID(); ?>"><?php the_title(); ?></a></h2>
+	<? if (is_category()) : //Si es categoria mostraremos el bloque de suscripción rss de la categoría ?>
+		<h3>Suscríbete</h3>
+		<div id="rss" class="block">
+			<ul>
+				<li><a href="<?php bloginfo('rss2_url'); ?>">Suscribirse a todas las noticias</a></li>
+				<li><a href="<?php echo get_category_feed_link(intval(get_query_var('cat'))); ?>">Suscribirse a las noticias de <? echo get_cat_name(intval(get_query_var('cat'))); ?></a></li>				
+			</ul>
+		</div>	
+	<? elseif (is_tag()) : ?>
+		<h3>Suscríbete</h3>
+		<div id="rss" class="block">
+			<ul>
+				<li><a href="<?php bloginfo('rss2_url'); ?>">Suscribirse a todas las noticias</a></li>
+				<li><a href="<?php echo get_tag_feed_link(intval(get_query_var('tag_id'))); ?>">Suscribirse a las noticias de "<? echo single_tag_title('', false) ?>"</a></li>				
+			</ul>
+		</div>
+	<? endif; ?>
+	<? if (is_home()) :  // solo se mostrará el bloque en la portada ?>	
+		<h3>Suscríbete</h3>
+		<div id="rss" class="block">
+			<ul>
+				<li><a href="<?php bloginfo('rss2_url'); ?>">Suscribirse a todas las noticias</a></li>
+			</ul>
+		</div>
+
+		<h3>Temas destacados</h3>
+		<div id="featureds" class="block">
+			<div id="more-featured">
+				<? $featureds = get_posts("category=26&numberposts=10"); ?>
+				<? $cnt = 0; ?>
+				<? $buttons = "";?>
+			 	<? foreach($featureds as $post) : ?>
+					<? setup_postdata($post); ?>
+					<? $id = get_the_ID(); ?>
+					<div id="post-<?php the_ID(); ?>" class="featured-item <? echo $cnt==0 ? "active" : ""; ?> post-<?php the_ID(); ?>">
+						<a href="<?php the_permalink(); ?>" title="<? the_title(); ?>">
+						<? echo get_single_image("featureds",$post->ID); ?>
+						</a>
+						<h2><a href="<?php the_permalink(); ?>" id="post-<?php the_ID(); ?>"><?php the_title(); ?></a></h2>
 					
-					<?$buttons .= "<a href='#image-$id' class=\"button goto post-$id\" onclick='slideSwitch(\"post-$id\");return false;'>".($cnt+1)."</a>"; ?>
+						<?$buttons .= "<a href='#image-$id' class=\"button goto post-$id\" onclick='slideSwitch(\"post-$id\");return false;'>".($cnt+1)."</a>"; ?>
+					</div>
+			 	<?php $cnt++; endforeach; ?>
+				<div class="buttons">
+					<a href="#play-stop" class="playstop button" onclick="slide_toggle(); return false;">play/pause</a>
+					<? echo $buttons; ?>
 				</div>
-		 	<?php $cnt++; endforeach; ?>
-			<div class="buttons">
-				<a href="#play-stop" class="playstop button" onclick="slide_toggle(); return false;">play/pause</a>
-				<? echo $buttons; ?>
 			</div>
-		</div>
 
-	</div>
-	
-	<div id="map">
-	<!-- saved from url=(0013)about:internet -->
-	<!-- ammap script-->
-	  <script type="text/javascript" src="<?php echo bloginfo('template_url'); ?>/ammap/swfobject.js"></script>
-		<div id="flashcontent">
-			<strong>You need to upgrade your Flash Player</strong>
 		</div>
-
-		<script type="text/javascript">
-			// <![CDATA[		
-			var so = new SWFObject("<?php echo bloginfo('template_url'); ?>/ammap/ammap.swf", "ammap", "300", "200", "8", "#FFFFFF");
-			so.addVariable("path", "<?php echo bloginfo('template_url'); ?>/ammap/");
-			so.addVariable("settings_file", escape("<?php echo bloginfo('template_url'); ?>/ammap/ammap_settings.xml"));                  // you can set two or more different settings files here (separated by commas)
-			so.addVariable("data_file", escape("<?php echo bloginfo('template_url'); ?>/ammap/ammap_data.xml"));		
-			so.write("flashcontent");
-			// ]]>
-		</script>
-	<!-- end of ammap script -->	
-	</div>
 	
-	<?php dynamic_sidebar("Lateral"); ?> 
+		<div id="map">
+		<!-- saved from url=(0013)about:internet -->
+		<!-- ammap script-->
+		  <script type="text/javascript" src="<?php echo bloginfo('template_url'); ?>/ammap/swfobject.js"></script>
+			<div id="flashcontent">
+				<strong>You need to upgrade your Flash Player</strong>
+			</div>
+
+			<script type="text/javascript">
+				// <![CDATA[		
+				var so = new SWFObject("<?php echo bloginfo('template_url'); ?>/ammap/ammap.swf", "ammap", "300", "200", "8", "#FFFFFF");
+				so.addVariable("path", "<?php echo bloginfo('template_url'); ?>/ammap/");
+				so.addVariable("settings_file", escape("<?php echo bloginfo('template_url'); ?>/ammap/ammap_settings.xml"));                  // you can set two or more different settings files here (separated by commas)
+				so.addVariable("data_file", escape("<?php echo bloginfo('template_url'); ?>/ammap/ammap_data.xml"));		
+				so.write("flashcontent");
+				// ]]>
+			</script>
+		<!-- end of ammap script -->	
+		</div>
+	
+		<?php dynamic_sidebar("Lateral"); ?> 
 	
 	<? endif;  // Fin de condición para mostrar solo si es portada ?>
 
-<?
-	if (is_single()){	
+	<? if (is_single()) :
 		$recomended = recomended_links();
-		if (!empty($recomended)){
-?>		
-		<h3>Enlaces recomendados</h3>
-		<div class="recomended-links block">
-			<ul>
-				<?echo $recomended;?>
-			</ul>
-		</div>
-<?		}		?>
+		if (!empty($recomended)) : ?>				
+			<h3>Enlaces recomendados</h3>
+			<div class="recomended-links block">
+				<ul>
+					<? echo $recomended; ?>
+				</ul>
+			</div>
+		<? endif; ?>
 			
 		<h3>Artículos relacionados</h3>
 		<div id="meta_links" class="block clearfix">
@@ -70,7 +92,7 @@
 				</div>
 		</div>
 
-<?	}		?>
+	<? endif; ?>
 
 <?php require(TEMPLATEPATH . "/links_block.php"); ?>	
 <?php require(TEMPLATEPATH . "/mss_block.php"); ?>	

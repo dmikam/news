@@ -7,7 +7,7 @@
 		<h5>
 			Por 
 			<? if (get_the_author_meta('user_level') > 6) : ?>
-				<strong><? the_author_posts_link(); ?></strong> <span class="internal_author">(Enfoque 19)</span> 
+				<strong><? the_author_posts_link(); ?></strong> <span class="internal_author">(Periodismo Humano)</span> 
 			<? else : ?>
 				<strong><? the_author(); ?></strong> <span class="external_author">(Redactor externo)</span>
 			<? endif;?>
@@ -18,6 +18,6 @@
 			<? if (!empty($wimage)) :  ?>
 				<a href="<?php the_permalink(); ?>" title="<? the_title(); ?>">	<? echo get_single_image(array($width,$width)); ?></a>
 			<? endif; ?>
-			<?php the_excerpt(); ?>
+			<?php echo apply_filters( 'the_content', get_the_excerpt()); ?>
 		</div>
 	<?php endforeach; 
