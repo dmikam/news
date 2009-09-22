@@ -252,4 +252,57 @@ function additional_image_sizes( $sizes )
 }
 add_filter( 'intermediate_image_sizes', 'additional_image_sizes' );
 
+
+
+/*
+function print_post_title() {
+	global $post;
+	$thePostID = $post->ID;
+	$post_id = get_post($thePostID);
+	$title = $post_id->post_title;
+	$perm = get_permalink($post_id);
+	$post_keys = array(); $post_val = array();
+	$post_keys = get_post_custom_keys($thePostID);
+
+	if (!empty($post_keys)) {
+		foreach ($post_keys as $pkey) {
+			if ($pkey=='title_url') {
+				$post_val = get_post_custom_values($pkey);
+			}
+		}
+		if (empty($post_val)) {
+			$link = $perm;
+		} else {
+			$link = $post_val[0];
+		}
+	} else {
+		$link = $perm;
+	}
+	echo '<h2><a href="'.$link.'" rel="bookmark" title="'.$title.'" target="_blank">'.$title.'</a></h2>';
+} 
+
+*/
+
+function the_title_link($title=""){
+	$return = $title;
+
+	$post_keys = get_post_custom_keys($thePostID);
+	if (!empty($post_keys)) {
+		foreach ($post_keys as $pkey) {
+			if ($pkey=='title_url') {
+				$post_val = get_post_custom_values($pkey);
+			}
+		}
+		if (!empty($post_val)) {
+			$link = $post_val[0];
+		}
+	}
+	if (is_single() && !empty($link) ){
+		$return = "<a href=\"$link\" title=\"$title\" target=\"_blank\">$title</a>";
+	}
+	return $return;
+}
+
+add_filter( 'the_title', 'the_title_link' );
+
 ?>
