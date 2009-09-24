@@ -252,4 +252,10 @@ function additional_image_sizes( $sizes )
 }
 add_filter( 'intermediate_image_sizes', 'additional_image_sizes' );
 
+function proximamente() {
+	if ( !is_user_logged_in() ) { header("Location: http://periodismohumano.com/proximamente/"); }
+ 
+}
+
+add_action('template_redirect','proximamente');
 ?>
