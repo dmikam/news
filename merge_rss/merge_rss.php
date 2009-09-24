@@ -86,12 +86,15 @@ function hierarhical_select($list,$parent=0,$level=0){
 function mss_sort_rss_helper($a,$b) {
 	return strtotime($a['pubdate']) < strtotime($b['pubdate']);
 }
-function mss_get_rss($cat,$type){
+function mss_get_rss($cat,$type,$count=null){
 	global
 		$wpdb,
 		$mss_opt;	
+	if (empty($count))  {
+		$count=$mss_opt['count'];
+	}
 	include_once(ABSPATH . WPINC . '/rss.php');
-   $table_name = $wpdb->prefix . "merge_rss";
+   	$table_name = $wpdb->prefix . "merge_rss";
 	$where_array = array();
 	if (is_array($cat)){
 		$where_array[] = 'cat IN ("'. implode('","',$cat).'")';
@@ -138,7 +141,7 @@ function mss_get_rss($cat,$type){
 	$return = array();
 	$cnt = 0;
 	foreach ($all_rss as $rss) {
-		if ($cnt>=$mss_opt['count']){
+		if ($cnt>=$count){
 			break;
 		}
 		$return[] = $rss;
