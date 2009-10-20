@@ -306,10 +306,10 @@ function the_title_link($title=""){
 add_filter( 'the_title', 'the_title_link' );
 
 function proximamente() {
-	if ( !is_user_logged_in() ) { header("Location: http://periodismohumano.com/proximamente/"); }
+	if ( !is_user_logged_in()) { header("Location: http://periodismohumano.com/proximamente/"); }
  
 }
 
-add_action('template_redirect','proximamente');
+add_action('wp','proximamente');
 
 ?>
