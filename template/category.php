@@ -14,7 +14,7 @@
 				 		<h2><a href="<?php the_permalink(); ?>" id="post-<?php the_ID(); ?>"><?php the_title(); ?></a></h2>
 						<a href="<?php the_permalink(); ?>" title="<? the_title(); ?>">	<? echo get_single_image("large"); ?></a>
 						<div id="excerpt">
-							<? the_excerpt(); ?>
+							<?php echo apply_filters( 'the_content', get_the_excerpt()); ?>
 						</div>
 					<? else : ?>
 						<? echo apply_filters( 'the_content', $raw_content); ?>
@@ -36,7 +36,7 @@
 								<? if (!empty($wimage)) :  ?>
 									<a href="<?php the_permalink(); ?>" title="<? the_title(); ?>">	<? echo get_single_image(array(630,630)); ?></a>
 								<? endif; ?>
-								<?php the_excerpt(); ?>
+								<?php echo apply_filters( 'the_content', get_the_excerpt()); ?>
 							</div>
 						</div>
 					<? endif; // Si el posts es distinto al posts destacado, para no duplicar el post en la portadilla ?>
