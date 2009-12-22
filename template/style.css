@@ -28,11 +28,12 @@
 
 /* END FIXES */
 body {
-	font-family:Helvetica,Arial,Tahoma, sans-serif;
+	font-family:"Microsoft Sans Serif";
 	font-size:0.8em;
 }
 a {
 	text-decoration:none;
+	color:#ccc;
 }
 a:hover {
 	text-decoration:underline;
@@ -48,7 +49,6 @@ strong {
 	height:99px;
 	padding-top:1px;
 	margin:10px auto 0px auto;
-	background:#980000;
 }
 	#header h1 {
 		margin:20px;
@@ -61,10 +61,10 @@ strong {
 	#navbar {
 		width:990px;
 		margin:0px auto;
-		border-bottom:1px solid #bbb;
 		position:relative;
-		height:24px;
-		background:#f8f8f8;
+		height:30px;
+		background:#D12421;
+		font-size:10px;
 	}
 	#navbar #searchbox {
 		float:right;
@@ -79,57 +79,60 @@ strong {
 		z-index:90;
 	}
 		#navbar #menu li {
-			font-weight: bold; 
 			float: left; 
 			zoom: 1;
+			padding:5px 12px;
 			list-style:none;
+			background:transparent url("images/bullet.png") right 5px no-repeat;
+		}
+		#navbar #menu li.cat-item-21 {
+			background:none;
 		}
 		#navbar #menu li a {
 			display: block; 
 			padding: 4px 8px; 
 			display:block;
 			text-decoration:none;
-			font-weight:bold;
-			color: #222; 
+			color: #fff; 
+		}
+		#navbar #menu li a:hover {
+			color:#000;
 		}
 
 		#menu li.hover, #menu li:hover { 
 			position: relative; 
 			}
 		#menu li.hover a { 
+			
 			}
-		#menu ul { 
-			font-size:0.8em;
-			visibility: hidden; 
-			position: absolute; 
-			top: 100%; 
-			left: 0px; 
-			background:#fff;
-			border:1px solid #e4e4e4;
-			padding-right:6px;
-			width:200px;
-			}
-		#menu ul li { 
-			font-weight: normal; 
-			color: #000; 
-			margin:0px;
-			background:#fff;
-			padding:3px;
-			border-bottom: 1px dotted #e4e4e4; 
-			float: none; 
-			} /* IE 6 & 7 Needs Inline Block */
-
-			#menu ul li a:hover { 
-				background:#e7f4fa;
-			}
-			#menu ul li a {
-				color:#008bcb;
-		 	}
-		#menu ul li { 
-			border-right: none; 
-			width: 100%; 
-			display: inline-block; 
-			}
+	#navbar #second-menu {
+		float: right; 
+		background:#000;
+		list-style:none;
+		height:30px;
+		width:304px;
+	}
+		#navbar #second-menu  li {
+			zoom: 1;
+			float:left;
+			text-transform:uppercase;
+			padding:5px 12px;
+			list-style:none;
+			background:transparent url("images/bullet.png") right 5px no-repeat;
+		}
+					#navbar #second-menu  li.rss-link { 
+						background:transparent url("images/rss.jpg") right 8px no-repeat;
+					}
+		#navbar #second-menu li a {
+			display: block; 
+			padding: 4px 8px; 
+			display:block;
+			text-decoration:none;
+			color: #fff; 
+		}
+		#navbar #second-menu li a:hover {
+			color:#666666;
+		}
 	#header_bar {
 		width:990px;
 		margin:5px auto;
@@ -149,8 +152,7 @@ strong {
 }
 	#content {
 		float:left;
-		width:630px;
-		padding:10px;
+		width:650px;
 		margin-top:10px;
 	}
 		#content #featured {
@@ -175,27 +177,81 @@ strong {
 				width:614px;
 			}
 		#content #sub-content #left {
-			width:350px;
+			width:374px;
 			float:left;
 		}
 		#content #sub-content #right {
+			background:#E6E6E6;
 			float:right;
-			width:260px;
+			width:250px;
 		}
-		#content #sub-content .entry {
+		#content #sub-content .news img {
+			margin:5px 0px;
+		}
+		#content #sub-content .news .comments {
+			height:15px;
+			font-weight:normal;
+			width:93px;
+			padding:3px 0px 3px 30px;
+			font-size:11px;
+			background:url('images/sprite.png') 0px -21px;
+		}
+		#content #sub-content #right .news .comments {
+			background:url('images/sprite.png') 0px -42px;
+		}
+		#content #sub-content .news .category {
+			background:url('images/sprite.png');
+			width:116px;
+			height:16px;
+			font-size:12px;
+			font-weight:normal;
+			color:#fff;
+			padding:2px 0px 3px 7px;
+			margin-bottom:7px;
+			text-transform:uppercase;
+		}
+			#content #sub-content #right .news .category {
+				margin-left:-18px;
+				padding-left:20px;
+				width:103px;
+			}
+		#content #sub-content #right .news {
+			padding:20px 18px;
+			border-bottom:3px solid #FFFFFF;
+		}
+		#content #sub-content #left .news {
+			padding:20px 0px 20px 0px;
+			margin-right:26px;
+			border-bottom:1px solid #CCCCCC;
+		}
+		#content #sub-content #right .news img {
+			width:214px;
+			height:auto;
+		}
+		
+		#content #sub-content .news .entry {
 			text-align:justify;
-			line-height:1.4em;
-			border-bottom:1px dotted #111;
-			padding-bottom:10px;
-			margin-bottom:10px;
+			line-height:19px;
+			font-size:12px;
 		}
-		#content #sub-content .title {
-			line-height:1.4em;	
+		#content #sub-content .news .metadata {
+			font-weight:normal;
+			color:#4C4C4C;
+			margin:11px 0px 5px 0px; 
+		}
+			#content #sub-content .news .metadata .date {
+			}
+			#content #sub-content .news .metadata .author a {
+				color:#D12421;
+			}
+		#content #sub-content .news .title {
+			line-height:21px;	
 			margin-bottom:5px;	
+			font-size:20px;
 			font-weight:normal;	
 		}
-			#content #sub-content .title a {
-				color:#000;
+			#content #sub-content .news .title a {
+				color:#4C4C4C;
 			}
 			
 		/* PORTADAS DE CATEGORÍA */
@@ -206,15 +262,16 @@ strong {
 		margin-top:10px;
 		float:right;
 		padding:10px;
-		width:300px;
+		width:280px;
 		min-height:500px;
+		background:#4C4C4C;
 	}
 		#sidebar h3 {
 			text-transform:uppercase;
 			border-bottom:1px solid #111;
 			border-top:6px solid #333;
 			margin:0px 0px 15px 0px;
-			color:#980000;
+			color:#fff;
 			padding:9px 3px;
 		}
 		#sidebar .block {
@@ -355,10 +412,7 @@ strong {
 		float:right;
 	}
 	.entry p {
-		color:#333;
 		margin:10px 0px;
-		font-size:13px;
-		line-height:19px;
 	}
 	.entry .alignleft {
 		float:left;
