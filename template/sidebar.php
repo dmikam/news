@@ -1,6 +1,6 @@
 <div id="sidebar">
 	<? if (is_home()) :  // solo se mostrará el bloque en la portada ?>	
-		<h3>Temas destacados</h3>
+		<h3 id="featureds-title">Temas destacados</h3>
 		<div id="featureds" class="block">
 			<div id="more-featured">
 				<? $featureds = get_posts("category=26&numberposts=10"); ?>

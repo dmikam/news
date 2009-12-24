@@ -58,7 +58,7 @@ if (is_category() || is_home()){
 				$mss = mss_get_rss($cat->slug,'blog');
 				if (!empty($mss)){
 		?>
-				<h3>
+				<h3 id="primera-voz-title">
 					En primera voz
 				</h3>
 				<div id="external_rss" class="block">

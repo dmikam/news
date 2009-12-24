@@ -284,21 +284,25 @@ strong {
 	#sidebar {
 		margin-top:10px;
 		float:right;
-		padding:10px;
-		width:280px;
+		width:300px;
 		min-height:500px;
-		background:#4C4C4C;
 	}
 		#sidebar h3 {
-			text-transform:uppercase;
-			border-bottom:1px solid #111;
-			border-top:6px solid #333;
-			margin:0px 0px 15px 0px;
-			color:#fff;
-			padding:9px 3px;
+			text-indent:-999999px;
+			width:300px;
 		}
+			#sidebar h3#featureds-title {
+				height:120px;
+				background:url('images/sprite.png') 0px -236px no-repeat;
+			}
+			#sidebar h3#primera-voz-title {
+				height:125px;
+				background:url('images/sprite.png') 0px -356px no-repeat;
+			}
 		#sidebar .block {
 			margin-bottom:30px;
+			background:#4C4C4C;
+			padding:20px 10px;
 		}
 		/* ENLACES INTERNOS Y EXTERNOS */
 		#sidebar .links_list {
@@ -344,11 +348,11 @@ strong {
 				margin-top:20px;
 				left:0;
 				height:250px;
-				background:#fff;
+				background:;
 			}
 			#featureds #more-featured .featured-item h2 {
 				color:#000;
-				background:#fff;
+				background:#4C4C4C;
 				font-size:19px;
 				margin-top:8px;
 				height:40px;
