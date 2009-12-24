@@ -4,6 +4,17 @@
 		if (have_posts()) {
 			the_post(); 
 ?>
+			<h5 id="category-single">
+				<?php 
+					$cats = get_the_category(); 
+					foreach ($cats as $cat) :
+						if ($cat->category_parent == 0) :
+							echo $cat->cat_name;
+							break;
+						endif;
+					endforeach;
+				?>
+			</h5>
 			<h2 class="single-title" id="title-<? the_ID(); ?>">
 					<?php the_title(); ?>
 			</h2>
@@ -21,29 +32,28 @@
 					<h4 class="subtitle"><? echo $subtitle3; ?></h4>
 				<? endif; ?>
 			</div>
-			<div id="sign_and_date" class="clearfix">
-				<div id="author">
-					Por 
-					<? if (get_the_author_meta('user_level') > 6) : ?>
-						<strong><? the_author_posts_link(); ?></strong> <span class="internal_author">(Enfoque 19)</span> 
-					<? else : ?>
-						<strong><? the_author(); ?></strong> <span class="external_author">(Redactor externo)</span>
-					<? endif;?>
-				</div>
-				<div id="postdate">
-					Actualizado el 
-					<strong><?	the_date('d/m/Y', '', '');  ?></strong> a las <strong><? the_time('G:i'); ?></strong>
-				</div>
-			</div>
 			<div class="entry">
+				<h5 class="metadata">
+				<span class="date"><?	echo date('d.m.Y',strtotime($post->post_date));  ?></span> · <span class="author"><? the_author_posts_link(); ?></span> 
+				</h5>
 				<?php the_content('Leer más &raquo;'); ?>
 			</div>
 <?php
 		} 
 ?>
-			<div id="tags">
-				<p><strong>Etiquetas:</strong> <? the_tags('',', '); ?></p>
-				<p><strong>Compartir esta noticia en</strong> Meneame.net facebook twitter digg reddit</p>
+			<div id="share_and_tags">
+				<div id="tags">
+					<p id="tag-title">Etiquetas</p>  <p><? the_tags('',', '); ?></p>
+				</div>
+				<div id="share">
+					<p id="share-title">Comparte</p> 
+					<ul id="share-services">
+						<li id="facebook"><a href="">Facebook</a></li>
+						<li id="meneame"><a href="">Meneame</a></li>
+						<li id="digg"><a href="">Digg</a></li>
+						<li id="twitter"><a href="">Twitter</a></li>		
+					</ul>
+				</div>
 			</div>
 			
 			<?php comments_template(); ?>

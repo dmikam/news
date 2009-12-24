@@ -1,29 +1,5 @@
 <div id="sidebar">
-	<? if (is_category()) : //Si es categoria mostraremos el bloque de suscripción rss de la categoría ?>
-		<h3>Suscríbete</h3>
-		<div id="rss" class="block">
-			<ul>
-				<li><a href="<?php bloginfo('rss2_url'); ?>">Suscribirse a todas las noticias</a></li>
-				<li><a href="<?php echo get_category_feed_link(intval(get_query_var('cat'))); ?>">Suscribirse a las noticias de <? echo get_cat_name(intval(get_query_var('cat'))); ?></a></li>				
-			</ul>
-		</div>	
-	<? elseif (is_tag()) : ?>
-		<h3>Suscríbete</h3>
-		<div id="rss" class="block">
-			<ul>
-				<li><a href="<?php bloginfo('rss2_url'); ?>">Suscribirse a todas las noticias</a></li>
-				<li><a href="<?php echo get_tag_feed_link(intval(get_query_var('tag_id'))); ?>">Suscribirse a las noticias de "<? echo single_tag_title('', false) ?>"</a></li>				
-			</ul>
-		</div>
-	<? endif; ?>
 	<? if (is_home()) :  // solo se mostrará el bloque en la portada ?>	
-		<h3>Suscríbete</h3>
-		<div id="rss" class="block">
-			<ul>
-				<li><a href="<?php bloginfo('rss2_url'); ?>">Suscribirse a todas las noticias</a></li>
-			</ul>
-		</div>
-
 		<h3>Temas destacados</h3>
 		<div id="featureds" class="block">
 			<div id="more-featured">

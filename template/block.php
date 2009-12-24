@@ -25,7 +25,7 @@
 				</h5>
 				<div class="entry">
 					<?php echo apply_filters( 'the_content', get_the_excerpt()); ?>
-					<?php edit_post_link('#edit', '', ''); ?>
+					<?php //edit_post_link('#edit', '', ''); ?>
 				</div>
 				<h3 class="comments"><?php comments_number('Sin comentarios','1 comentario','% comentarios');?></h3>
 				

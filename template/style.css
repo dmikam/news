@@ -33,7 +33,7 @@ body {
 }
 a {
 	text-decoration:none;
-	color:#ccc;
+	color:#61A6FF;
 }
 a:hover {
 	text-decoration:underline;
@@ -159,23 +159,42 @@ strong {
 			position:relative;
 			margin-bottom:20px;
 			text-align:center;
-		}
+		}	
+			#content #featured img.attachment-large {
+				width:650px;
+				height:auto;
+				margin-bottom:10px;
+			}
 			#content #featured h2 {
-				color:#000;
-				font-size:30px;
+				font-size:35px;
 				text-align:center;
 				margin-bottom:8px;
+				color:#4C4C4C;
 			}
 			#content #featured h2 a {
-				color:#000;
+				color:#4C4C4C;
 			}
 			#content #featured #excerpt {
-				font-size:0.8em;
+				font-size:12px;
 				color:#fff;
 				background:#000;
-				padding:5px 10px;
-				width:614px;
+				padding:0px 10px 0px 165px;
+				width:475px;
+				height:60px;
+				line-height:14px;
+				display:table-cell;
+				vertical-align:middle;
+				text-align:left;
+				background:url('images/sprite.png') 0px -482px #808080 no-repeat;
 			}
+				#content #featured #excerpt .metadata {
+					font-size:12px;
+					color:#CCCCCC;
+					font-weight:normal;
+				}
+				#content #featured #excerpt .metadata a {
+					color:#CCCCCC;
+				}
 		#content #sub-content #left {
 			width:374px;
 			float:left;
@@ -197,10 +216,10 @@ strong {
 			background:url('images/sprite.png') 0px -21px;
 		}
 		#content #sub-content #right .news .comments {
-			background:url('images/sprite.png') 0px -42px;
+			background:url('images/sprite.png') 0px -41px;
 		}
 		#content #sub-content .news .category {
-			background:url('images/sprite.png');
+			background:url('images/sprite.png') no-repeat right 0px;
 			width:116px;
 			height:16px;
 			font-size:12px;
@@ -233,11 +252,14 @@ strong {
 			text-align:justify;
 			line-height:19px;
 			font-size:12px;
+			padding:0px;
+			background:none;
 		}
 		#content #sub-content .news .metadata {
 			font-weight:normal;
 			color:#4C4C4C;
 			margin:11px 0px 5px 0px; 
+			font-size:12px;
 		}
 			#content #sub-content .news .metadata .date {
 			}
@@ -249,6 +271,7 @@ strong {
 			margin-bottom:5px;	
 			font-size:20px;
 			font-weight:normal;	
+			font-family: "Lucida Sans", "Helvetica", "Arial", sans-serif;
 		}
 			#content #sub-content .news .title a {
 				color:#4C4C4C;
@@ -381,10 +404,23 @@ strong {
 	.article {
 		margin-bottom:30px;
 	}
-	.single-title {
-		font-size:30px;
+	#category-single {
+		background:url('images/sprite.png') no-repeat -270px -63px;
+		font-size:40px;
+		height:40px;
+		text-indent:40px;
+		color:#D1241F;
 		font-weight:normal;
+		text-transform:lowercase;
+		line-height:40px;
 		margin-bottom:10px;
+		font-family: "Myriad Web", "Helvetica", "Arial", sans-serif;
+	}
+	.single-title {
+		font-size:35px;
+		font-weight:normal;
+		margin-bottom:20px;
+		font-family: "Lucida Sans", "Helvetica", "Arial", sans-serif;
 	}
 	.single-title a {
 		color:#000;
@@ -395,52 +431,121 @@ strong {
 		font-size:14px;
 		margin:3px 10px 10px 20px;
 	}
-	#sign_and_date {
-		border-bottom:1px solid #e4e4e4;
-		padding:3px;
-		font-size:10px;
-		font-style:italic;
-		color:#888;
-	}	
-		#sign_and_date strong {
-			color:#000;
+	.entry {
+		background:url('images/close-news.jpg') bottom center no-repeat;
+		padding:0px 20px 10px 20px;
+		margin-bottom:20px;
+	}
+ 	.entry .metadata {
+		font-weight:normal;
+		color:#4C4C4C;
+		margin:11px 0px 5px 0px; 
+	}
+		.entry .metadata .date {
 		}
-	#author {
-		float:left;
-	}
-	#postdate { 
-		float:right;
-	}
+		.entry .metadata .author a {
+			color:#D12421;
+		}
 	.entry p {
 		margin:10px 0px;
+		color:#4C4C4C;
+		font-size:12px;
+		line-height:22px;
 	}
-	.entry .alignleft {
-		float:left;
-		margin-right:10px;
-	}
-	.entry .alignright {
+	.entry .alignleft, .entry .alignright {
 		float:right;
-		margin-left:10px;
+		margin-left:20px;
+		margin-bottom:10px;
+		margin-top:-20px;
+		margin-right:-20px;
+	}
+	.entry .alignright img, .entry .alignleft img, .entry .alignnone img  {
+		width:100%;
+		height:auto;
 	}
 	.entry .wp-caption-text {
-		margin:0px;
-		font-size:10px;
-		font-style:italic;
-		margin-right:10px;
-		background:#e4e4e4;
-		padding:3px;
+		font-size:12px;
+		background:url('images/sprite.png') 0px -634px no-repeat #000;
+		padding:8px 20px;
+		color:#fff;
+		line-height:14px;
+		margin-top:4px;
+		margin-bottom:0px;
+	}
+	#share_and_tags {
+		height:100px;
 	}
 	#tags {
-		border-top:1px solid #e4e4e4;
-		border-bottom:1px solid #e4e4e4;
-		background:#f8f8f8;
-		padding:3px 3px;	
-	}	
-	#tags p {
-		height:16px;
-		margin:6px 0px;
+		display:table;
+		height:40px;
+		margin-bottom:20px;
 	}
-
+	#tags #tag-title {
+		display:table-cell;
+		padding:0px 13px 0px 10px;
+		text-align:center;
+		color:#fff;
+		text-transform:uppercase;
+		background:url('images/sprite.png') no-repeat right -104px;
+	}
+	#tags p {
+		padding-left:10px;
+		display:table-cell;
+		vertical-align:middle;
+	}
+	
+	#share {
+		display:table;
+		height:21px;
+		margin-bottom:20px;
+		position:absolute;
+	}
+	#share #share-title {
+		display:table-cell;
+		padding:0px 13px 0px 10px;
+		text-align:center;
+		color:#fff;
+		text-transform:uppercase;
+		background:url('images/sprite.png') no-repeat right 0px;
+	}
+	#share #share-services {
+		float:left;
+		list-style:none;
+		position:relative;
+		left:6px;
+		top:3px;
+	}
+		#share #share-services li {
+			float:left;
+			margin:0px 5px;
+			height:15px;	
+		}
+		#share #share-services li#facebook {
+			background:url('images/sprite.png') no-repeat left -191px;
+		}
+		#share #share-services li#meneame {
+			background:url('images/sprite.png') no-repeat left -206px;
+		}
+		#share #share-services li#digg {
+			background:url('images/sprite.png') no-repeat left -221px;
+		}
+		#share #share-services li#twitter {
+			background:url('images/sprite.png') no-repeat left -176px;
+		}  
+		#share #share-services li a {
+			display:block;
+			height:15px;
+			margin-left:18px;
+			background:url('images/sprite.png') no-repeat right -161px;
+			padding:0 10px 0 4px;
+			color:#4C4C4C;
+			font-size:11px;
+		}
+		#share #share-services li a:hover {
+			background:url('images/sprite.png') no-repeat right -145px;
+			color:#D9D9D9;
+			text-decoration:none;
+		}
 .recomended-links ul,
 .related_posts ul {
 	list-style-type:none;

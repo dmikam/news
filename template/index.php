@@ -13,6 +13,9 @@
 			 		<h2><a href="<?php the_permalink(); ?>" id="post-<?php the_ID(); ?>"><?php the_title(); ?></a></h2>
 					<a href="<?php the_permalink(); ?>" title="<? the_title(); ?>">	<? echo get_single_image("large"); ?> </a>
 					<div id="excerpt">
+						<h5 class="metadata">
+						<span class="date"><?	echo date('d.m.Y',strtotime($post->post_date));  ?></span> · <span class="author"><? the_author_posts_link(); ?></span> 
+						</h5>
 						<? the_excerpt(); ?>
 					</div>
 				<? else : ?>
