@@ -42,11 +42,9 @@
 	<div id="navbar" class="clearfix">
 		<ul id="menu">
 			<? wp_list_categories('title_li=&depth=1&hide_empty=0&orderby=term_order&exclude=39,24,25,26,310,311,313,314,309,40,308'); ?>
-		</ul>
-		<ul id="second-menu">
-			<li><a href="">Enfoques</a></li>
-			<li><a href="">Enfoques</a></li>
-			<li class="rss-link"><a href="">RSS</a></li>	
+			<li class="enfoques"><a href="">Enfoques</a></li>
+			<li class="multimedia"><a href="">Multimedia</a></li>
+			<li class="rss-link"><a href="">RSS</a></li>
 		</ul>
 		<?php // include (TEMPLATEPATH . '/searchform.php'); ?>
 	</div>

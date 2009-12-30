@@ -18,7 +18,7 @@
 						<?$buttons .= "<a href='#image-$id' class=\"button goto post-$id\" onclick='slideSwitch(\"post-$id\");return false;'>".($cnt+1)."</a>"; ?>
 					</div>
 			 	<?php $cnt++; endforeach; ?>
-				<div class="buttons">
+				<div class="buttons clearfix">
 					<a href="#play-stop" class="playstop button" onclick="slide_toggle(); return false;">play/pause</a>
 					<? echo $buttons; ?>
 				</div>
