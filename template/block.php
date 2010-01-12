@@ -2,17 +2,19 @@
 	<?php foreach ($block_post as $post) : ?>
 		<div class="news">
 				<? setup_postdata($post); ?>
-				<h5 class="category">
 					<?php 
 						$cats = get_the_category(); 
 						foreach ($cats as $cat) :
 							if ($cat->category_parent == 0) :
-								echo $cat->cat_name;
+							?>
+								<h5 class="category cat-<? echo $cat->term_id; ?>">
+									<? echo $cat->cat_name; ?>
+								</h5>
+							<?
 								break;
 							endif;
 						endforeach;
 					?>
-				</h5>
 				<? $wimage = get_meta('image'); ?>
 				<? if (!empty($wimage)) :  ?>
 					<a href="<?php the_permalink(); ?>" title="<? the_title(); ?>">	<? echo get_single_image(array($width,$width)); ?></a>
@@ -27,7 +29,7 @@
 					<?php echo apply_filters( 'the_content', get_the_excerpt()); ?>
 					<?php //edit_post_link('#edit', '', ''); ?>
 				</div>
-				<h3 class="comments"><?php comments_number('Sin comentarios','1 comentario','% comentarios');?></h3>
+				<?php comments_number('','<h3 class="comments">1 comentario</h3','<h3 class="comments">% comentarios</h3>');?>
 				
 		</div>
 	
