@@ -10,15 +10,17 @@
 	?>
 
 <?php if ( have_comments() ) : ?>
-	<h3 id="comments"><?php comments_number('Sin comentarios','1 comentario','% comentarios');?> en <em><? the_title(); ?></em></h3>
-
+	<div id="comments-title">
+		<h3 id="comments"><?php comments_number('Sin comentarios','1 comentario','% comentarios');?> </h3>
+	</div>
+	
 	<div class="navigation">
 		<div class="alignleft"><?php previous_comments_link() ?></div>
 		<div class="alignright"><?php next_comments_link() ?></div>
 	</div>
 
 	<ol class="commentlist">
-	<?php wp_list_comments();?>
+	<?php wp_list_comments("callback=comentarios");?>
 	</ol>
 
 	<div class="navigation">
