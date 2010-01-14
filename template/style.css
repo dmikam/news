@@ -315,9 +315,60 @@ strong {
 			}
 			
 		/* PORTADAS DE CATEGORÍA */
-		#content #sub-content .category_news .title {
-			font-size:25px;
+		#content #sub-content .category_news {
+			margin:20px 0px;
 		}
+		#content #sub-content .category_news .title {
+			line-height:27px;	
+			margin-bottom:5px;	
+			font-size:25px;
+			font-weight:normal;	
+			font-family: "Georgia";	
+		}
+			#content #sub-content .category_news .title a {
+				color:#4c4c4c;
+			}
+		#content #sub-content .category_news .category_news_image {
+			float:left;
+			margin-right:30px;
+			width:291px;
+		}
+		#content #sub-content .category_news .category_news_post {
+			width:300px;
+			float:left;
+			padding-top:20px;
+			border-top:2px dotted #D12421;
+		}
+		#content #sub-content .category_news .category_news_post.no_image {
+			width:650px;
+		}
+		#content #sub-content .category_news .category_news_post .entry {
+			padding:0px;
+			background:none;
+		}
+		#content #sub-content .category_news .category_news_post .entry .read_more {
+			background:url('images/sprite.png') no-repeat right 0px;
+			width:75px;
+			height:16px;
+			font-size:12px;
+			font-weight:normal;
+			padding:2px 0px 3px 7px;
+			margin-bottom:7px;
+		}
+			#content #sub-content .category_news .category_news_post .entry .read_more a {
+				color:#fff;
+			}
+		#content #sub-content .category_news .category_news_post .metadata {
+			font-weight:normal;
+			color:#4C4C4C;
+			margin:11px 0px 5px 0px; 
+			font-size:12px;
+		}
+			#content #sub-content .category_news .category_news_post  .metadata .date {
+			}
+			#content #sub-content .category_news .category_news_post  .metadata .author a {
+				color:#D12421;
+			}
 	#sidebar {
 		margin-top:10px;
 		float:right;
@@ -466,6 +517,7 @@ strong {
 			}
 			
 			#featureds .buttons .playstop {
+				outline:none;
 				width:20px;
 				height:20px;
 				display:inline-block;
@@ -477,7 +529,7 @@ strong {
 				background:transparent url("images/sprite.png")  -231px -177px no-repeat;
 			}
 			#featureds .buttons .playstop.pause {
-				background:transparent url("images/sprite.png")  -231px -177px no-repeat;
+				background:transparent url("images/sprite.png")  -207px -177px no-repeat;
 			}
 				
 			#featureds .buttons .button.active {
