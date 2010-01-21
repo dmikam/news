@@ -44,50 +44,78 @@ a img {
 strong {
 	color:#000;
 }
+#header-full {
+	width:100%;
+	background:#D12421; 
+}
 #header {
 	width:1010px;
-	height:118px;
+	height:75px;
 	padding-top:1px;
 	margin:0px auto 0px auto;
-	background:url('images/header-background.jpg') repeat-x; 
 }
 	#header h1 {
-		height:119px;
-		width:492px;
-		background:url('images/logo.png') no-repeat; 
+		height:50px;
+		width:395px;
+		margin:12px;
+		background:url('images/sprite.png') 0px -735px no-repeat; 
 	}
 		#header h1 a {
 			display:block;
-			height:119px;
-			width:492px;
+			height:50px;
+			width:395px;
 			text-indent:-9999999px;
 		}
+	#full-header-toggle {
+		width:100%;
+		background:url('images/background-header-banner.jpg') repeat-x;
+	}
+		#header-toggle {
+			background:url('images/background-banner.jpg') no-repeat;
+			width:1010px;
+			margin:0px auto;
+			height:26px;
+		}
+			#toggle-banner {
+				float:right;
+				color:#4C4C4C;
+				margin:3px;
+				font-size:12px;
+			}
+		#banner {
+			height:100px;
+			background:url('images/banner.png') #CCCCCC center no-repeat;
+		}
 	#navbar {
-		width:1010px;
-		margin:0px auto;
-		position:relative;
-		height:33px;
+		width:100%;
+		height:50px;
 		background:#000;
 		font-size:10px;
 	}
-	#navbar #searchbox {
-		float:right;
-		padding:2px;
-	}
 	#navbar #menu {
+		width:1010px;
+		margin:0px auto;
 		list-style:none;
-		position: absolute; 
 		text-transform:uppercase;
-		left:0;
-		top:0px;
-		z-index:90;
+		font-size:12px;
 	}
 		#navbar #menu li {
 			float: left; 
 			zoom: 1;
-			padding:5px 3px;
+			padding:13px 4px;
 			list-style:none;
-			background:transparent url("images/separator.png") right -1px no-repeat;
+			background:transparent url("images/separator.png") right 6px no-repeat;
+		}
+		#navbar #menu  li.enfoques a { 
+			text-transform:lowercase;
+			color:#D12421;
+		}
+		#navbar #menu  li.multimedia {
+			background:none;
+		}
+		#navbar #menu  li.multimedia a { 
+			text-transform:lowercase;
+			color:#D12421;
 		}
 
 		#navbar #menu li a {
@@ -97,9 +125,6 @@ strong {
 			text-decoration:none;
 			color: #fff; 
 		}
-		#navbar #menu li a:hover {
-			border-bottom:5px solid yellow;
-		}
 
 		#menu li.hover, #menu li:hover { 
 			position: relative; 
@@ -107,46 +132,35 @@ strong {
 		#menu li.hover a { 
 			
 			}
-		#navbar #menu  li.rss-link a { 
-			background:transparent url("images/rss.jpg") 50px 4px no-repeat;
-			padding-right:38px;
-		}
-				#navbar #menu  li.rss-link {
-					background:none;
-				}
 			#navbar #menu  li.cat-item-1 a:hover { 
-				border-bottom:5px solid #D12421;
+				color:#D12421;
 			}
 			#navbar #menu  li.cat-item-13 a:hover { 
-				border-bottom:5px solid #A6DE00;
+				color: #A6DE00;
 			}
 			#navbar #menu  li.cat-item-20 a:hover { 
-				border-bottom:5px solid #00B300;
+				color:#00B300;
 			}
 			#navbar #menu  li.cat-item-19 a:hover { 
-				border-bottom:5px solid #FFB300;
+				color:#FFB300;
 			}
 			#navbar #menu  li.cat-item-23 a:hover { 
-				border-bottom:5px solid #D76B00;
+				color:#D76B00;
 			}
 			#navbar #menu  li.cat-item-18 a:hover { 
-				border-bottom:5px solid #5105A8;
+				color:#5105A8;
 			}
 			#navbar #menu  li.cat-item-21 a:hover { 
-				border-bottom:5px solid #61A6FF;
+				color:#61A6FF;
 			}
 			
 			#navbar #menu  li.enfoques a:hover { 
-				border-bottom:5px solid #808080;
+				color:#808080;
 			}
 			#navbar #menu  li.multimedia a:hover { 
-				border-bottom:5px solid #b3b3b3;
+				color:#b3b3b3;
 			}
-			
-			#navbar #menu  li.rss-link a:hover { 
-				border-bottom:5px solid #E6E6E6;
-				
-			}
+
 	#header_bar {
 		width:990px;
 		margin:5px auto;
@@ -522,7 +536,7 @@ strong {
 				height:20px;
 				display:inline-block;
 				padding:0px;
-				margin:0px 116px -5px 0px;
+				margin:0px 116px -8px 0px;
 				text-indent:-99999px;
 				overflow:hidden;
 				border:none;

@@ -14,6 +14,8 @@
 	
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js" charset="utf-8"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_directory')?>/scripts/jquery.thickbox.js" charset="utf-8"></script>
+	<script type="text/javascript" src="<?php bloginfo('template_directory')?>/scripts/jquery.cookie.js" charset="utf-8"></script>
+	
 	<link rel="stylesheet" href="<?php bloginfo('template_directory')?>/scripts/jquery.thickbox.css" type="text/css" />
 	<? if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 	
@@ -36,15 +38,56 @@
 	</script>
 </head>
 <body>
-	<div id="header" class="clearfix">
-		<h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
+	<div id="header-full">
+		<div id="header" class="clearfix">
+			<h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
+		</div>
 	</div>
+	<div id="full-header-toggle">
+		<div id="header-toggle">
+			<a id="toggle-banner" href="#">ocultar/mostrar banner</a>
+		</div>
+		<div id="banner">
+			
+		</div>
+		<script type="text/javascript" charset="utf-8">
+			$(document).ready(function () {
+				 $("#toggle-banner").click(function(){
+					if ($("#banner").is(":hidden")) {
+				        $("#banner").slideDown("slow");
+						$(this).addClass("show");
+						$(this).text('ocultar');
+				        $.cookie('showTop', 'showbanner', { expires: 1 });
+						return false;
+				      } else {
+				        $("#banner").slideUp("slow");
+						$(this).removeClass("hide");
+						$(this).text('colaborar con periodismohumano.com');
+				        $.cookie('showTop', 'hiddenbanner', { expires: 1 });
+						return false;
+				      }
+
+				  });
+			
+				var showTop = $.cookie('showTop');
+			    if (showTop == 'hiddenbanner') {
+					$("#banner").hide();
+					$("#toggle-banner").addClass("hide");
+					$("#toggle-banner").text('colaborar con periodismohumano.com');
+				} else {
+					$("#toggle-banner").text('ocultar');
+					$("#toggle-banner").addClass("show");			
+			    };
+			});	    
+		</script>
+	</div>
+	
+	
 	<div id="navbar" class="clearfix">
 		<ul id="menu">
 			<? wp_list_categories('title_li=&depth=1&hide_empty=0&orderby=term_order&exclude=39,24,25,26,310,311,313,314,309,40,308'); ?>
 			<li class="enfoques"><a href="">Enfoques</a></li>
 			<li class="multimedia"><a href="">Multimedia</a></li>
-			<li class="rss-link"><a href="">RSS</a></li>
 		</ul>
 		<?php // include (TEMPLATEPATH . '/searchform.php'); ?>
 	</div>

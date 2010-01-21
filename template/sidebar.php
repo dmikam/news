@@ -3,7 +3,7 @@
 		<h3 id="featureds-title">Temas destacados</h3>
 		<div id="featureds" class="block">
 			<div id="more-featured">
-				<? $featureds = get_posts("category=26&numberposts=10"); ?>
+				<? $featureds = get_posts("category=26&numberposts=5"); ?>
 				<? $cnt = 0; ?>
 				<? $buttons = "";?>
 			 	<? foreach($featureds as $post) : ?>
