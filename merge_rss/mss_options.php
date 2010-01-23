@@ -25,6 +25,39 @@
 			);
 		}
 	}
+
+	if ($_POST['edit']){
+		foreach ($_POST['edit'] as $id=>$value) {
+			$id = (int)$id;
+			$sql = "
+				SELECT
+					id,url,type,cat,title,image_url
+				FROM
+					$table_name
+				WHERE
+					id = $id
+			";
+			$old = $wpdb->get_row($sql);
+		}
+	}
+
+	if ($_POST['update']){
+		foreach($_POST['update'] as $id=>$value){
+			$new_cat		= mss_block($_POST['mss']['category']);
+			$new_type	= mss_block($_POST['mss']['type']);
+			$new_url		= mss_block($_POST['mss']['url']);
+			$new_title	= mss_block($_POST['mss']['title']);
+			$new_image_url		= mss_block($_POST['mss']['image_url']);
+			$id = (int)$id;
+			$wpdb->update( $table_name	,/*SET*/				array( 'url' => $new_url, 'type' => $new_type, 'cat' => $new_cat, 'title' => $new_title, 'image_url' => $new_image_url )
+												,/*WHERE*/			array('id'=>$id)
+												,/*VALIDATION*/	array( '%s', '%s', '%s', '%s', '%s')
+												,/*VALIDATION*/	array( '%d')
+			);
+			$wpdb->print_error();
+		}
+	}
+
 	
 	$categories =	get_categories(array(
 							'hide_empty'=>false
@@ -53,16 +86,16 @@
 		wp_nonce_field('update-options'); 
 		settings_fields('mss-opt' );
 ?>
-		<p>version: <?php echo $mss_opt['version']?></p>
+		<p>Version: <?php echo $mss_opt['version']?></p>
 		<table class="form-table">
 			<tr valign="top">
 				<th scope="row">Cantidad de articulos de RSS para mostrar</th>
 				<td><input type="text" name="mss_opt[count]" value="<?php echo $mss_opt['count']; ?>" /></td>
 			</tr>
-			<tr valign="top">
+			<!--tr valign="top">
 				<th scope="row">Loguear todos eventos</th>
-				<td><input type="checkbox" name="mss_opt[log]" value="1" <?php echo $mss_opt['log']? 'checked="checked"' : '' ; ?>" /></td>
-			</tr>
+				<td><input type="checkbox" name="mss_opt[log]" value="1" <?php echo $mss_opt['log']? 'checked="checked"' : '' ; ?> /></td>
+			</tr-->
 		</table>
 		<input type="hidden" name="action" value="update" />
 		<input type="hidden" name="page_options" value="mss_opt" />
@@ -118,9 +151,17 @@
 	</form>
 	<form method="post" action="">
 		<table class="form-table">
-			<tr><th>Título</th><th>Categoría</th><th>Tipo</th><th>URL de RSS</th><th>Imágen</th><th>Quitar</th></tr>
+			<tr><th>Título</th><th>Categoría</th><th>Tipo</th><th>URL de RSS</th><th>Imágen</th><th>Editar</th><th>Quitar</th></tr>
 <?php		foreach($list as $item){		?>
-			<tr><td><?php echo $item->title;?></td><td><?php echo $item->cat;?></td><td><?php echo $item->type;?></td><td><?php echo $item->url;?></td><td><img src="<?php echo $item->image_url;?>" title="<?php echo $item->image_url;?>" alt="<?php echo $item->image_url;?>" style="max-height:25px;"></a></td><td><input type="submit" name="delete[<?php echo $item->id;?>]" value="Eliminar" /></td></tr>
+			<tr>
+				<td><?php echo $item->title;?></td>
+				<td><?php echo $item->cat;?></td>
+				<td><?php echo $item->type;?></td>
+				<td><?php echo $item->url;?></td>
+				<td><img src="<?php echo $item->image_url;?>" title="<?php echo $item->image_url;?>" alt="<?php echo $item->image_url;?>" style="max-height:25px;"></a></td>
+				<td><input type="submit" name="edit[<?php echo $item->id;?>]" value="Editar" /></td>
+				<td><input type="submit" name="delete[<?php echo $item->id;?>]" value="Eliminar" /></td>
+			</tr>
 <?php		}		?>
 		</table>
 	</form>
