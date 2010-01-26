@@ -41,6 +41,8 @@
 	<div id="header-full">
 		<div id="header" class="clearfix">
 			<h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
+			<?php  include (TEMPLATEPATH . '/searchform.php'); ?>
+			
 		</div>
 	</div>
 	<div id="full-header-toggle">

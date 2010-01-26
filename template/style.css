@@ -59,12 +59,33 @@ strong {
 		width:395px;
 		margin:12px;
 		background:url('images/sprite.png') 0px -735px no-repeat; 
+		float:left;
 	}
 		#header h1 a {
 			display:block;
 			height:50px;
 			width:395px;
 			text-indent:-9999999px;
+		}
+	#searchbox {
+		margin-left:800px;
+		margin-top:30px;
+	}
+	#searchbox label {
+		color:#fff;
+		font-size:12px;
+		text-transform:lowercase;
+	}	
+		#searchbox input {
+			border-radius:6px;
+			-webkit-border-radius:6px;
+			-moz-border-radius:6px;
+			border:1px;
+			height:14px;
+			padding:2px 6px;
+		}
+		#searchbox input[type=submit] {
+			visibility:hidden;
 		}
 	#full-header-toggle {
 		width:100%;
