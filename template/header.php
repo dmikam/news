@@ -40,7 +40,7 @@
 <body>
 	<div id="header-full">
 		<div id="header" class="clearfix">
-			<h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
+			<h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a> <? the_current_date(); ?></h1>
 			<?php  include (TEMPLATEPATH . '/searchform.php'); ?>
 			
 		</div>
@@ -92,21 +92,4 @@
 			<li class="multimedia"><a href="">Multimedia</a></li>
 		</ul>
 		<?php // include (TEMPLATEPATH . '/searchform.php'); ?>
-	</div>
-	<div id="header_bar" class="clearfix">
-		<div id="date">
-			<? the_current_date(); ?>
-		</div>
-		<div id="login_bar">
-			<? if (is_user_logged_in()) { ?>
-				<? global $current_user; ?>
-				<? get_currentuserinfo(); ?>
-				¡Hola <strong><? echo $current_user->display_name; ?></strong>!  
-				<a href="/wp-admin">Accede al panel</a>  | 
-				<a href='<?php echo wp_logout_url(); ?>&amp;redirect_to=<? the_current_url() ?>'>Desconecta</a>
-			<? } else { ?>
-				<a href="/iniciar-sesion/?height=220&amp;width=350&amp;redirect_to=<? the_current_url() ?>" class="thickbox" title="Iniciar sesión">Inicia sesión</a>  |  
-				<a href="#">Registrate</a>
-			<? } ?>
-		</div>
 	</div>
