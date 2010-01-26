@@ -12,7 +12,7 @@ global
 	$mss_opt;
 
 	add_option('mss_opt', array(
-		'version'	=> '0.1',
+		'version'	=> '0.2',
 		'count'		=> '5',
 		'log'			=> '1',
 	));
