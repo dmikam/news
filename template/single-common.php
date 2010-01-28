@@ -1,20 +1,23 @@
 <div id="container" class="clearfix">
-	<div id="content" class="clearfix">
+	<div id="content" class="single clearfix">
 <?php	
 		if (have_posts()) {
 			the_post(); 
 ?>
-			<h5 id="category-single">
 				<?php 
 					$cats = get_the_category(); 
 					foreach ($cats as $cat) :
-						if ($cat->category_parent == 0) :
+						if ($cat->category_parent == 0 && $cat->term_id!=24) : ?>
+							<h2 class="category cat-title cat-<? echo $cat->term_id; ?>">
+						<?	
 							echo $cat->cat_name;
+						?>
+						</h2>
+						<?
 							break;
 						endif;
 					endforeach;
 				?>
-			</h5>
 			<h2 class="single-title" id="title-<? the_ID(); ?>">
 					<?php the_title(); ?>
 			</h2>

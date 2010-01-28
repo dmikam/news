@@ -40,7 +40,7 @@
 				<? require(TEMPLATEPATH . "/block.php"); ?>
 			</div>
 			<div id="right">
-				<? $width = 260; ?>
+				<? $width = 214; ?>
 				<? $number = "Bloque 2"; ?>
 				<? require(TEMPLATEPATH . "/block.php"); ?>
 				<? $number = "Bloque 4"; ?>
