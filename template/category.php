@@ -1,6 +1,7 @@
 <?php get_header() ?>
 <div id="container" class="clearfix">
 	<div id="content" class="category-page clearfix">
+		<h2 class="category cat-<? echo get_query_var('cat'); ?>"><? echo  single_cat_title('', false); ?></h2> 
 		<? $featured_cat = get_category_featured_id(intval(get_query_var('cat'))); ?>
 		<? if (!empty($featured_cat)) : ?>
 			<? $featured = get_posts("category=" . $featured_cat . "&numberposts=1"); ?>

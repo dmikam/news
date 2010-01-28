@@ -12,20 +12,22 @@ if (is_category() || is_home()){
 			Blogs externos
 		</h3>
 		<div id="external_rss" class="block">
-			<dl class="links_list rss_list">
+			<? $cnt=0; ?>
 <?php		foreach ($mss as $item){		?>
-				<dt>
-					<a href="<?php echo $item['link']; ?>" target="_blank"><?php echo $item['title']; ?></a>
-<?php				if (!empty($item['rss_title'])){			?>
-					<div class="mss_item_title"><?php echo $item['rss_title'] ?></div>
-<?					} 		?>
-<?php				if (!empty($item['image_url'])){			?>
-					<div class="mss_item_image"><img src="<?php echo $item['image_url'] ?>" alt="image" /></div>
-<?					} 		?>
-				</dt>
-				<dd><?php echo excerpt(strip_tags($item['description']),300); ?></dd>
+			<div class="rss_item rss_item_<? echo $cnt; ?>">
+					<?php if (!empty($item['image_url'])){	?>
+						<div class="rss_item_image"><img src="<?php echo $item['image_url'] ?>" alt="image" /></div>
+					<?	}  ?>
+					<h4 class="rss_title">
+						<?php if (!empty($item['rss_title'])){ ?>
+							<span class="rss_item_title"> <?php echo $item['rss_title'] ?> </span>
+						<?	} ?>
+						<a href="<?php echo $item['link']; ?>" target="_blank"><?php echo $item['title']; ?></a>
+					</h4>
+					<div class="rss_entry"><?php echo excerpt(strip_tags($item['description']),150); ?></div>
+			</div>
+			<? $cnt++; ?>
 <?php		}		?>
-			</dl>
 		</div>
 
 <?php
@@ -37,20 +39,22 @@ if (is_category() || is_home()){
 				Blogs internos
 			</h3>
 			<div id="external_rss" class="block">
-				<dl class="links_list rss_list">
-<?php			foreach ($mss as $item){		?>
-					<dt>
-						<a href="<?php echo $item['link']; ?>" target="_blank"><?php echo $item['title']; ?></a>
-<?php				if (!empty($item['rss_title'])){			?>
-					<div class="mss_item_title"><?php echo $item['rss_title'] ?></div>
-<?					} 		?>
-<?php				if (!empty($item['image_url'])){			?>
-					<div class="mss_item_image"><img src="<?php echo $item['image_url'] ?>" alt="image" /></div>
-<?					} 		?>						
-					</dt>
-					<dd><?php echo excerpt(strip_tags($item['description']),300); ?></dd>
+				<? $cnt=0; ?>
+	<?php		foreach ($mss as $item){		?>
+				<div class="rss_item rss_item_<? echo $cnt; ?>">
+						<?php if (!empty($item['image_url'])){	?>
+							<div class="rss_item_image"><img src="<?php echo $item['image_url'] ?>" alt="image" /></div>
+						<?	}  ?>
+						<h4 class="rss_title">
+							<?php if (!empty($item['rss_title'])){ ?>
+								<span class="rss_item_title"> <?php echo $item['rss_title'] ?> </span>
+							<?	} ?>
+							<a href="<?php echo $item['link']; ?>" target="_blank"><?php echo $item['title']; ?></a>
+						</h4>
+						<div class="rss_entry"><?php echo excerpt(strip_tags($item['description']),150); ?></div>
+				</div>
+				<? $cnt++; ?>
 	<?php		}		?>
-				</dl>
 			</div>
 
 	<?php
@@ -70,7 +74,7 @@ if (is_category() || is_home()){
 							<?	}  ?>
 							<h4 class="rss_title">
 								<?php if (!empty($item['rss_title'])){ ?>
-									<span class="rss_item_title"> <?php echo $item['rss_title'] ?> </span> <br />
+									<span class="rss_item_title"> <?php echo $item['rss_title'] ?> </span>
 								<?	} ?>
 								<a href="<?php echo $item['link']; ?>" target="_blank"><?php echo $item['title']; ?></a>
 							</h4>
