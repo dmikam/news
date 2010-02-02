@@ -70,14 +70,15 @@ function mss_register_settings(){
 										FUNCTIONS OF TEMPLATE
 *******************************************************************************/
 
-function hierarhical_select($list,$parent=0,$level=0){
+function hierarhical_select($list,$parent=0,$level=0,$current=''){
 	$return = '';
+	dump($current);
 	foreach ($list as $item){
 		if ($item->parent==$parent){
 ?>
-			<option value="<?php echo $item->slug;?>" ><?php echo str_repeat('-',$level)." ".$item->name;?></option>
+			<option value="<?php echo $item->slug;?>" <?php echo ($item->slug==$current ? 'selected="selected"' : '' )?> ><?php echo str_repeat('-',$level)." ".$item->name;?></option>
 <?php
-			echo hierarhical_select($list,$item->term_id,$level+1);
+			echo hierarhical_select($list,$item->term_id,$level+1,$current);
 		}
 	}
 	return $return;

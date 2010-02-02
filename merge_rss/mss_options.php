@@ -42,7 +42,7 @@
 	}
 
 	if ($_POST['update_rss']){
-		foreach($_POST['update'] as $id=>$value){
+		foreach($_POST['update_rss'] as $id=>$value){
 			$new_cat		= mss_block($_POST['mss']['category']);
 			$new_type	= mss_block($_POST['mss']['type']);
 			$new_url		= mss_block($_POST['mss']['url']);
@@ -121,7 +121,7 @@
 			<tr valign="top">
 				<td>
 					<select name="mss[category]">
-<?php					echo hierarhical_select($cats,(empty($edit_mss) ? 0 : $edit_mss->category ));		?>
+<?php					echo hierarhical_select($cats,0,0,(empty($edit_mss) ? 0 : $edit_mss->cat ));		?>
 					</select>
 				</td>
 				<td>
@@ -144,14 +144,14 @@
 		<table class="form-table">
 			<tr valign="top">
 				<th scope="row">Imagen</th>
-				<td><input type="text" name="mss[image_url]"	value="<?php echo (empty($edit_mss) ? '' : $edit_mss->url )?>"	size="60" onblur="document.getElementById('new_mss_image').src=this.value;" /></td>
-				<td><img src="<?php echo (empty($edit_mss) ? '' : $edit_mss->url )?>" id="new_mss_image" style="max-height:25px;"	/></td>
+				<td><input type="text" name="mss[image_url]"	value="<?php echo (empty($edit_mss) ? '' : $edit_mss->image_url )?>"	size="60" onblur="document.getElementById('new_mss_image').src=this.value;" /></td>
+				<td><img src="<?php echo (empty($edit_mss) ? '' : $edit_mss->image_url )?>" id="new_mss_image" style="max-height:25px;"	/></td>
 			</tr>
 		</table>
 <?php
 		if (isset($edit_mss)){
 ?>
-		<input type="hidden" name="update_rss" value="1" />
+		<input type="hidden" name="update_rss[<?php echo $edit_mss->id;?>]" value="1" />
 <?php
 		}else{
 ?>
