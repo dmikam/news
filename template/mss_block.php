@@ -36,14 +36,14 @@ if (is_category() || is_home()){
 			if (!empty($mss)){
 	?>
 			<h3>
-				Blogs internos
+				Enfoques
 			</h3>
 			<div id="external_rss" class="block">
 				<? $cnt=0; ?>
 	<?php		foreach ($mss as $item){		?>
 				<div class="rss_item rss_item_<? echo $cnt; ?>">
 						<?php if (!empty($item['image_url'])){	?>
-							<div class="rss_item_image"><img src="<?php echo $item['image_url'] ?>" alt="image" /></div>
+							<div class="rss_item_image"><img src="<?php echo $item['image_url'] ?>" alt="<?php echo $item['rss_title'] ?>" /></div>
 						<?	}  ?>
 						<h4 class="rss_title">
 							<?php if (!empty($item['rss_title'])){ ?>
