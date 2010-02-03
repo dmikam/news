@@ -41,9 +41,7 @@ a:hover {
 a img {
 	border:0px;
 }
-strong {
-	color:#000;
-}
+
 #header-full {
 	width:100%;
 	background:#D12421; 
@@ -760,10 +758,11 @@ strong {
 		color:#000;
 	}
 	.subtitle {
-		color:#555;
+		color:#4C4C4C;
 		font-weight:normal;
-		font-size:14px;
-		margin:3px 10px 10px 20px;
+		font-size:15px;
+		margin:3px 10px 10px 0px;
+		text-transform:uppercase;
 	}
 	.entry {
 		background:url('images/close-news.jpg') bottom center no-repeat;
@@ -792,12 +791,19 @@ strong {
 		font-size:12px;
 		line-height:18px;
 	}
-	.entry .alignleft, .entry .alignright {
+	.entry .alignright {
 		float:right;
 		margin-left:20px;
 		margin-bottom:10px;
 		margin-top:-20px;
 		margin-right:-20px;
+	}
+	.entry .alignleft {
+		float:left;
+		margin-right:20px;
+		margin-bottom:10px;
+		margin-top:5px;
+		margin-left:-20px;
 	}
 	.entry .alignright img, .entry .alignleft img, .entry .alignnone img, .entry .aligncenter img  {
 		width:100%;
@@ -815,6 +821,36 @@ strong {
 		margin-top:4px;
 		margin-bottom:0px;
 	}
+	.entry blockquote {
+		float:right;
+		width:220px;
+		padding:20px 10px 0px 10px;
+		background:url('images/quote.jpg') no-repeat left top;
+		margin-right:-20px;
+		margin-left:20px;
+	}
+		.entry blockquote p {
+			font-size:20px;
+			font-family:Georgia;
+			color:#D12420;
+			line-height:25px;
+			text-align:center;
+			background:url('images/quote-in.jpg') no-repeat right bottom;
+			padding:0px 10px 20px 0px;
+			margin-right:-10px;
+		}
+	.entry .despiece {
+		background:#E6E6E6;
+		padding:20px 20px 0px 20px;
+	}
+
+		.entry .despiece h3 {
+			font-family:Georgia;
+			font-weight:normal;
+			font-size:20px;
+			color:#4C4C4C;
+			margin-bottom:10px;
+		}
 	#share_and_tags {
 		height:100px;
 	}
