@@ -46,7 +46,7 @@
 ?>
 			<div id="share_and_tags">
 				<div id="tags">
-					<p id="tag-title">Etiquetas</p>  <p><? the_tags('',', '); ?></p>
+					<p id="tag-title">Más info sobre</p>  <p><? the_tags('',', '); ?></p>
 				</div>
 				<div id="share">
 					<p id="share-title">Comparte</p> 

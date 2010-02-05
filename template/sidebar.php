@@ -34,7 +34,7 @@
 	<? if (is_single()) :
 		$recomended = recomended_links();
 		if (!empty($recomended)) : ?>				
-			<h3>Enlaces recomendados</h3>
+			<h3>Para profundizar</h3>
 			<div class="recomended-links block">
 				<ul>
 					<? echo $recomended; ?>
@@ -42,7 +42,7 @@
 			</div>
 		<? endif; ?>
 			
-		<h3>Artículos relacionados</h3>
+		<h3>Información relacionada en PH</h3>
 		<div id="meta_links" class="block clearfix">
 				<div class="related_posts">
 				<?php echo related_posts_shortcode('limit=5');?>
