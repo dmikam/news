@@ -40,7 +40,7 @@
 <body>
 	<div id="header-full">
 		<div id="header" class="clearfix">
-			<h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a> <? the_current_date(); ?></h1>
+			<h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
 			<?php  include (TEMPLATEPATH . '/searchform.php'); ?>
 			
 		</div>

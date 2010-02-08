@@ -45,7 +45,7 @@
 
 <div id="respond">
 
-<h3 id="leave_comment"><?php comment_form_title('Deja un comentario', 'Deja una respuesta a %s'); ?> <?php cancel_comment_reply_link() ?></h3>
+<h3 id="leave_comment"><?php comment_form_title('Deja un comentario', 'Deja una respuesta a %s'); ?> <?php cancel_comment_reply_link('cancelar') ?></h3>
 
 
 <?php if ( get_option('comment_registration') && !$user_ID ) : ?>

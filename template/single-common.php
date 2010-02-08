@@ -51,10 +51,10 @@
 				<div id="share">
 					<p id="share-title">Comparte</p> 
 					<ul id="share-services">
-						<li id="facebook"><a href="">Facebook</a></li>
-						<li id="meneame"><a href="">Meneame</a></li>
-						<li id="digg"><a href="">Digg</a></li>
-						<li id="twitter"><a href="">Twitter</a></li>		
+						<li id="facebook"><a href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>&t=<?php the_title(); ?>" title="Enviar a facebook" target="blank">Facebook</a></li>
+						<li id="meneame"><a href="http://meneame.net/submit.php?url=<?php the_permalink();?>" target="_blank" title="Enviar a Meneame">Meneame</a></li>
+						<li id="digg"><a href="http://digg.com/submit?phase=2&url=<?php the_permalink();?>" target="_blank" title="Enviar a Digg">Digg</a></li>
+						<li id="twitter"><a href="http://twitter.com/home?status=Estoy leyendo <?php the_permalink(); ?>" title="Enviar a twitter" target="_blank">Twitter</a></li>		
 					</ul>
 				</div>
 			</div>

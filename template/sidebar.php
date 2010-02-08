@@ -1,7 +1,10 @@
 <div id="sidebar">
+	<div id="date">
+		<span><? the_current_date(); ?></span>
+	</div>
+	
 	<? if (is_home()) :  // solo se mostrará el bloque en la portada ?>	
-		<h3 id="featureds-title">Temas destacados</h3>
-		<div id="featureds" class="block">
+		<div id="featureds" class="featureds_main"> 
 			<div id="more-featured">
 				<? $featureds = get_posts("category=26&numberposts=5"); ?>
 				<? $cnt = 0; ?>
