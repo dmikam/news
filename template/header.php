@@ -86,10 +86,25 @@
 	
 	
 	<div id="navbar" class="clearfix">
-		<ul id="menu">
-			<? wp_list_categories('title_li=&depth=1&hide_empty=0&orderby=term_order&exclude=39,24,25,26,310,311,313,314,309,40,308'); ?>
-			<li class="enfoques"><a href="">Enfoques</a></li>
-			<li class="multimedia"><a href="">Multimedia</a></li>
-		</ul>
+		<ul id="menu"> 
+		<li class="cat-item cat-item-1"><a href="http://periodismohumano.com/seccion/sociedad" title="Ver todas las entradas de Sociedad">Sociedad</a> 
+		</li> 
+		<li class="cat-item cat-item-13"><a href="http://periodismohumano.com/seccion/economia" title="Ver todas las entradas de Economía">Economía</a> 
+		</li> 
+		<li class="cat-item cat-item-20"><a href="http://periodismohumano.com/seccion/migracion" title="Ver todas las entradas de Migración">Migración</a> 
+		</li> 
+		<li class="cat-item cat-item-19"><a href="http://periodismohumano.com/seccion/mujer" title="Ver todas las entradas de Mujer">Mujer</a> 
+		</li> 
+		<li class="cat-item cat-item-23"><a href="http://periodismohumano.com/seccion/en-conflicto" title="Ver todas las entradas de En conflicto">En conflicto</a> 
+		</li> 
+		<li class="cat-item cat-item-18"><a href="http://periodismohumano.com/seccion/culturas" title="Ver todas las entradas de Culturas">Culturas</a> 
+		</li> 
+		<li class="cat-item cat-item-21"><a href="http://periodismohumano.com/seccion/cooperacion" title="Ver todas las entradas de Cooperación">Cooperación</a> 
+		</li> 
+		<li class="enfoques"><a href="">Enfoques</a></li> 
+		<li class="multimedia"><a href="">Multimedia</a></li> 
+	</ul>
+			<? // wp_list_categories('title_li=&depth=1&hide_empty=0&orderby=term_order&exclude=39,24,25,26,310,311,313,314,309,40,308'); ?>
+
 		<?php // include (TEMPLATEPATH . '/searchform.php'); ?>
 	</div>
