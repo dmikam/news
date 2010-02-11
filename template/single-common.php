@@ -49,7 +49,7 @@
 					<p id="tag-title">Más info sobre</p>  <p><? the_tags('',', '); ?></p>
 				</div>
 				<div id="share">
-					<p id="share-title">Comparte</p> 
+					<p id="share-title">Si no lo mueves, no lo sabrá nadie</p> 
 					<ul id="share-services">
 						<li id="facebook"><a href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>&t=<?php the_title(); ?>" title="Enviar a facebook" target="blank">Facebook</a></li>
 						<li id="meneame"><a href="http://meneame.net/submit.php?url=<?php the_permalink();?>" target="_blank" title="Enviar a Meneame">Meneame</a></li>

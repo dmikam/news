@@ -1,6 +1,6 @@
 <div id="sidebar">
 	<div id="date">
-		<span><? the_current_date(); ?></span>
+		<span><? the_current_date(); ?> | </span>
 	</div>
 	
 	<? if (is_home()) :  // solo se mostrará el bloque en la portada ?>	

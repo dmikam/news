@@ -28,12 +28,12 @@
 
 /* END FIXES */
 body {
-	font-family:"Microsoft Sans Serif";
+	font-family:"Microsoft Sans Serif", sans-serif;
 	font-size:0.8em;
 }
 a {
 	text-decoration:none;
-	color:#86B300;
+	color:#891715;
 }
 a:hover {
 	text-decoration:underline;
@@ -244,6 +244,41 @@ a img {
 			background:url('images/featured.jpg') bottom right no-repeat #E6E6E6;
 			padding:0px 20px 20px 20px;
 		}
+		#content.category-page #description {
+			background:#E6E6E6;
+			padding:0px 20px 20px 20px;
+		}
+			#content #description #author-avatar {
+				float:left;
+				margin-left:10px;
+			}
+				#content #description #author-avatar img {
+					border:5px solid #000;
+				}
+			#content #description #author-description {
+				margin-left:250px;
+				margin-right:20px;
+				font-size:13px;
+				line-height:19px;
+				color:#4C4C4C;
+			}
+			#content #description #author-description h4 {
+				width:31px;
+				height:25px;
+				background:url('images/sprite.png') no-repeat 0px -70px;
+				text-indent:-99999px;
+				margin-bottom:10px;
+			}
+			#content #description #author-email {
+				padding-left:20px;
+				margin-top:10px;
+				display:block;
+				background:url('images/sprite.png') no-repeat 0px -95px;
+				line-height:13px;
+				color:#000;
+				height:16px;
+				
+			}
 		#content.category-page #featured h2 {
 			text-align:left;
 			font-size:30px;
@@ -325,6 +360,7 @@ a img {
 				margin-bottom:0px;
 				height:63px;
 				text-indent:35px;
+				background:url('images/sprite.png') #D12421 0px -364px  no-repeat;
 			}	
 					#content .category.cat-title.cat-1 { 
 						background:url('images/sprite.png') #829CBA 0px -364px  no-repeat;
@@ -428,14 +464,13 @@ a img {
 		}
 		
 		#content #sub-content .news .entry {
-			text-align:justify;
 			padding:0px;
 			margin:0px;
 			background:none;
 		}
 		#content #sub-content .news .entry p {
-			font-size:12px;
-			line-height:18px;
+			font-size:13px;
+			line-height:19px;
 		}
 		#content #sub-content .news .metadata {
 			font-weight:normal;
@@ -496,9 +531,8 @@ a img {
 			background:none;
 		}
 		#content #sub-content .category_news .category_news_post .entry p {
-
-			font-size:12px;
-			line-height:18px;
+			font-size:13px;
+			line-height:19px;
 		}
 		#content #sub-content .category_news .category_news_post .entry .read_more {
 			background:url('images/sprite.png') no-repeat right -41px;
@@ -531,7 +565,7 @@ a img {
 		min-height:500px;
 	}
 		#sidebar h3 {
-			font-family:"Microsoft Sans Serif", sans-serif;
+			font-family:"Microsoft Sans Serif", sans-serif, sans-serif;
 			padding-right:20px;
 			padding-top:5px;
 			height:47px;
@@ -556,17 +590,18 @@ a img {
 			border-bottom:1px solid #D9D9D9;
 		}
 		#sidebar #date {
-			background:url('images/sprite.png') -349px -522px  no-repeat #D12421;
-			padding:15px 20px 5px 10px;
+			padding:23px 0px 5px 0px;
 			margin-bottom:20px;
-			color:#fff;
+			color:#000;
 			text-align:right;
 			font-size:12px;
 		}
 			#sidebar #date span {
-				background:url('images/sprite.png') 0px -112px  no-repeat #D12421;
+				background: url('images/sprite.png') no-repeat scroll 273px -112px;
 				width:270px;
+				padding-right:20px;
 				display:block;
+				float:right;
 			}
 		/* NOTICIAS RELACIONADAS */
 		#sidebar .related_posts li:last-child, #sidebar .recomended-links li:last-child {
@@ -583,7 +618,7 @@ a img {
 			padding-left:23px;
 			line-height:19px;
 			margin-bottom:5px;
-			background:url('images/sprite.png') -634px -242px no-repeat;
+			background:url('images/sprite.png') -634px -240px no-repeat;
 			font-size:17px;
 			color:#000;
 			text-transform:none;
@@ -594,13 +629,13 @@ a img {
 			padding-left:23px;
 			line-height:14px;
 			margin-bottom:5px;
-			background:url('images/sprite.png') -634px -324px no-repeat;
+			background:url('images/sprite.png') -634px -335px no-repeat;
 			font-size:12px;
 			padding-top:2px;
 			padding-bottom:2px;
 			color:#000;
 			text-transform:none;
-			font-family:"Microsoft Sans", sans-serif;		
+			font-family:"Microsoft Sans Serif", sans-serif, sans-serif;		
 		}
 			
 		/* ENLACES INTERNOS Y EXTERNOS */
@@ -649,22 +684,27 @@ a img {
 		}
 			.rss_title a {
 				color:#333333;
+				display:block;
+				padding-left:23px;
 			}
 			.rss_title span.rss_item_title {
 				display:block;
-				text-indent:23px;
+				padding-left:23px;
 				line-height:14px;
 				margin-bottom:5px;
 				background:url('images/sprite.png')   -634px -207px no-repeat;
 				font-size:20px;
-				color:#D12421;
+				color:#000;
 				text-transform:none;
 				font-family:Georgia;
+				min-height:16px;
 			}
 		div.rss_entry {
 			color:#666666;
 			line-height:18px;
 			font-size:12px;
+			padding-left:23px;
+			
 		}
 		/* TEMAS dESTACADOS*/
 		#featureds {
@@ -812,14 +852,14 @@ a img {
 	.entry p  {
 		margin:0px 0px 20px 0px;
 		color:#4C4C4C;
-		font-size:13px;
-		line-height:19px;
+		font-size:14px;
+		line-height:21px;
 	}
 	.entry ul, .entry ol {
 		margin:0px 0px 20px 20px;
 		color:#4C4C4C;
-		font-size:12px;
-		line-height:18px;
+		font-size:14px;
+		line-height:21px;
 	}
 	.entry .alignright {
 		float:right;
@@ -854,7 +894,7 @@ a img {
 	.entry blockquote {
 		float:right;
 		width:220px;
-		padding:20px 10px 0px 10px;
+		padding:30px 0px 0px 0px;
 		background:url('images/quote.jpg') no-repeat left top;
 		margin-right:-20px;
 		margin-left:20px;
@@ -864,9 +904,8 @@ a img {
 			font-family:Georgia;
 			color:#D12420;
 			line-height:25px;
-			text-align:center;
 			background:url('images/quote-in.jpg') no-repeat right bottom;
-			padding:0px 10px 20px 0px;
+			padding:0px 0px 30px 0px;
 			margin-right:-10px;
 		}
 	.entry .despiece {
