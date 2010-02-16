@@ -1,5 +1,13 @@
-	<div id="footer_widgets">
-		 <?php  dynamic_sidebar("Pie"); ?> 
+	<div id="footer_widgets" class="clearfix">
+		<div class="clearfix">
+			<?php  dynamic_sidebar("Pie 50"); ?> 
+		</div>
+		<div class="clearfix">
+			<?php  dynamic_sidebar("Pie 25"); ?> 
+		</div>
+		<div class="clearfix">
+			<?php  dynamic_sidebar("Pie 33"); ?> 
+		</div>
 	</div>
 	<div id="footer" class="clearfix">
 		<div id="line_titles" class="line clearfix">

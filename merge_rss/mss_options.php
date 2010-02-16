@@ -127,7 +127,8 @@
 				<td>
 					<select name="mss[type]" >
 <?php
-				foreach (array('internal'=>'Blogs propios','external'=>'Blogs ajenos', 'blog'=>'Blogs en primera voz', 'analisis'=>'Analisis') as $key=>$value) {
+				$phtypes = array('internal'=>'Enfoques','external'=>'De referencia', 'blog'=>'Sociedad civil', 'analisis'=>'Analisis');
+				foreach ($phtypes as $key=>$value) {
 ?>
 						<option value="<?php echo $key; ?>" <?php echo ((!empty($edit_mss) && $edit_mss->type==$key) ? 'selected="selected"' : '' )?>><?php echo $value; ?></option>
 <?php					
@@ -138,7 +139,7 @@
 						<option value="analisis">Analisis</option-->
 					</select>
 				</td>
-				<td><input type="text"	name="mss[url]"	value="<?php echo (empty($edit_mss) ? '' : $edit_mss->url )?>"	size="75" /></td>
+				<td><input type="text"	name="mss[url]"	value="<?php echo (empty($edit_mss) ? '' : $edit_mss->url )?>"	size="65" /></td>
 			</tr>
 		</table>
 		<table class="form-table">
@@ -170,7 +171,7 @@
 			<tr>
 				<td><?php echo $item->title;?></td>
 				<td><?php echo $item->cat;?></td>
-				<td><?php echo $item->type;?></td>
+				<td><?php echo $phtypes[$item->type];?></td>
 				<td><?php echo $item->url;?></td>
 				<td><img src="<?php echo $item->image_url;?>" title="<?php echo $item->image_url;?>" alt="<?php echo $item->image_url;?>" style="max-height:25px;"></a></td>
 				<td><input type="submit" name="edit[<?php echo $item->id;?>]" value="Editar" /></td>

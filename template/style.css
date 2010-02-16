@@ -213,7 +213,7 @@ a img {
 				text-align:center;
 				margin-bottom:8px;
 				color:#4C4C4C;
-				font-family: "Georgia";
+				font-family: "Palatino", "Book Antiqua";
 				font-weight:normal;
 			}
 			#content #featured h2 a {
@@ -345,7 +345,7 @@ a img {
 			margin-bottom:5px;
 			font-weight:normal;
 			text-transform:lowercase;
-			font-family:Georgia;
+			font-family:"Palatino", "Book Antiqua";
 			color:#fff;
 		}
 			#content #sub-content #right .category {
@@ -487,7 +487,7 @@ a img {
 			line-height:21px;	
 			font-size:20px;
 			font-weight:normal;	
-			font-family: "Georgia";
+			font-family: "Palatino", "Book Antiqua";
 			margin-bottom:5px;
 		}
 			#content #sub-content .news .title a {
@@ -503,7 +503,7 @@ a img {
 			margin-bottom:5px;	
 			font-size:25px;
 			font-weight:normal;	
-			font-family: "Georgia";	
+			font-family: "Palatino", "Book Antiqua";	
 		}
 			#content #sub-content .category_news .title a {
 				color:#000;
@@ -622,7 +622,7 @@ a img {
 			font-size:17px;
 			color:#000;
 			text-transform:none;
-			font-family:Georgia;
+			font-family:"Palatino", "Book Antiqua";
 		}
 		#sidebar .recomended-links li a {
 			display:block;
@@ -696,7 +696,7 @@ a img {
 				font-size:20px;
 				color:#000;
 				text-transform:none;
-				font-family:Georgia;
+				font-family:"Palatino", "Book Antiqua";
 				min-height:16px;
 			}
 		div.rss_entry {
@@ -748,7 +748,7 @@ a img {
 				padding:20px 10px 10px 10px;
 				min-height:62px;
 				width:280px;
-				font-family:Georgia;
+				font-family:"Palatino", "Book Antiqua";
 			}
 			#featureds #more-featured .featured-item h2 a {
 				color:#000;
@@ -817,7 +817,7 @@ a img {
 		font-size:35px;
 		font-weight:normal;
 		margin-bottom:20px;
-		font-family: "Georgia";
+		font-family: "Palatino", "Book Antiqua";
 	}
 	.single-title a {
 		color:#000;
@@ -832,7 +832,7 @@ a img {
 		font-weight:normal;
 		font-size:17px;
 		margin:3px 10px 10px 0px;
-		font-family:Georgia;
+		font-family:"Palatino", "Book Antiqua";
 	}
 	.entry {
 		background:url('images/close-news.jpg') bottom center no-repeat;
@@ -901,7 +901,7 @@ a img {
 	}
 		.entry blockquote p {
 			font-size:20px;
-			font-family:Georgia;
+			font-family:"Palatino", "Book Antiqua";
 			color:#D12420;
 			line-height:25px;
 			background:url('images/quote-in.jpg') no-repeat right bottom;
@@ -915,7 +915,7 @@ a img {
 	}
 
 		.entry .despiece h3 {
-			font-family:Georgia;
+			font-family:"Palatino", "Book Antiqua";
 			font-weight:normal;
 			font-size:20px;
 			color:#4C4C4C;
@@ -1012,6 +1012,52 @@ a img {
 			margin:auto;	
 		}
 
+#footer_widgets {
+	width:990px;
+	margin:10px auto;
+}
+	#footer_widgets .block {
+		float:left;
+		background:url('images/sprite.png') 0px -950px #D9D9D9 no-repeat;
+		margin:10px;
+		padding:20px;
+		min-height:250px;
+	}
+		#footer_widgets .block h3 {
+			background:#000;
+			color:#fff;
+			margin-left:-20px;
+			margin-top:-20px;
+			padding-left:15px;
+			font-family:"Palatino", "Book Antiqua";
+			padding-top:2px;
+			font-weight:normal;
+			margin-bottom:20px;
+			text-transform:lowercase;
+		}
+		#footer_widgets .block ul li, #footer_widgets .block ol li{
+			list-style:none;
+			margin:5px 0px;
+		}
+	#footer_widgets .two {
+		width:435px;
+	}
+		#footer_widgets .two h3 {
+			width:460px;
+		}
+	#footer_widgets .three {
+		width:270px;
+	}
+		#footer_widgets .three h3 {
+			width:295px;
+		}
+	#footer_widgets .four {
+		width:187px;
+		min-height:270px;
+	}
+		#footer_widgets .four h3 {
+			width:212px;
+		}
 #footer {
 	width:100%;
 	margin:30px auto 0px auto;
@@ -1036,7 +1082,7 @@ a img {
 		}
 			#line_titles h3 {
 				color:#D12421;
-				font-family:Georgia;
+				font-family:"Palatino", "Book Antiqua";
 				font-size:20px;
 				text-transform:lowercase;
 				font-weight:normal;
@@ -1081,7 +1127,7 @@ a img {
 			#line_socials #followus {
 				width:100px;
 				float:right;
-				font-family:Georgia;
+				font-family:"Palatino", "Book Antiqua";
 				font-size:20px;
 				text-transform:lowercase;
 				font-weight:normal;

@@ -12,13 +12,28 @@ if ( function_exists('register_sidebar') )
     ));
 if ( function_exists('register_sidebar') )
     register_sidebar(array(
-        'before_widget' => '<div class="block">',
+        'before_widget' => '<div class="two block">',
         'after_widget' => '</div>',
         'before_title' => '<h3>',
         'after_title' => '</h3>',
-		  'name' => 'Pie',
+		  'name' => 'Pie 50',
     ));
-
+if ( function_exists('register_sidebar') )
+    register_sidebar(array(
+        'before_widget' => '<div class="three block">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>',
+		  'name' => 'Pie 33',
+    ));
+if ( function_exists('register_sidebar') )
+    register_sidebar(array(
+        'before_widget' => '<div class="four block">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>',
+		  'name' => 'Pie 25',
+    ));
 
 function add_clearfix() {
 	return "<div style=\"clear:both\"></div>";
