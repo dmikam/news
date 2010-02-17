@@ -8,12 +8,13 @@
 		<h2 class="category cat-title "><? echo  $curauth->display_name; ?></h2> 
 		<div id="description" class="clearfix">
 			<div id="author-avatar">
+				<? $class_img = 'no_image'?>
 				<? if (file_exists(get_theme_root() . '/newstheme/images/authors/' . $curauth->user_nicename . '.jpg')) : ?>
 					<img src="<? echo get_bloginfo('template_directory') . '/images/authors/' . $curauth->user_nicename . '.jpg'?>" alt="Avatar de <? echo $curauth->display_name; ?>" />
-				<? else : ?>
+					<? $class_img = 'with_image'?>
 				<? endif; ?>
 			</div>
-			<div id="author-description">
+			<div id="author-description" class="<? echo $class_img; ?>">
 				<h4>Perfil de <?echo  $curauth->display_name; ?></h4>
 				<? echo $curauth->description; ?>
 				<span id="author-email"><? echo $curauth->user_email?></span>

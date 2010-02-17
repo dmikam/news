@@ -198,6 +198,10 @@ a img {
 		width:650px;
 		margin-top:10px;
 	}
+		#content.no_sidebar {
+			width:auto;
+			float:none;
+		}
 		#content #featured {
 			position:relative;
 			margin-bottom:20px;
@@ -256,12 +260,18 @@ a img {
 					border:5px solid #000;
 				}
 			#content #description #author-description {
-				margin-left:250px;
-				margin-right:20px;
 				font-size:13px;
 				line-height:19px;
 				color:#4C4C4C;
-			}
+			}	
+				#content #description #author-description.no_image {
+					margin-left:50px;
+					margin-right:50px;
+				}
+				#content #description #author-description.with_image {
+					margin-left:250px;
+					margin-right:20px;
+				}
 			#content #description #author-description h4 {
 				width:31px;
 				height:25px;
@@ -838,6 +848,9 @@ a img {
 		background:url('images/close-news.jpg') bottom center no-repeat;
 		padding:0px 20px 10px 20px;
 		margin-bottom:20px;
+	}
+	#content.no_sidebar .entry {
+		background:none;
 	}
  	.entry .metadata {
 		font-weight:normal;
