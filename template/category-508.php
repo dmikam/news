@@ -1,34 +1,80 @@
 <?php
 		$cat = get_category(intval(get_query_var('cat')));
-		$mss = mss_get_rss($cat->slug,'blog',100);
+		$mss = mss_get_rss($cat->slug,'blog',20);
 ?>
 <?php get_header() ?>
 <div id="container" class="clearfix">
-	<div id="content" class="enfoques clearfix">
-		<h2>
+	<div id="content" class="no_sidebar clearfix">
+		<h2 id="enfoques-title">
 			Enfoques
 		</h2>
-		<div id="external_rss" class="block">
-			<? $cnt=0; ?>
-<?php		foreach ($mss as $item){		?>
-			<div class="rss_item rss_item_<? echo $cnt; ?>">
+	
+		<div id="enfoques" class="enfoques-column">
+			<h3 class="enfoques-title-column">Enfoques</h3>
+<?php		foreach ($mss as $item) :		?>
+			<div class="enfoques-item clearfix">
 					<?php if (!empty($item['image_url'])){	?>
-						<div class="rss_item_image"><img src="<?php echo $item['image_url'] ?>" alt="image" /></div>
+						<div class="enfoques-image"><img src="<?php echo $item['image_url'] ?>" alt="image" /></div>
 					<?	}  ?>
-					<h4 class="rss_title">
+					<div class="enfoques-data clearfix">
 						<?php if (!empty($item['rss_title'])){ ?>
-							<span class="rss_item_title"> <?php echo $item['rss_title'] ?> </span>
+							<h3 class="enfoques-name"> <?php echo $item['rss_title'] ?> </h3>
 						<?	} ?>
-						<a href="<?php echo $item['link']; ?>" target="_blank"><?php echo $item['title']; ?></a>
-					</h4>
-					<div class="rss_entry"><?php echo excerpt(strip_tags($item['description']),150); ?></div>
+						<h2 class="enfoques-title">
+							<a href="<?php echo $item['link']; ?>" target="_blank"><?php echo $item['title']; ?></a>
+						</h2>
+						<div class="enfoques-entry"><?php echo excerpt(strip_tags($item['description']),150); ?></div>
+						<a class="enfoques-readmore" href="<?php echo $item['link']; ?>" target="_blank">Leer más</a>
+					</div>
 			</div>
-			<? $cnt++; ?>
-<?php		}		?>
+<?php		endforeach;		?>
+		</div>
+	
+	
+		<div id="sociedad-civil" class="enfoques-column">
+			<h3 class="enfoques-title-column">Sociedad civil</h3>
+<?php		foreach ($mss as $item) :		?>
+			<div class="enfoques-item clearfix">
+					<?php if (!empty($item['image_url'])){	?>
+						<div class="enfoques-image"><img src="<?php echo $item['image_url'] ?>" alt="image" /></div>
+					<?	}  ?>
+					<div class="enfoques-data clearfix">
+						<?php if (!empty($item['rss_title'])){ ?>
+							<h3 class="enfoques-name"> <?php echo $item['rss_title'] ?> </h3>
+						<?	} ?>
+						<h2 class="enfoques-title">
+							<a href="<?php echo $item['link']; ?>" target="_blank"><?php echo $item['title']; ?></a>
+						</h2>
+						<div class="enfoques-entry"><?php echo excerpt(strip_tags($item['description']),150); ?></div>
+						<a class="enfoques-readmore" href="<?php echo $item['link']; ?>" target="_blank">Leer más</a>
+					</div>
+			</div>
+<?php		endforeach;		?>
 		</div>
 
-
-
+		<div id="en-perspectiva" class="enfoques-column">
+			<h3 class="enfoques-title-column">En perspectiva</h3>
+<?php		foreach ($mss as $item) :		?>
+			<div class="enfoques-item clearfix">
+					<?php if (!empty($item['image_url'])){	?>
+						<div class="enfoques-image"><img src="<?php echo $item['image_url'] ?>" alt="image" /></div>
+					<?	}  ?>
+					<div class="enfoques-data clearfix">
+						<?php if (!empty($item['rss_title'])){ ?>
+							<h3 class="enfoques-name"> <?php echo $item['rss_title'] ?> </h3>
+						<?	} ?>
+						<h2 class="enfoques-title">
+							<a href="<?php echo $item['link']; ?>" target="_blank"><?php echo $item['title']; ?></a>
+						</h2>
+						<div class="enfoques-entry"><?php echo excerpt(strip_tags($item['description']),150); ?></div>
+						<a class="enfoques-readmore" href="<?php echo $item['link']; ?>" target="_blank">Leer más</a>
+					</div>
+			</div>
+<?php		endforeach;		?>
+		</div>
+		
+		
+	
 	</div>
 </div>
 <?php get_footer() ?>

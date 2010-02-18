@@ -1350,6 +1350,111 @@ ol.commentlist li.thread-even {}
 ol.commentlist li.thread-odd {}
 
 
+/* ENFOQUES */
+#enfoques-title {
+	background:url('images/enfoques/title.jpg') center no-repeat;
+	height:87px;
+	text-indent:-99999px;
+	border-bottom:1px dashed #B3B3B3;
+	margin-bottom:20px;
+	padding-bottom:2px;
+}
+	.enfoques-column {
+		width:310px;
+		float:left;
+		margin-right:30px;
+	}
+		#en-perspectiva.enfoques-column {
+			margin-right:0px;
+		}
+	.enfoques-title-column {
+		font-size:25px;
+		font-weight:normal;
+		font-style:italic;
+		width:310px;
+		font-family:"Georgia", serif;
+		margin-bottom:20px;
+		text-indent:25px;
+		line-height:20px;
+		padding-bottom:15px;
+		text-transform:lowercase;
+		background:url('images/enfoques/quote-red.jpg') no-repeat;
+		color:#D12421;
+		border-bottom:1px dashed #D12421;
+	}
+		#sociedad-civil .enfoques-title-column {
+			color:#61A6FF;
+			border-bottom:1px dashed #61A6FF;
+			background:url('images/enfoques/quote-blue.jpg') no-repeat;
+		}
+		#en-perspectiva .enfoques-title-column {
+			color:#91C200;
+			border-bottom:1px dashed #91C200;
+			background:url('images/enfoques/quote-green.jpg') no-repeat;
+		}
+	.enfoques-item {
+		background:transparent url('images/enfoques/shadow.jpg') repeat-x center bottom;
+		padding-bottom:10px;
+		margin-bottom:10px;
+	}
+		.enfoques-image {
+			border-left:1px solid #CCCCCC;
+			border-right:1px solid #CCCCCC;
+			border-top:1px solid #CCCCCC;
+		}
+			.enfoques-image img {
+				height:auto;
+				width:308px;
+			}
+		.enfoques-data {
+				border-right:1px solid #ccc;
+				border-left:1px solid #ccc;
+				border-bottom:1px solid #ccc;
+				border-top:5px solid #D12421;
+				padding-top:20px;
+		}
+			#sociedad-civil .enfoques-data {
+				border-top:5px solid #61A6FF;
+			}
+			#en-perspectiva .enfoques-data {
+				border-top:5px solid #91C200;
+			}
+			.enfoques-name {
+				font-size:12px;
+				font-weight:normal;
+				text-transform:uppercase;
+				color:#D12421;
+				margin:0px 20px 5px 20px;
+			}
+				#sociedad-civil .enfoques-name {
+					color:#61A6FF;
+				}
+				#en-perspectiva.enfoques-name {
+					color:#91C200;
+				}
+			.enfoques-title {
+				font-size:20px;
+				font-weight:normal;
+				margin:0px 20px 5px 20px;
+				font-family:"Georgia", serif;
+			}
+				.enfoques-title a {
+					color:#000;
+				}
+			.enfoques-entry {
+				color:#4C4C4C;
+				margin:0px 20px 20px 20px;
+			}
+			.enfoques-readmore {
+				background:transparent url('images/enfoques/readmore.jpg') no-repeat;
+				height:17px;
+				font-family:"Georgia", serif;
+				color:#ccc;
+				padding-left:30px;
+				float:right;
+				margin-right:20px;
+				margin-bottom:20px;
+			}
 
 /* ----------------------------------------------------------------------------------------------------------------*/
 /* ---------->>> global settings needed for thickbox <<<-----------------------------------------------------------*/

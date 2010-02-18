@@ -6,14 +6,21 @@
 	$videos = get_posts("category=39&orderby=ID&order=DESC&numberposts=5");
 	$cur_video = get_post(get_the_ID());
 ?>
-
+<?php
+	if ($cur_video){
+		preg_match_all("/\[youtube.*\[\/youtube\]/", get_the_content(), $video_tag); 
+		var_dump($video_tag);
+		
+		//echo get_post_meta($cur_video->ID,'video',true);
+	}
+?>
 <div id="container" class="clearfix video">
 	<div id="content" class="clearfix">
 		<div id="video">
 			<div class="embed">
 <?php
 	if ($cur_video){
-		echo get_post_meta($cur_video->ID,'video',true);
+		//echo get_post_meta($cur_video->ID,'video',true);
 	}
 ?>				
 			</div>

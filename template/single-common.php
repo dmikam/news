@@ -35,7 +35,7 @@
 					<h4 class="subtitle"><? echo $subtitle3; ?></h4>
 				<? endif; ?>
 			</div>
-			<div class="entry">
+			<div class="entry clearfix">
 				<h5 class="metadata">
 				<span class="date"><?	echo date('d.m.Y',strtotime($post->post_date));  ?></span> · <span class="author"><? the_author_posts_link(); ?></span> 
 				</h5>
