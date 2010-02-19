@@ -24,6 +24,7 @@
 			<div class="entry">
 					<?php echo  apply_filters('the_content', preg_replace("/\[youtube.*\[\/youtube\]/",'', get_the_content())); ?>
 			</div>
+			<? break; ?>
 		<?php endwhile; ?>
 	</div>
 	<div id="sidebar">

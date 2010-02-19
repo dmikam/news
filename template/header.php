@@ -101,8 +101,8 @@
 		</li> 
 		<li class="cat-item cat-item-21"><a href="http://periodismohumano.com/seccion/cooperacion" title="Ver todas las entradas de Cooperación">Cooperación</a> 
 		</li> 
-		<li class="enfoques"><a href="">Enfoques</a></li> 
-		<li class="multimedia"><a href="">Multimedia</a></li> 
+		<li class="enfoques"><a href="http://periodismohumano.com/seccion/enfoques" title="Ver Enfoques en periodismohumano">Enfoques</a></li> 
+		<li class="multimedia"><a href="http://periodismohumano.com/seccion/video" title="Ver la sección multimedia, videos">Multimedia</a></li> 
 	</ul>
 			<? // wp_list_categories('title_li=&depth=1&hide_empty=0&orderby=term_order&exclude=39,24,25,26,310,311,313,314,309,40,308'); ?>
 
