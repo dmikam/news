@@ -40,23 +40,30 @@
 				<span class="date"><?	echo date('d.m.Y',strtotime($post->post_date));  ?></span> · <span class="author"><? the_author_posts_link(); ?></span> 
 				<? $author2 = get_meta('author2'); ?>
 				<? if (!empty($author2)) : ?>
-					<span class="author"> · <? echo $author2; ?>
+					<span class="author"> · 
 						<? $rolauthor2 = get_meta('rol-author2'); ?>
 						<? if (!empty($rolauthor2)) : ?>
-							(<? echo $rolauthor2; ?>)
+							<? echo $rolauthor2; ?>:
 						<? endif; ?>
+						<? echo $author2; ?>
 					</span>
 				<? endif; ?>
 				<? $author3 = get_meta('author3'); ?>
 				<? if (!empty($author3)) : ?>
-					<span class="author"> · <? echo $author3; ?> 
+					<span class="author"> ·
 						<? $rolauthor3 = get_meta('rol-author3'); ?>
 						<? if (!empty($rolauthor3)) : ?>
-							(<? echo $rolauthor3; ?>)
-						<? endif; ?>	
+							<? echo $rolauthor3; ?>:
+						<? endif; ?> 
+						 <? echo $author3; ?>			
 					</span>
-
 				<? endif; ?>
+					<ul id="share-services-head">
+						<li class="facebook"><a href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>&t=<?php the_title_attribute(); ?>" title="Enviar a facebook" target="blank">Facebook</a></li>
+						<li class="meneame"><a href="http://meneame.net/submit.php?url=<?php the_permalink();?>" target="_blank" title="Enviar a Meneame">Meneame</a></li>
+						<li class="digg"><a href="http://digg.com/submit?phase=2&url=<?php the_permalink();?>" target="_blank" title="Enviar a Digg">Digg</a></li>
+						<li class="twitter"><a href="http://twitter.com/home?status=Estoy leyendo <?php the_permalink(); ?>" title="Enviar a twitter" target="_blank">Twitter</a></li>		
+					</ul>
 				</h5>
 				<?php the_content('Leer más &raquo;'); ?>
 			</div>

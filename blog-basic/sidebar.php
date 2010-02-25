@@ -1,3 +1,3 @@
-<div id="sidebar">
-	
+<div id="sidebar">	
+	<?php dynamic_sidebar("Lateral"); ?> 
 </div>

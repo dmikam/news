@@ -1,5 +1,5 @@
 /*
-      Theme Name: Blog básico
+      Theme Name: blogbasics
       Theme URI: http://www.periodismohumano.com
       Version: 1.0
       Author: Daniel Aguilar
@@ -29,35 +29,411 @@
 /* END FIXES */
 a {
 	text-decoration:none;
-	color:;
+	color:#D12421;
 }
 a:hover {
-	
+	text-decoration:underline;
 }
 
 body {
-	font-family:;
+	font-family:"Microsoft Sans Serif", sans-serif;
 	font-size:0.9em;
 }
 #header {
-	
-}
+	background:url('images/background-repeat.jpg') #D12421 repeat-x bottom left;
+	height:83px;
+}	
+	#header #inside {
+		height:82px;
+		background:url('images/header.jpg') transparent no-repeat bottom left;
+		width:980px;
+		margin:0px auto;
+		padding-top:1px;
+		
+	}
+		#header #inside h1 {
+			height:39px;
+			width:297px;
+			background:url('images/logo.jpg') no-repeat;
+			margin:10px 25px;
+			float:left;
+		}
+			#header #inside h1 a {
+				display:block;
+				height:39px;
+				width:297px;
+				text-indent:-999999px;
+			}
+			#header #inside #back {
+				float:right;
+				color:#fff;
+				background:url('images/arrow.jpg') no-repeat;
+				padding-left:15px;
+				text-transform:lowercase;
+				font-size:12px;
+				line-height:7px;
+				height:12px;
+				margin-top:20px;
+			}
 #container {
-	
+	width:980px;
+	margin:20px auto;
 }
 	#content {
-	
+		float:left;
+		width:620px;
 	}
-	#content p {
+		#content #header-logo {
+			width:620px;
+			height:120px;
+			background:#ccc;
+			margin-bottom:10px;
+		}
+			#content #header-logo a {
+				display:block;
+				width:620px;
+				height:120px;
+				text-indent:-9999999px;
+			}
+		#content  #separator {
+			background:url('images/separator-header.jpg') no-repeat;
+			height:22px;
+			border:0px;
+			margin-bottom:20px;
+		}
+		
+		#content .top {
+			border-bottom:1px dashed #D12421;
+			padding-bottom:10px;
+			padding-left:10px;
+		}
+			#content .top .title {
+				float:left;
+				text-transform:uppercase;
+				font-size:25px;
+				font-weight:normal;
+				width:480px;
+				float:left;
+			}	
+				#content .top .title a {
+					color:#000;
+				}
+			#content .top .comments {
+				float:right;
+			}
+				#content .top .comments a {
+					display:block;
+					color:#D12421;
+					font-size:12px;
+					background:url('images/quote.gif') right center no-repeat;
+					height:23px;
+					padding-right:40px;
+					line-height:30px;
+				}
+		#content .metadata {
+			font-weight:normal;
+			color:#4C4C4C;
+			margin:10px 0px 5px 10px; 
+			font-size:12px;
+		}
+			#content .metadata .date {
+			}
+			#content .metadata .author a {
+				color:#D12421;
+			}
+	.entry {
+		font-size:14px;
+		line-height:21px;
+		padding:10px;
+		color:#4C4C4C;
+	}
+	.entry p {
 		margin:10px 0px;
 	}
-	#content ul, #content ol {
+	.entry ul, .entry ol {
 		margin:10px;
 	}
-	#sidebar {
-	
+	.entry a img {
+		border:0px;
+		border-bottom:5px solid #d12421;
 	}
+	.entry .more-link {
+		color:#d12421;
+		font-family: "Georgia", serif;
+		font-size:12px;
+		background:url('images/readmore.jpg') no-repeat;
+		padding-left:30px;
+		text-transform:lowercase;
+		font-weight:bold;
+		display:block;
+		height:17px;
+		line-height:17px;
+	}
+	#content .share_and_tags {
+		margin-bottom:40px;
+	}
+	#content .tags {
+		border-bottom:1px dashed #B3B3B3;
+		border-top:1px dashed #B3B3B3;
+		padding:5px 10px;	
+		font-size:12px;
+	}
+		#content .tags strong {
+			float:left;
+			width:75px;
+			font-family: "Georgia", serif;
+			color:#D12421;
+		}
+		
+		
+	#content .share {
+		border-bottom:1px dashed #B3B3B3;
+		border-top:1px dashed #B3B3B3;
+		padding:5px 10px;
+		font-size:12px;
+		margin-top:10px;
+	}
+		#content .share strong {
+			float:left;
+			width:75px;
+			font-family: "Georgia", serif;
+			color:#61A6FF;
+		}
+		#content .share ul li {
+			list-style:none;
+			float:left;
+			margin:0px 10px 0px 0px;
+			height:15px;
+			text-indent:20px;
+		}
+			#content .share ul li a {
+				color:#808080;
+				text-transform:lowercase;
+			}
+			#content .share ul li.twitter {
+				background:url('images/sprite.png') no-repeat;
+			}
+			#content .share ul li.facebook {
+				background:url('images/sprite.png') 0px -15px no-repeat;
+			}	
+			#content .share ul li.digg {
+				background:url('images/sprite.png') 0px -45px no-repeat;
+			}
+			#content .share ul li.meneame {
+				background:url('images/sprite.png') 0px -30px no-repeat;
+			}
+	.separator-posts {
+		border:0px;
+		border-bottom:1px dashed #B3B3B3;
+		border-top:1px dashed #B3B3B3;
+		width:140px;
+		height:6px;
+		margin:50px auto;
+	}
+	#sidebar {
+		float:right;
+		width:312px;
+	}
+		#sidebar .block {
+			border:1px solid #ccc;
+			border-top:5px solid #D12421;
+			padding:15px 25px;
+			-moz-box-shadow:0 5px 5px #e9e9e9;
+			-webkit-box-shadow:0 5px 5px #e9e9e9;
+			box-shadow:0 5px 5px #e9e9e9;
+			margin-bottom:20px;
+			font-size:12px;
+			line-height:18px;
+			color:#4C4C4C;
+		}
+		#sidebar .block h3.title {
+			font-size:12px;
+			color:#D12421;
+			border-bottom:1px dashed #D12421;
+			text-transform:uppercase;
+			font-weight:normal;
+			margin:0px -5px;
+			padding:0px 5px 5px 5px;
+			margin-bottom:10px;
+		}
+			#sidebar .block h3.title .rsswidget img {
+				display:none;
+			}
+			#sidebar .block li {
+				list-style:none;
+				margin:20px 0px;
+				padding-bottom:20px;
+				border-bottom:1px dashed #B3B3B3;
+			}	
+
+				#sidebar .block li a {
+					color:#000;
+				}
+				#sidebar .block li .rsswidget {
+					font-family: "Georgia", serif;
+					font-size:20px;
+				}
+				#sidebar .block li .rssSummary {
+					margin-top:5px;
+				}
+
+				/* COMENTARIOS */
+
+				#comments-title {
+					border-bottom:1px dashed #D12421;
+					border-top:1px dashed #D12421;
+					background:url('images/mediumquote.jpg') no-repeat 580px center;
+					padding:5px;
+				}
+					#comments-title h3 {
+						font-size:12px;
+						font-weight:normal;
+						color:#D12421;
+					}
+					#respond {
+						padding:0px 20px;
+					}
+					#cancel-comment-reply-link {
+						padding-left:16px;
+						color:#D12421;
+						float:right;
+						margin-right:20px;
+						line-height:14px;
+						margin-top:1px;
+					}
+					#leave_comment {
+						color:#4C4C4C;
+						font-weight:normal;
+						font-size:12px;
+						border-bottom:1px dashed #B3B3B3;
+						border-top:1px dashed #B3B3B3;
+						padding:5px;
+					}
+					#commentform #subform {
+						width:560px;
+						padding:30px 0px;
+					}
+						#commentform  p {
+							margin:5px 0px;
+							color:#4C4C4C;
+						}
+						#commentform #subform label {
+							display:inline-block;
+							width:200px;
+							text-align:right;
+							margin-right:20px;
+							float:left;
+							font-size:12px;
+						}
+
+						#commentform #subform input[type=text], #commentform textarea {
+							border:0px;
+							width:340px;
+							padding:3px 0px;
+							background:#E6E6E6;
+						}
+						#commentform #subform input[type=submit] {
+							background:url('images/respond.png') #fff no-repeat 0px 4px;
+							font-weight:bold;
+							font-family: "Georgia", serif;
+							padding:2px 0px 3px 20px;
+							margin-bottom:7px;
+							display:block;
+							height:19px;
+							line-height:6px;
+							border:0px;
+							font-size:12px;
+							color:#b3b3b3;
+							margin-left:220px;
+							margin-top:10px;
+							text-transform:lowercase;
+						}
+							#commentform #subform input[type=submit]:hover {
+								text-decoration:underline;
+							}
+					#subform #loggedin {
+						font-size:12px;
+						margin:10px 0px;
+						text-align:right;
+					}
+
+				ol.commentlist { color:#4C4C4C; list-style:none; margin-top:30px; margin-left:5px; padding:0; text-indent:0; }
+					ol.commentlist li.depth-1 {
+						background:url('images/miniquote.png') no-repeat left top;
+						padding:0px 25px 10px;
+						border-bottom:1px dashed #D12421;
+						margin-bottom:20px;
+					}
+					ol.commentlist li.depth-2 {
+						margin:10px 1px;
+						padding:20px 45px 10px;
+						background:url('images/miniquote.png') #F3F3F3 no-repeat 20px 20px;
+					}
+					ol.commentlist li:last-child {
+						border:0px;
+					}
+				ol.commentlist li.alt { }
+				ol.commentlist li.bypostauthor {}
+				ol.commentlist li.byuser {}
+				ol.commentlist li.comment-author-admin {}
+				ol.commentlist li.comment { }
+					ol.commentlist li div.comment-author {
+						color:#D12421;
+						font-size:12px;
+						font-weight:bold;
+						font-family: "Georgia", serif;
+					}
+				ol.commentlist li div.vcard { }
+				ol.commentlist li div.vcard cite.fn { font-style:normal; }
+				ol.commentlist li div.vcard cite.fn a.url {}
+				ol.commentlist li div.vcard img.avatar { border:5px solid #ccc; float:right; margin:0 0 1em 1em; }
+				ol.commentlist li div.vcard img.avatar-32 {}
+				ol.commentlist li div.vcard img.photo {}
+				ol.commentlist li div.commentmetadata {}
+				ol.commentlist li div.comment-meta { font-size:9px; }
+				ol.commentlist li div.comment-meta a { color:#ccc; }
+				ol.commentlist li p { font-size:12px; line-height:18px; margin:1em 0 1em; }
+				ol.commentlist li ul { font-size:11px; list-style:square; margin:0 0 1em 2em; }
+				ol.commentlist li div.reply .comment-reply-link { 
+					font-size:12px;
+					font-weight:normal;
+					color:#B3B3B3;
+					background:url('images/respond.png') no-repeat;
+					font-weight:bold;
+					font-family: "Georgia", serif;
+					padding:2px 0px 3px 20px;
+					margin-bottom:7px;
+					display:block;
+					height:12px;
+					line-height:6px;
+					text-transform:lowercase;
+				}
+
+				ol.commentlist li ul.children { list-style:none; margin:1em 0 0; text-indent:0; }
+				ol.commentlist li ul.children li {}
+				ol.commentlist li ul.children li.alt {}
+				ol.commentlist li ul.children li.bypostauthor {}
+				ol.commentlist li ul.children li.byuser {}
+				ol.commentlist li ul.children li.comment {}
+				ol.commentlist li ul.children li.comment-author-admin {}
+				ol.commentlist li ul.children li.depth-4 { border-left:0px solid #bbb; border-bottom:0px; margin:0 0 .25em .25em; }
+				ol.commentlist li ul.children li.depth-5 {}
+				ol.commentlist li ul.children li.odd {}
+				ol.commentlist li.parent { border-left:0px solid #111; }
+				ol.commentlist li.pingback { border-bottom:1px dotted #666; padding:1em; }
+				ol.commentlist li.thread-alt { }
+				ol.commentlist li.thread-even {}
+				ol.commentlist li.thread-odd {}
 #footer {
-	
+	color:#4C4C4C;
+	font-weight:normal;
+	font-size:11px;
+	font-style:italic;
+	border-bottom:1px dashed #B3B3B3;
+	border-top:1px dashed #B3B3B3;
+	padding:5px;
+	text-align:center;
+	width:980px;
+	margin:20px auto;
 }
 	

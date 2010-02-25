@@ -855,13 +855,46 @@ a img {
  	.entry .metadata {
 		font-weight:normal;
 		color:#4C4C4C;
-		margin:11px 0px 5px 0px; 
+		margin:11px -20px 5px -20px; 
+		border-top:2px dotted #B3B3B3;
+		border-bottom:2px dotted #B3B3B3;
+		padding:5px 5px 7px 5px;
+		width:640px;
 	}
 		.entry .metadata .date {
 		}
 		.entry .metadata .author a {
 			color:#D12421;
 		}
+		.entry .metadata ul#share-services-head {
+			float:right;
+			margin:0px;
+			border-left:2px dotted #B3B3B3;
+			padding-left:5px;
+		}
+			.entry .metadata ul#share-services-head li {
+				float:left;
+				list-style:none;
+				margin:0px 2px;
+			}
+				.entry .metadata ul#share-services-head li a {
+					display:block;
+					height:15px;
+					width:15px;
+					text-indent:-99999px;
+				}				
+			.entry .metadata ul#share-services-head li.facebook a {
+				background:url('images/sprite.png') no-repeat left -191px;
+			}
+			.entry .metadata ul#share-services-head li.meneame a {
+				background:url('images/sprite.png') no-repeat left -206px;
+			}
+			.entry .metadata ul#share-services-head li.digg a {
+				background:url('images/sprite.png') no-repeat left -221px;
+			}
+			.entry .metadata ul#share-services-head li.twitter a {
+				background:url('images/sprite.png') no-repeat left -176px;
+			}
 	.entry p  {
 		margin:0px 0px 20px 0px;
 		color:#4C4C4C;

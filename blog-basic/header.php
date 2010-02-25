@@ -14,5 +14,14 @@
 </head>
 <body>
 	<div id="header">
-		<h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
+		<div id="inside">
+			<h1><a href="http://periodismohumano.com">Periodismo Humano</a></h1>
+			<a id="back" href="http://periodismohumano.com">Volver a periodismohumano.com</a>
+		</div>
 	</div>
+	
+	<div id="container" class="clearfix">
+		<div id="content" class="clearfix">
+			<h1 id="header-logo"><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
+			<hr id="separator" />
+	

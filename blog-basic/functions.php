@@ -1,11 +1,36 @@
 <?php
-	if ( function_exists('register_sidebar') ){
+	if ( function_exists('register_sidebar')){
 		 register_sidebar(array(
-		     'before_widget' => '<li id="%1$s" class="widget %2$s">',
-		     'after_widget' => '</li>',
-		     'before_title' => '<h2 class="widgettitle">',
-		     'after_title' => '</h2>',
+		     'before_widget' => '<div id="%1$s" class="block clearfix %2$s">',
+		     'after_widget' => '</div>',
+		     'before_title' => '<h3 class="title">',
+		     'after_title' => '</h3>',
+			  'name' => 'Lateral',
 		 ));
+	}
+	function comentarios($comment, $args, $depth) {
+	   $GLOBALS['comment'] = $comment; ?>
+	   <li <?php comment_class(); ?> id="li-comment-<?php comment_ID() ?>">
+	     <div id="comment-<?php comment_ID(); ?>">
+	      <div class="comment-author vcard">
+	         <?php echo get_avatar($comment,$size='48',$default='<path_to_url>' ); ?>
+
+	         <?php printf(__('<cite class="fn">%s</cite>'), get_comment_author_link()) ?>
+	      </div>
+	      <?php if ($comment->comment_approved == '0') : ?>
+	         <em><?php _e('Your comment is awaiting moderation.') ?></em>
+	         <br />
+	      <?php endif; ?>
+
+	      <div class="comment-meta commentmetadata"><?php edit_comment_link(__('(Edit)'),'  ','') ?></div>
+
+	      <?php comment_text() ?>
+
+	      <div class="reply">
+	         <?php comment_reply_link(array_merge( $args, array('depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
+	      </div>
+	     </div>
+	<?php
 	}
 
 	function get_single_image($size = 'thumbnail',$post_id=0) {
@@ -102,5 +127,37 @@
 		}
 		return $return;
 	}
+	//make changeable header
 
+	define('HEADER_TEXTCOLOR', '');
+	define('HEADER_IMAGE', '%s/setta.jpg'); // %s is theme dir uri
+	define('HEADER_IMAGE_WIDTH', 620);
+	define('HEADER_IMAGE_HEIGHT', 120);
+	define( 'NO_HEADER_TEXT', true );
+
+	function blogbasics_admin_header_style() {
+	?>
+		<style type="text/css">
+		#content #header-logo {
+			height: <?php echo HEADER_IMAGE_HEIGHT; ?>px;
+			width: <?php echo HEADER_IMAGE_WIDTH; ?>px;
+		}
+		</style>
+	<?php
+	}
+
+	function header_style() {
+	?>
+		<style type="text/css">
+		#content #header-logo  {
+			background: url(<?php header_image() ?>) no-repeat;
+		}
+		</style>
+
+	<?php
+	}
+
+	add_custom_image_header('header_style', 'blogbasics_admin_header_style');
+
+	
 ?>
