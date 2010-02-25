@@ -44,6 +44,7 @@
 			<div class="entry">
 					<?php echo apply_filters('the_content', preg_replace("/\[embed.*\[\/embed\]/",'', get_the_content())); ?>
 			</div>	
+			<? $withcomments = 1; ?>	
 			<?php comments_template(); ?>
 	</div>
 	<? break; ?>

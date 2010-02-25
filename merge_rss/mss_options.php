@@ -127,7 +127,7 @@
 				<td>
 					<select name="mss[type]" >
 <?php
-				$phtypes = array('internal'=>'Enfoques','external'=>'De referencia', 'blog'=>'Sociedad civil', 'analisis'=>'Analisis');
+				$phtypes = array('internal'=>'Enfoques','external'=>'De referencia', 'blog'=>'Sociedad civil');
 				foreach ($phtypes as $key=>$value) {
 ?>
 						<option value="<?php echo $key; ?>" <?php echo ((!empty($edit_mss) && $edit_mss->type==$key) ? 'selected="selected"' : '' )?>><?php echo $value; ?></option>

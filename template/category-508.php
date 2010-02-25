@@ -1,6 +1,6 @@
 <?php
 		$cat = get_category(intval(get_query_var('cat')));
-		$mss = mss_get_rss($cat->slug,'blog',20);
+		$mss = mss_get_rss($cat->slug,'internal',20);
 ?>
 <?php get_header() ?>
 <div id="container" class="clearfix">
@@ -29,7 +29,8 @@
 			</div>
 <?php		endforeach;		?>
 		</div>
-	
+		
+	<?php $mss = mss_get_rss($cat->slug,'blog',20); ?>	
 	
 		<div id="sociedad-civil" class="enfoques-column">
 			<h3 class="enfoques-title-column">Sociedad civil</h3>
@@ -52,8 +53,10 @@
 <?php		endforeach;		?>
 		</div>
 
+		<?php $mss = mss_get_rss($cat->slug,'external',20); ?>	
+
 		<div id="en-perspectiva" class="enfoques-column">
-			<h3 class="enfoques-title-column">En perspectiva</h3>
+			<h3 class="enfoques-title-column">De referencia</h3>
 <?php		foreach ($mss as $item) :		?>
 			<div class="enfoques-item clearfix">
 					<?php if (!empty($item['image_url'])){	?>

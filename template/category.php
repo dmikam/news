@@ -14,7 +14,7 @@
 					<? if (empty($raw_content)) : ?>
 				 		<h2><a href="<?php the_permalink(); ?>" id="post-<?php the_ID(); ?>"><?php the_title(); ?></a></h2>
 						<div class="image-featured">
-							<a href="<?php the_permalink(); ?>" title="<? the_title(); ?>">	<? echo get_single_image(array(360,360)); ?></a>						
+							<a href="<?php the_permalink(); ?>" title="<? the_title_attribute(); ?>">	<? echo get_single_image(array(360,360)); ?></a>						
 						</div>
 						<div class="excerpt-featured">
 							<h5 class="metadata">
@@ -37,7 +37,7 @@
 							<div class="category_news_image">
 								<? $wimage = get_meta('image'); ?>
 								<? if (!empty($wimage)) :  ?>
-									<a href="<?php the_permalink(); ?>" title="<? the_title(); ?>">	<? echo get_single_image(array(291,630)); ?></a>
+									<a href="<?php the_permalink(); ?>" title="<? the_title_attribute(); ?>">	<? echo get_single_image(array(291,630)); ?></a>
 									<? $class = "with_image";?>
 								<? else: ?>
 									<? $class = "no_image";?>

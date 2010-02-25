@@ -15,6 +15,7 @@
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js" charset="utf-8"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_directory')?>/scripts/jquery.thickbox.js" charset="utf-8"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_directory')?>/scripts/jquery.cookie.js" charset="utf-8"></script>
+	<script type="text/javascript" src="<?php bloginfo('template_directory')?>/scripts/jquery.quickpager.js" charset="utf-8"></script>
 	
 	<link rel="stylesheet" href="<?php bloginfo('template_directory')?>/scripts/jquery.thickbox.css" type="text/css" />
 	<? if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
@@ -102,7 +103,7 @@
 		<li class="cat-item cat-item-21"><a href="http://periodismohumano.com/seccion/cooperacion" title="Ver todas las entradas de Cooperación">Cooperación</a> 
 		</li> 
 		<li class="enfoques"><a href="http://periodismohumano.com/seccion/enfoques" title="Ver Enfoques en periodismohumano">Enfoques</a></li> 
-		<li class="multimedia"><a href="http://periodismohumano.com/seccion/video" title="Ver la sección multimedia, videos">Multimedia</a></li> 
+		<li class="multimedia"><a href="http://periodismohumano.com/seccion/multimedia" title="Ver la sección multimedia, videos">Multimedia</a></li> 
 	</ul>
 			<? // wp_list_categories('title_li=&depth=1&hide_empty=0&orderby=term_order&exclude=39,24,25,26,310,311,313,314,309,40,308'); ?>
 

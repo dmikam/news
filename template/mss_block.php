@@ -9,7 +9,7 @@ if (is_category() || is_home()){
 		if (!empty($mss)){
 ?>
 		<h3>
-			Blogs externos
+			De referencia
 		</h3>
 		<div id="external_rss" class="block">
 			<? $cnt=0; ?>
@@ -63,7 +63,7 @@ if (is_category() || is_home()){
 				if (!empty($mss)){
 		?>
 				<h3 id="primera-voz-title">
-					En primera voz
+					Sociedad civil
 				</h3>
 				<div id="external_rss" class="block">
 					<? $cnt=0; ?>
