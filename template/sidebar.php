@@ -45,13 +45,17 @@
 			</div>
 		<? endif; ?>
 			
-		<h3>Información relacionada en PH</h3>
+		<h3>Información relacionada</h3>
 		<div id="meta_links" class="block clearfix">
 				<div class="related_posts">
 				<?php echo related_posts_shortcode('limit=5');?>
 				</div>
 		</div>
 
+		<h3>Más información sobre</h3>
+		<div id="tags_links" class="block clearfix">
+			<?php the_tags('<ul><li>','</li><li>','</li></ul>'); ?>
+		</div>
 	<? endif; ?>
 
 <?php require(TEMPLATEPATH . "/links_block.php"); ?>	

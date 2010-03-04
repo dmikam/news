@@ -18,6 +18,8 @@
 						endif;
 					endforeach;
 				?>
+				<?php edit_post_link(); ?>
+				
 			<h2 class="single-title" id="title-<? the_ID(); ?>">
 					<?php the_title(); ?>
 			</h2>

@@ -47,6 +47,8 @@
 								<h2 class="title" id="title-<? the_ID(); ?>">
 									<a href="<?php the_permalink() ?>" title="Enlace a <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
 								</h2>
+								<?php edit_post_link(); ?>
+								
 								<h5 class="metadata">
 								<span class="date"><?	echo date('d.m.Y',strtotime($post->post_date));  ?></span> · <span class="author"><? the_author_posts_link(); ?></span> 
 								</h5>
@@ -64,7 +66,7 @@
 				<?php endwhile; ?>
 		</div>
 		
-		
+		<div class="navigation"><p><?php posts_nav_link('','Página anterior','Más noticias'); ?></p></div>
 
 	</div>
 <?php get_sidebar() ?>

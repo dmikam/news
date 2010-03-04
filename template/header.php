@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-	<title> <?php bloginfo('name'); ?> <?php wp_title(); ?></title>
+	<title>  <?php wp_title(''); ?> - <?php bloginfo('name'); ?></title>
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all" charset="utf-8" />
 	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>" />
 	<link rel="alternate" type="text/xml" title="RSS .92" href="<?php bloginfo('rss_url'); ?>" />
@@ -13,12 +13,10 @@
 	<?php wp_head(); ?>
 	
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js" charset="utf-8"></script>
-	<script type="text/javascript" src="<?php bloginfo('template_directory')?>/scripts/jquery.thickbox.js" charset="utf-8"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_directory')?>/scripts/jquery.cookie.js" charset="utf-8"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_directory')?>/scripts/jquery.quickpager.js" charset="utf-8"></script>
 	<script type="text/javascript" charset="utf-8" src="<?php bloginfo('template_directory')?>/scripts/flash.js"></script>
 	
-	<link rel="stylesheet" href="<?php bloginfo('template_directory')?>/scripts/jquery.thickbox.css" type="text/css" />
 	<? if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 	
 	<script type="text/javascript" charset="utf-8">
