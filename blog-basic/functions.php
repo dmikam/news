@@ -132,7 +132,7 @@
 	define('HEADER_TEXTCOLOR', '');
 	define('HEADER_IMAGE', '%s/setta.jpg'); // %s is theme dir uri
 	define('HEADER_IMAGE_WIDTH', 620);
-	define('HEADER_IMAGE_HEIGHT', 120);
+	define('HEADER_IMAGE_HEIGHT', get_option('custom_image_height'));
 	define( 'NO_HEADER_TEXT', true );
 
 	function blogbasics_admin_header_style() {
@@ -151,6 +151,8 @@
 		<style type="text/css">
 		#content #header-logo  {
 			background: url(<?php header_image() ?>) no-repeat;
+			height: <?php echo HEADER_IMAGE_HEIGHT; ?>px;
+			width: <?php echo HEADER_IMAGE_WIDTH; ?>px;
 		}
 		</style>
 
@@ -158,6 +160,13 @@
 	}
 
 	add_custom_image_header('header_style', 'blogbasics_admin_header_style');
-
+	add_option('custom_image_height',100);
+	
+	
+	function proximamente() {
+		if ( !is_user_logged_in()) { header("Location: http://periodismohumano.com/proximamente/"); }
+	}
+	add_action('wp','proximamente');
+	
 	
 ?>

@@ -21,7 +21,7 @@
 			</div>
 			
 			<div class="share_and_tags">
-				<div class="tags">
+				<div class="tags clearfix">
 					<strong class="tag-title">etiquetas</strong>  <p><? the_tags('',', '); ?></p>
 				</div>
 				<div  class="clearfix share">

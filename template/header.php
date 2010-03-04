@@ -16,6 +16,7 @@
 	<script type="text/javascript" src="<?php bloginfo('template_directory')?>/scripts/jquery.thickbox.js" charset="utf-8"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_directory')?>/scripts/jquery.cookie.js" charset="utf-8"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_directory')?>/scripts/jquery.quickpager.js" charset="utf-8"></script>
+	<script type="text/javascript" charset="utf-8" src="<?php bloginfo('template_directory')?>/scripts/flash.js"></script>
 	
 	<link rel="stylesheet" href="<?php bloginfo('template_directory')?>/scripts/jquery.thickbox.css" type="text/css" />
 	<? if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
@@ -51,7 +52,9 @@
 			<a id="toggle-banner" href="#">ocultar/mostrar banner</a>
 		</div>
 		<div id="banner">
-			
+			<script type="text/javascript" charset="utf-8">
+				ver_flash("<?php bloginfo('template_directory'); ?>/images/banner.swf", 990, 120);	
+			</script>
 		</div>
 		<script type="text/javascript" charset="utf-8">
 			$(document).ready(function () {

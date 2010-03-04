@@ -90,3 +90,8 @@
 	</div>
 <?php get_sidebar() ?>
 </div>
+
+<script type="text/javascript" charset="utf-8">
+	jQuery('.entry embed').attr('width','610');
+	jQuery('.entry embed').attr('height','400');
+</script>

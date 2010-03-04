@@ -53,5 +53,8 @@
 <? get_sidebar(); ?>
 </div>
 
-
+<script type="text/javascript" charset="utf-8">
+	jQuery('#embed embed').attr('width','650');
+	jQuery('#embed embed').attr('height','400');
+</script>
 <?php get_footer() ?>

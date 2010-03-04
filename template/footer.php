@@ -12,7 +12,7 @@
 	<div id="footer" class="clearfix">
 		<div id="line_titles" class="line clearfix">
 			<div class="footer_content">
-				<h3 class="contact">Contacto</h3>
+				<h3 class="contact">Y más</h3>
 				<h3 class="what">De qué hablamos</h3>
 				<h3 class="who">Quiénes somos</h3>
 			</div>
@@ -23,23 +23,20 @@
 			<h3 id="phlogo">Periodismo Humano</h3>
 
 			<ul class="contact">
-				<li><a href="">En la redacción</a></li>
-				<li><a href="">Envíanos un email</a></li>
-				<li><a href="">Formulario</a></li>
-				<li><a href="">Condiciones de uso</a></li>
-				<li><a href="">Aviso Legal</a></li>
+				<li><a href="http://periodismohumano.com/contacto">Contacto</a></li>
+				<li><a href="http://periodismohumano.com/condiciones-legales">Condiciones de uso / Aviso legal</a></li>
+				<li><a href="http://periodismohumano.com/creative-commons">Creative Commons</a></li>
+				<li><a href="http://periodismohumano.com/canales-rss">Canales RSS</a></li>
 			</ul>
 			<ul class="what">
 				<? wp_list_categories('title_li=&depth=1&hide_empty=0&orderby=term_order&exclude=39,24,25,26,310,311,313,314,309,40,308'); ?>
-				<li><a href="">Enfoques</a></li>
-				<li><a href="">Multimedia</a></li>
 			</ul>
 			<ul class="who">
-				<li><a href="">Qué es periodismohumano</a></li>
-				<li><a href="">El Equipo</a></li>
-				<li><a href="">Quién nos apoya</a></li>
-				<li><a href="">Hazte socio de periodismohumano</a></li>
-				<li><a href="">Más dudas (FAQ)</a></li>
+				<li><a href="http://periodismohumano.com/que-es-periodismohumano-com">Qué es periodismohumano.com</a></li>
+				<li><a href="http://periodismohumano.com/el-equipo">El Equipo</a></li>
+				<li><a href="http://periodismohumano.com/quien-nos-apoya">Quién nos apoya</a></li>
+				<li><a href="http://periodismohumano.com/hazte-socio-de-periodimohumano-com">Hazte socio de periodismohumano</a></li>
+				<li><a href="http://periodismohumano.com/mas-dudas-faq">Más dudas (FAQ)</a></li>
 			</ul>
 			</div>
 		</div>

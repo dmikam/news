@@ -1,8 +1,8 @@
 /*
       Theme Name: NewsThemes
-      Theme URI: http://www.enfoque19.com
+      Theme URI: http://www.periodismohumano.com
       Version: 1.0
-      Author: Daniel Aguilar & Dmitrijus Kamyninas
+      Author: Daniel Aguilar
       Author URI: http://www.e-dac.es
 */
 
@@ -92,10 +92,9 @@ a img {
 		}
 	#full-header-toggle {
 		width:100%;
-		background:url('images/background-header-banner.jpg') repeat-x;
 	}
 		#header-toggle {
-			background:url('images/background-banner.jpg') 20px 0px no-repeat;
+			background:url('images/background-banner.png') 20px 0px no-repeat;
 			width:990px;
 			margin:0px auto;
 			height:26px;
@@ -108,8 +107,9 @@ a img {
 				margin-right:26px;
 			}
 		#banner {
-			height:100px;
-			background:url('images/banner.png') #CCCCCC center no-repeat;
+			height:120px;
+			background: #fff center no-repeat;
+			text-align:center;
 		}
 	#navbar {
 		width:100%;
@@ -690,14 +690,13 @@ a img {
 		.rss_title  {
 			font-weight:normal;
 			font-size:12px;
-			text-transform:uppercase;
 		}
 			.rss_title a {
 				color:#333333;
 				display:block;
 				padding-left:23px;
 			}
-			.rss_title span.rss_item_title {
+			.rss_title span.rss_item_title a {
 				display:block;
 				padding-left:23px;
 				line-height:14px;
@@ -975,14 +974,11 @@ a img {
 		.entry .destacado p {
 			color:#fff;
 		}
-		#content.single embed {
-			height:430px;
-			width:610px;
-			margin-bottom:10px;
-		}
+
 	#share_and_tags {
 		height:100px;
 		padding:0px 20px;
+		margin-bottom:20px;
 	}
 	#tags {
 		display:table;
@@ -990,8 +986,9 @@ a img {
 		margin-bottom:20px;
 	}
 	#tags #tag-title {
-		display:table-cell;
-		padding:0px 13px 0px 4px;
+		display:block;
+		padding:12px 13px 0px 4px;
+		height:28px;
 		text-align:center;
 		color:#fff;
 		width:95px;

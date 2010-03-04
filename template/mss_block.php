@@ -20,7 +20,7 @@ if (is_category() || is_home()){
 					<?	}  ?>
 					<h4 class="rss_title">
 						<?php if (!empty($item['rss_title'])){ ?>
-							<span class="rss_item_title"> <?php echo $item['rss_title'] ?> </span>
+							<span class="rss_item_title"><a href="<?php echo $item['link']; ?>" target="_blank"> <?php echo $item['rss_title'] ?> </a> </span>
 						<?	} ?>
 						<a href="<?php echo $item['link']; ?>" target="_blank"><?php echo $item['title']; ?></a>
 					</h4>
@@ -40,14 +40,14 @@ if (is_category() || is_home()){
 			</h3>
 			<div id="external_rss" class="block">
 				<? $cnt=0; ?>
-	<?php		foreach ($mss as $item){		?>
+	<?php		foreach ($mss as $item){		?>		
 				<div class="rss_item rss_item_<? echo $cnt; ?>">
 						<?php if (!empty($item['image_url'])){	?>
 							<div class="rss_item_image"><img src="<?php echo $item['image_url'] ?>" alt="<?php echo $item['rss_title'] ?>" /></div>
 						<?	}  ?>
 						<h4 class="rss_title">
 							<?php if (!empty($item['rss_title'])){ ?>
-								<span class="rss_item_title"> <?php echo $item['rss_title'] ?> </span>
+								<span class="rss_item_title"><a href="<?php echo $item['link']; ?>" target="_blank"> <?php echo $item['rss_title'] ?> </a></span>
 							<?	} ?>
 							<a href="<?php echo $item['link']; ?>" target="_blank"><?php echo $item['title']; ?></a>
 						</h4>
@@ -74,7 +74,7 @@ if (is_category() || is_home()){
 							<?	}  ?>
 							<h4 class="rss_title">
 								<?php if (!empty($item['rss_title'])){ ?>
-									<span class="rss_item_title"> <?php echo $item['rss_title'] ?> </span>
+									<span class="rss_item_title"><a href="<?php echo $item['link']; ?>" target="_blank"> <?php echo $item['rss_title'] ?> </a></span>
 								<?	} ?>
 								<a href="<?php echo $item['link']; ?>" target="_blank"><?php echo $item['title']; ?></a>
 							</h4>
