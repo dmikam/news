@@ -1,6 +1,6 @@
 <?
 	global $wpdb;
-//	$wpdb->show_errors();
+	$wpdb->show_errors();
    $table_name = $wpdb->prefix . "merge_rss";
 
 	if ($_POST['new_rss']){
@@ -86,6 +86,7 @@
 		wp_nonce_field('update-options'); 
 		settings_fields('mss-opt' );
 ?>
+
 		<p>Version: <?php echo $mss_opt['version']?></p>
 		<table class="form-table">
 			<tr valign="top">
@@ -134,9 +135,7 @@
 <?php					
 				}
 ?>
-						<!--option value="external">Blogs ajenos</option>
-						<option value="blog">Blogs en primera voz</option>
-						<option value="analisis">Analisis</option-->
+
 					</select>
 				</td>
 				<td><input type="text"	name="mss[url]"	value="<?php echo (empty($edit_mss) ? '' : $edit_mss->url )?>"	size="65" /></td>

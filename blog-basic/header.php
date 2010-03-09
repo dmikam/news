@@ -23,5 +23,4 @@
 	<div id="container" class="clearfix">
 		<div id="content" class="clearfix">
 			<h1 id="header-logo"><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
-			<hr id="separator" />
 	

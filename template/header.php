@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-	<title>  <?php wp_title(''); ?> - <?php bloginfo('name'); ?></title>
+	<title>  <?php wp_title(''); ?>  <?php if(wp_title(' ', false)) { echo '-'; } ?>  <?php bloginfo('name'); ?></title>
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all" charset="utf-8" />
 	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>" />
 	<link rel="alternate" type="text/xml" title="RSS .92" href="<?php bloginfo('rss_url'); ?>" />
@@ -18,24 +18,7 @@
 	<script type="text/javascript" charset="utf-8" src="<?php bloginfo('template_directory')?>/scripts/flash.js"></script>
 	
 	<? if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
-	
-	<script type="text/javascript" charset="utf-8">
-		$(document).ready(function(){
-		    $("#menu li").hover(function(){
-		        $(this).addClass("hover");
-		        $('ul:first',this).css('visibility', 'visible');
 
-		    }, function(){
-
-		        $(this).removeClass("hover");
-		        $('ul:first',this).css('visibility', 'hidden');
-
-		    });
-
-		    $("#menu li ul li:has(ul)").find("a:first").append(" &raquo; ");
-
-		});
-	</script>
 </head>
 <body>
 	<div id="header-full">
@@ -61,13 +44,13 @@
 				        $("#banner").slideDown("slow");
 						$(this).addClass("show");
 						$(this).text('ocultar');
-				        $.cookie('showTop', 'showbanner', { expires: 1 });
+				        $.cookie('showTop', 'showbanner', { expires: 30 });
 						return false;
 				      } else {
 				        $("#banner").slideUp("slow");
 						$(this).removeClass("hide");
 						$(this).text('colaborar con periodismohumano.com');
-				        $.cookie('showTop', 'hiddenbanner', { expires: 1 });
+				        $.cookie('showTop', 'hiddenbanner', { expires: 30 });
 						return false;
 				      }
 

@@ -52,13 +52,10 @@
 				</div>
 		</div>
 
-		<h3>Más información sobre</h3>
-		<div id="tags_links" class="block clearfix">
-			<?php the_tags('<ul><li>','</li><li>','</li></ul>'); ?>
-		</div>
+
 	<? endif; ?>
 
-<?php require(TEMPLATEPATH . "/links_block.php"); ?>	
+<?php  //require(TEMPLATEPATH . "/links_block.php"); ?>	
 <?php require(TEMPLATEPATH . "/mss_block.php"); ?>	
 
 

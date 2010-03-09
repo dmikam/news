@@ -55,7 +55,7 @@ function get_single_image($size = 'thumbnail',$post_id=false) {
 		return "<img src='" . get_bloginfo('template_directory') . "/imagenes/default.png'>";
 	else :
 		foreach ($images as $image) :
-			return  wp_get_attachment_image_src($image->ID,$size);
+		 	return	 wp_get_attachment_image($image->ID,$size);
 		endforeach;
 	endif;
 }
@@ -300,7 +300,6 @@ function print_post_title() {
 
 function the_title_link($title=""){
 	$return = $title;
-
 	$post_keys = get_post_custom_keys($thePostID);
 	if (!empty($post_keys)) {
 		foreach ($post_keys as $pkey) {
@@ -318,7 +317,7 @@ function the_title_link($title=""){
 	return $return;
 }
 
-//add_filter( 'the_title', 'the_title_link' );
+add_filter('the_title', 'the_title_link' );
 
 function proximamente() {
 	if ( !is_user_logged_in()) { header("Location: http://periodismohumano.com/proximamente/"); }

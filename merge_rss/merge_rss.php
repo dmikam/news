@@ -72,7 +72,6 @@ function mss_register_settings(){
 
 function hierarhical_select($list,$parent=0,$level=0,$current=''){
 	$return = '';
-	dump($current);
 	foreach ($list as $item){
 		if ($item->parent==$parent){
 ?>
@@ -118,8 +117,6 @@ function mss_get_rss($cat,$type,$count=null){
 			id
 	";
 	$rss = $wpdb->get_results($sql);
-//	dump($sql);
-//	dump($rss);
 	$rss_list = array();
 	foreach($rss as $item){
 		$new_item = fetch_rss($item->url);
@@ -129,11 +126,7 @@ function mss_get_rss($cat,$type,$count=null){
 		}
 		$rss_list[] = $new_item;
 	}
-//$rss_list[]= fetch_rss('http://www.versvs.net/node/feed');
-//$rss_list[]= fetch_rss('http://www.error500.net/node/feed');
 	
-	
-
 	$all_rss = array();
 	foreach($rss_list as $rss){
 		$all_rss = array_merge($all_rss,$rss->items);

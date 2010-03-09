@@ -66,7 +66,10 @@
 				<?php endwhile; ?>
 		</div>
 		
-		<div class="navigation"><p><?php posts_nav_link('','Página anterior','Más noticias'); ?></p></div>
+		<div class="navigation clearfix">
+			<div class="previous"><?php previous_posts_link('Anterior') ?></div>
+			<div class="next"><?php next_posts_link('Siguiente') ?></div>
+		</div>
 
 	</div>
 <?php get_sidebar() ?>

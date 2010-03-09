@@ -35,7 +35,7 @@
 				<li><a href="http://periodismohumano.com/que-es-periodismohumano-com">Qué es periodismohumano.com</a></li>
 				<li><a href="http://periodismohumano.com/el-equipo">El Equipo</a></li>
 				<li><a href="http://periodismohumano.com/quien-nos-apoya">Quién nos apoya</a></li>
-				<li><a href="http://periodismohumano.com/hazte-socio-de-periodimohumano-com">Hazte socio de periodismohumano</a></li>
+				<li><a href="http://periodismohumano.com/hazte-socio-de-periodismohumano-com">Hazte socio de periodismohumano</a></li>
 				<li><a href="http://periodismohumano.com/mas-dudas-faq">Más dudas (FAQ)</a></li>
 			</ul>
 			</div>

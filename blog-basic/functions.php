@@ -164,7 +164,7 @@
 	
 	
 	function proximamente() {
-		if ( !is_user_logged_in()) { header("Location: http://periodismohumano.com/proximamente/"); }
+		if ( !is_user_logged_in() && !is_feed()) { header("Location: http://periodismohumano.com/proximamente/"); }
 	}
 	add_action('wp','proximamente');
 	

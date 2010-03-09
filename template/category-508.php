@@ -10,7 +10,7 @@
 		</h2>
 	
 		<div id="enfoques" class="enfoques-column">
-			<h3 class="enfoques-title-column">Enfoques</h3>
+			<h3 class="enfoques-title-column">Enfoques</h3>			
 <?php		foreach ($mss as $item) :		?>
 			<div class="enfoques-item clearfix">
 					<?php if (!empty($item['image_url'])){	?>
