@@ -445,7 +445,9 @@ a img {
 			#content .category.cat-21 { 
 				background:url('images/sprite.png') no-repeat 0px -326px #AFC1C5;
 			}
-			
+			#content .category.cat-508 { 
+				background:url('images/sprite.png') #D12421 0px -364px no-repeat;
+			}
 			#content #right .category.cat-1 { 
 				background:url('images/sprite.png') no-repeat 0px -288px #829CBA;
 			}
@@ -466,6 +468,9 @@ a img {
 			}
 			#content #right .category.cat-21 { 
 				background:url('images/sprite.png') no-repeat 0px -288px #AFC1C5;
+			}
+			#content .category.cat-508 { 
+				background:url('images/sprite.png') #D12421 0px -288px no-repeat;
 			}
 		#content #sub-content #right .news {
 			padding:0px 18px 0px 18px;
