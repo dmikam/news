@@ -150,9 +150,20 @@ body {
 	.entry ul, .entry ol {
 		margin:10px;
 	}
+	.entry blockquote {
+		margin:0px 20px;
+	}
 	.entry a img {
 		border:0px;
 		border-bottom:5px solid #d12421;
+	}
+	.entry .alignleft {
+		float:left;
+		margin-right:10px;
+	}
+	.entry .alignright {
+		float:right;
+		margin-left:10px;
 	}
 	.entry .more-link {
 		color:#d12421;

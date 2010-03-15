@@ -119,19 +119,33 @@ function mss_get_rss($cat,$type,$count=null){
 	$rss = $wpdb->get_results($sql);
 	$rss_list = array();
 	foreach($rss as $item){
-		$new_item = fetch_rss($item->url);
-		foreach($new_item->items as $key=>$nitem){
-			$new_item->items[$key]['rss_title'] = $item->title;
-			$new_item->items[$key]['image_url'] = $item->image_url;
+//		$new_item = fetch_rss($item->url);
+		$feed = fetch_feed($item->url);
+		$maxitems = $feed->get_item_quantity(10);
+		$rss_items = $feed->get_items(0, $maxitems);
+		$new_item = array();
+		foreach($rss_items as $key=>$nitem){
+			$new_item = array(
+				 'rss_title'	=> $item->title//$nitem->get_title()
+				,'image_url'	=> $item->image_url// 
+				,'link'			=> $nitem->get_permalink()
+				,'title'			=> $nitem->get_title()
+				,'description'	=> $nitem->get_description()
+				,'pubdate'		=> strtotime($nitem->get_date())
+				,'date'			=> $nitem->get_date()
+			);
 		}
 		$rss_list[] = $new_item;
 	}
-	
-	$all_rss = array();
+
+/*	$all_rss = array();
 	foreach($rss_list as $rss){
-		$all_rss = array_merge($all_rss,$rss->items);
+		$all_rss = array_merge($all_rss,$rss);
 	}
+*/
+	$all_rss = $rss_list;
 	usort($all_rss, mss_sort_rss_helper);
+//	var_dump($all_rss);
 	$return = array();
 	$cnt = 0;
 	foreach ($all_rss as $rss) {
@@ -142,6 +156,7 @@ function mss_get_rss($cat,$type,$count=null){
 		//echo "$rss[title] -  $rss[pubdate] <br/>";
 		$cnt++;
 	}
+//	var_dump($return);
 	return $return;
 }
 

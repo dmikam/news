@@ -35,7 +35,6 @@
 
 	 <?php else : // comments are closed ?>
 		<!-- If comments are closed. -->
-		<p class="nocomments">Los comentarios están cerrados</p>
 
 	<?php endif; ?>
 <?php endif; ?>
