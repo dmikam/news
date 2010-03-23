@@ -54,7 +54,7 @@
 
 <form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="commentform">
 <div id="subform">
-<?php if ( !$user_ID ) : ?>
+<?php if ( $user_ID ) : ?>
 
 	<p><?php printf('¡Hola <strong><a href="%1$s">%2$s</a></strong>!', get_option('siteurl') . '/wp-admin/profile.php', $user_identity); ?> <a href="<?php echo wp_logout_url(get_permalink()); ?>" title="Desconecta">Desconecta</a></p>
 

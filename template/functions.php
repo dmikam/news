@@ -1,6 +1,7 @@
 <?php
 
 add_shortcode('linea', 'add_clearfix');
+add_shortcode('donaahora', 'donatenow');
 
 if ( function_exists('register_sidebar') )
     register_sidebar(array(
@@ -9,6 +10,14 @@ if ( function_exists('register_sidebar') )
         'before_title' => '<h3 class="widget">',
         'after_title' => '</h3>',
 		  'name' => 'Lateral',
+    ));
+if ( function_exists('register_sidebar') )
+    register_sidebar(array(
+        'before_widget' => '<div class="block">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="widget">',
+        'after_title' => '</h3>',
+		  'name' => 'Lateral Portada',
     ));
 if ( function_exists('register_sidebar') )
     register_sidebar(array(
@@ -34,9 +43,73 @@ if ( function_exists('register_sidebar') )
         'after_title' => '</h3>',
 		  'name' => 'Pie 25',
     ));
+if ( function_exists('register_sidebar') )
+    register_sidebar(array(
+        'before_widget' => '<div class="block">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="widget">',
+        'after_title' => '</h3>',
+		  'name' => 'Lateral Portada (Entre RSS)',
+    ));
+
 
 function add_clearfix() {
 	return "<div style=\"clear:both\"></div>";
+}
+
+function donatenow($atts) { 
+	extract(shortcode_atts(array(
+	      	'paypald' => '',
+	      	'paypals' => '',
+			'bancod' => '',
+			'bancos' => '',
+    ), $atts));
+	return '<ul class="donatenow clearfix">
+		<li class="subspaypal">
+			<form name="subscription" id="subscription" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+			        <input type="hidden" name="cmd" value="_xclick-subscriptions" />
+			        <input type="hidden" name="amount" value="50.00" />
+					<input type="hidden" name="business" value="patricia@periodismohumano.com"> 
+			        <input type="hidden" name="currency_code" value="EUR"> 
+					<input type="hidden" name="a3" value="50.00" />
+					<input type="hidden" name="p3" value="1" />
+					<input type="hidden" name="t3" value="Y" />
+					<input type="hidden" name="src" value="1" />
+					<input type="hidden" name="sra" value="1" />
+					<input type="hidden" name="item_name" value="Ayuda periodismohumano.com"> 
+					<input type="hidden" name="item_number" value="Donacion o suscripcion"> 
+					<input type="hidden" name="basedes" value="PH" />
+					<input type="hidden" name="no_note" value="1" />
+					<input type="hidden" name="no_shipping" value="1" />
+					<input type="hidden" name="return" value="http://www.periodismohumano.com/">
+			        <input name="enviar" type="image" id="enviarsp" value="Hazte socio por paypal" src="'. $paypals . '" />
+			</form>
+		</li>
+		<li class="subsbank">
+			<form name="subscription_bank" id="subscription_bank" action="http://periodismohumano.com/hazte-socio-mediante-ingreso-o-domiciliacion" method="post">
+			        <input name="enviar" type="image" id="enviarsb" value="Hazte socio por transferencia o ingreso" src="' . $bancos .'" />
+			</form>
+		</li>
+		<li class="donpaypal">
+			<form name="donation" id="donation" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+			        <input type="hidden" name="cmd" value="_donations" />
+					<input type="hidden" name="business" value="patricia@periodismohumano.com"> 
+			        <input type="hidden" name="currency_code" value="EUR"> 
+					<input type="hidden" name="item_name" value="Ayuda periodismohumano.com"> 
+					<input type="hidden" name="item_number" value="Donacion o suscripcion"> 
+					<input type="hidden" name="basedes" value="PH" />
+					<input type="hidden" name="no_note" value="1" />
+					<input type="hidden" name="no_shipping" value="1" />
+					<input type="hidden" name="return" value="http://www.periodismohumano.com/">
+			        <input name="enviar" type="image" id="enviarpd" value="Dona por paypal" src="' . $paypald . '" />
+			</form>
+		</li>
+		<li class="donbank">
+			<form name="donation_bank" id="donation_bank" action="http://periodismohumano.com/hazte-socio-mediante-ingreso-o-domiciliacion" method="post">
+			        <input name="enviar" type="image" id="enviarbd" value="Hazte socio por transferencia o ingreso" src="'. $bancod . '"/>
+			</form>		
+		</li>
+	</ul>';
 }
 
 function get_single_image($size = 'thumbnail',$post_id=false) {
@@ -223,7 +296,7 @@ function related_posts_shortcode( $atts ) {
 function the_current_date() {
 		$months = array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
 		$days = array("Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado");
-		echo $days[date("w")] . ", " . date("j") . " de " . $months[date("n")] . " de " . date("Y");
+		echo $days[date("w")] . ", " . date("j") . " de " . $months[date("n")-1] . " de " . date("Y");
 }
 
 function the_current_url() {
@@ -349,7 +422,7 @@ function comentarios($comment, $args, $depth) {
         }
 
 
-add_action('wp','proximamente');
+//add_action('wp','proximamente');
 
 add_filter('init', create_function('$a', 'global $wp_rewrite; $wp_rewrite->author_base = "autor"; $wp_rewrite->flush_rules();'));
 
@@ -360,4 +433,6 @@ function allow_contributor_uploads() {
 	$contributor = get_role('contributor');
 	$contributor->add_cap('upload_files');
 }
+
+add_filter( 'wp_feed_cache_transient_lifetime', create_function( '$a', 'return 7200;' ) );
 ?>

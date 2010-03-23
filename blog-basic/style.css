@@ -106,7 +106,6 @@ body {
 		}
 			#content .top .title {
 				float:left;
-				text-transform:uppercase;
 				font-size:25px;
 				font-weight:normal;
 				width:480px;
@@ -151,19 +150,59 @@ body {
 		margin:10px;
 	}
 	.entry blockquote {
-		margin:0px 20px;
+		padding-left:40px;
+		background:url('images/comment-quote.jpg') no-repeat left top;
+		margin-right:30px;
+		margin-left:20px;
 	}
+		.entry blockquote p {
+			font-size:17px;
+			font-family:"Georgia", serif;
+			line-height:23px;
+			background:url('images/quote-close-gray.jpg') no-repeat right bottom;
+			padding-right:40px;
+			font-style:italic;
+		}
 	.entry a img {
 		border:0px;
 		border-bottom:5px solid #d12421;
 	}
-	.entry .alignleft {
-		float:left;
-		margin-right:10px;
+	.entry img {
+		max-width:600px;
+		height:auto;
 	}
 	.entry .alignright {
 		float:right;
-		margin-left:10px;
+		margin-left:20px;
+		margin-bottom:10px;
+		margin-top:-20px;
+		margin-right:-20px;
+	}
+	.entry .alignleft {
+		float:left;
+		margin-right:20px;
+		margin-bottom:10px;
+		margin-top:5px;
+		margin-left:-20px;
+	}
+	.entry .alignright img, .entry .alignleft img, .entry .alignnone img, .entry .aligncenter img  {
+		width:100%;
+		height:auto;
+	}
+	.entry .aligncenter {
+		margin:0px auto 10px auto;
+	}
+	.entry .center {
+		text-align:center;
+	}
+	.entry .wp-caption-text {
+		font-size:12px;
+		background:url('images/sprite.png') 0px -1638px no-repeat #E6E6E6;
+		padding:20px 10px 10px 20px;
+		color:#4C4C4C;
+		line-height:14px;
+		margin-top:4px;
+		margin-bottom:0px;
 	}
 	.entry .more-link {
 		color:#d12421;
@@ -219,17 +258,74 @@ body {
 				text-transform:lowercase;
 			}
 			#content .share ul li.twitter {
-				background:url('images/sprite.png') no-repeat;
+				background:url('images/sprite2.png') no-repeat;
 			}
 			#content .share ul li.facebook {
-				background:url('images/sprite.png') 0px -15px no-repeat;
+				background:url('images/sprite2.png') 0px -15px no-repeat;
 			}	
 			#content .share ul li.digg {
-				background:url('images/sprite.png') 0px -45px no-repeat;
+				background:url('images/sprite2.png') 0px -45px no-repeat;
 			}
 			#content .share ul li.meneame {
-				background:url('images/sprite.png') 0px -30px no-repeat;
+				background:url('images/sprite2.png') 0px -30px no-repeat;
 			}
+			#content .share ul li.bitacoras {
+				background:url('images/sprite.png') no-repeat -140px -176px;
+			}
+			.entry .bloque {
+				float:right;
+				width:220px;
+				padding:30px 0px 0px 0px;
+				background:url('images/quote.jpg') no-repeat left top;
+				margin-right:-20px;
+				margin-left:20px;
+			}
+				.entry .bloque p {
+					font-size:20px;
+					font-family:"Georgia", serif;
+					color:#D12420;
+					line-height:25px;
+					background:url('images/quote-in.jpg') no-repeat right bottom;
+					padding:0px 0px 30px 0px;
+					margin-right:-10px;
+				}
+				.entry .bloque-destacado {
+					float:right;
+					width:220px;
+					padding:30px 0px 0px 0px;
+					margin-right:-20px;
+					margin-left:20px;
+				}
+					.entry .bloque-destacado p {
+						font-size:20px;
+						font-family:"Georgia", serif;
+						color:#D12420;
+						line-height:25px;
+						padding:0px 0px 30px 0px;
+						margin-right:-10px;
+					}
+			.entry .despiece {
+				background:url('images/sprite.png') 0px -1638px no-repeat #E6E6E6;
+				color:#4C4C4C;
+				padding:30px 20px 1px 20px;
+			}
+				.entry .despiece h3 {
+					font-family:"Georgia", serif;
+					font-weight:normal;
+					font-size:20px;
+					color:#4C4C4C;
+					margin-bottom:10px;
+				}
+				.entry .destacado {
+					background:url('images/featuredin.jpg') no-repeat #000;
+					padding:30px 20px 1px 50px;
+					display:table;
+					margin-bottom:20px;
+					color:#fff;
+				}
+				.entry .destacado p {
+					color:#fff;
+				}
 	.separator-posts {
 		border:0px;
 		border-bottom:1px dashed #B3B3B3;
@@ -237,6 +333,18 @@ body {
 		width:140px;
 		height:6px;
 		margin:50px auto;
+	}
+	.navigation div {
+		font-family: "Georgia", serif;
+		color:#61A6FF;
+		font-weight:bold;
+		text-transform:lowercase;
+	}
+	.navigation .previous {
+		float:left;
+	}
+	.navigation .next {
+		float:right;
 	}
 	#sidebar {
 		float:right;
@@ -433,15 +541,106 @@ body {
 				ol.commentlist li.thread-even {}
 				ol.commentlist li.thread-odd {}
 #footer {
-	color:#4C4C4C;
-	font-weight:normal;
-	font-size:11px;
-	font-style:italic;
-	border-bottom:1px dashed #B3B3B3;
-	border-top:1px dashed #B3B3B3;
-	padding:5px;
-	text-align:center;
-	width:980px;
-	margin:20px auto;
+	width:100%;
+	margin:30px auto 0px auto;
+	padding-top:1px;
 }
-	
+	#footer .line {
+		width:100%;
+		margin:0px auto;
+	}
+		#phlogo {
+			float:left;
+			width:217px;
+			height:28px;
+			background:url('images/sprite.png') no-repeat -3px -710px;
+			text-indent:-999999px;
+			margin-top:20px;
+			margin-left:4%;
+		}
+		#footer .footer_content {
+			width:980px;
+			margin:0px auto;
+		}
+			#line_titles h3 {
+				color:#D12421;
+				font-family:"Georgia", serif;
+				font-size:20px;
+				text-transform:lowercase;
+				font-weight:normal;
+				margin-bottom:10px;
+			}
+		.who {
+			width:250px;
+			float:right;
+		}
+		.what {
+			width:250px;
+			float:right;
+
+		}
+		.contact {
+			width:150px;
+			float:right;
+		}
+		#footer #line_content {
+			background:url('images/footer-background.jpg') #D12421 repeat-x 0px -1px;
+			padding-bottom:20px;
+		}
+			#line_content ul {
+				background:url('images/mark-footer-white.jpg') no-repeat 0px -1px;
+				padding-top:20px;
+			}
+			#line_content ul li {
+				list-style:none;
+				margin:0px 0px 10px 0px;
+			}
+				#line_content ul.what li {
+					width:50%;
+					float:left;
+				}
+
+				#line_content ul li a {
+					color:#fff;
+				}
+		#footer #line_socials {
+			background:#000;
+		}
+			#line_socials #followus {
+				width:100px;
+				float:right;
+				font-family:"Georgia", serif;
+				font-size:20px;
+				text-transform:lowercase;
+				font-weight:normal;
+				color:#fff;
+				background:url('images/mark-footer-red.jpg') no-repeat 0px 0px;
+				padding-top:20px;
+				margin-bottom:15px;
+			}
+			#line_socials .social {
+				width:550px;
+				float:right;
+				padding-top:17px;
+			}
+				#line_socials .social li {
+					float:left;
+					margin:9px 20px;
+					list-style:none;
+				}
+				#line_socials .social li a { 
+					display:block;
+					text-indent:20px;
+					color:#fff;
+					height:15px;
+				}
+					#line_socials .social li a.facebook { 
+						background:url('images/sprite.png') no-repeat left -161px;
+					}
+					#line_socials .social li a.twitter { 
+						background:url('images/sprite.png') no-repeat left -146px;
+					}	
+					#line_socials .social li a.rss { 
+						background:url('images/sprite.png') no-repeat left -132px;
+					}
+

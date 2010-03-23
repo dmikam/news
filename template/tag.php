@@ -14,7 +14,7 @@
 							<div class="category_news_image">
 								<? $wimage = get_meta('image'); ?>
 								<? if (!empty($wimage)) :  ?>
-									<a href="<?php the_permalink(); ?>" title="<? the_title(); ?>">	<? echo get_single_image(array(291,630)); ?></a>
+									<a href="<?php the_permalink(); ?>" title="<? the_title_attribute(); ?>">	<? echo get_single_image(array(291,630)); ?></a>
 									<? $class = "with_image";?>
 								<? else: ?>
 									<? $class = "no_image";?>
@@ -26,10 +26,34 @@
 								</h2>
 								<h5 class="metadata">
 								<span class="date"><?	echo date('d.m.Y',strtotime($post->post_date));  ?></span> · <span class="author"><? the_author_posts_link(); ?></span> 
+									<? $author2 = get_meta('author2'); ?>
+									<? if (!empty($author2)) : ?>
+										<span class="author"> · 
+											<? $rolauthor2 = get_meta('rol-author2'); ?>
+											<? if (!empty($rolauthor2)) : ?>
+												<? echo $rolauthor2; ?>:
+											<? endif; ?>
+											<? echo $author2; ?>
+										</span>
+									<? endif; ?>
+									<? $author3 = get_meta('author3'); ?>
+									<? if (!empty($author3)) : ?>
+										<span class="author"> ·
+											<? $rolauthor3 = get_meta('rol-author3'); ?>
+											<? if (!empty($rolauthor3)) : ?>
+												<? echo $rolauthor3; ?>:
+											<? endif; ?> 
+											 <? echo $author3; ?>			
+										</span>
+									<? endif; ?>
 								</h5>
 								<div class="entry">
 									<?php echo apply_filters( 'the_content', get_the_excerpt()); ?>
-									
+									<? $fuente = get_meta('fuente'); ?>
+									<? $fuenteurl = get_meta('fuenteurl')?>
+									<? if (!empty($fuente) && !empty($fuenteurl)) : ?>
+										<p class="source"><strong>Fuente:</strong> <a href="<? echo $fuenteurl; ?>"><? echo $fuente; ?></a></p>
+									<? endif; ?>
 									<h5 class="read_more">
 										<a href="<?php the_permalink() ?>" title="Leer el resto del artículo <?php the_title_attribute(); ?>">Leer más</a>
 									</h5>

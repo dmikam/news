@@ -160,13 +160,15 @@
 	}
 
 	add_custom_image_header('header_style', 'blogbasics_admin_header_style');
-	add_option('custom_image_height',100);
+	add_option('custom_image_height',120);
 	
 	
 	function proximamente() {
 		if ( !is_user_logged_in() && !is_feed()) { header("Location: http://periodismohumano.com/proximamente/"); }
 	}
-	add_action('wp','proximamente');
+//	add_action('wp','proximamente');
+	
+	add_filter('init', create_function('$a', 'global $wp_rewrite; $wp_rewrite->author_base = "autor"; $wp_rewrite->flush_rules();'));
 	
 	
 ?>

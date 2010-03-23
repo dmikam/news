@@ -5,7 +5,7 @@
 					<?php 
 						$cats = get_the_category(); 
 						foreach ($cats as $cat) :
-							if ($cat->category_parent == 0) :
+							if ($cat->category_parent == 0 && $cat->term_id!=511) :
 							?>
 								<h5 class="category cat-<? echo $cat->term_id; ?>">
 									<? echo $cat->cat_name; ?>
@@ -55,7 +55,7 @@
 						<p class="source"><strong>Fuente:</strong> <a href="<? echo $fuenteurl; ?>"><? echo $fuente; ?></a></p>
 					<? endif; ?>				
 				</div>
-				<?php comments_number('','<h3 class="comments">1 comentario</h3','<h3 class="comments">% comentarios</h3>');?>
+				<?php comments_number('','<h3 class="comments">1 comentario</h3>','<h3 class="comments">% comentarios</h3>');?>
 				
 		</div>
 	

@@ -2,36 +2,8 @@
 	<div id="date">
 		<span><? the_current_date(); ?> | </span>
 	</div>
-	
 	<? if (is_home()) :  // solo se mostrará el bloque en la portada ?>	
-		<div id="featureds" class="featureds_main"> 
-			<div id="more-featured">
-				<? $featureds = get_posts("category=26&numberposts=5"); ?>
-				<? $cnt = 0; ?>
-				<? $buttons = "";?>
-			 	<? foreach($featureds as $post) : ?>
-					<? setup_postdata($post); ?>
-					<? $id = get_the_ID(); ?>
-					<div id="post-<?php the_ID(); ?>" class="featured-item <? echo $cnt==0 ? "active" : ""; ?> post-<?php the_ID(); ?>">
-						<a href="<?php the_permalink(); ?>" title="<? the_title(); ?>">
-						<? echo get_single_image("featureds",$post->ID); ?>
-						</a>
-						<h2><a href="<?php the_permalink(); ?>" id="post-<?php the_ID(); ?>"><?php the_title(); ?></a></h2>
-					
-						<?$buttons .= "<a href='#image-$id' class=\"button goto post-$id\" onclick='slideSwitch(\"post-$id\");return false;'>".($cnt+1)."</a>"; ?>
-					</div>
-			 	<?php $cnt++; endforeach; ?>
-				<div class="buttons clearfix">
-					<a href="#play-stop" class="playstop button" onclick="slide_toggle(); return false;">play/pause</a>
-					<? echo $buttons; ?>
-				</div>
-			</div>
-
-		</div>
-	
-	
-		<?php dynamic_sidebar("Lateral"); ?> 
-	
+		<?php dynamic_sidebar("Lateral Portada"); ?> 
 	<? endif;  // Fin de condición para mostrar solo si es portada ?>
 
 	<? if (is_single()) :
@@ -52,10 +24,34 @@
 				</div>
 		</div>
 
+	<? else: ?>
+		<div id="featureds" class="featureds_main"> 
+			<div id="more-featured">
+				<? $featureds = get_posts("category=26&numberposts=5"); ?>
+				<? $cnt = 0; ?>
+				<? $buttons = "";?>
+			 	<? foreach($featureds as $post) : ?>
+					<? setup_postdata($post); ?>
+					<? $id = get_the_ID(); ?>
+					<div id="post-<?php the_ID(); ?>" class="featured-item <? echo $cnt==0 ? "active" : ""; ?> post-<?php the_ID(); ?>">
+						<a href="<?php the_permalink(); ?>" title="<? the_title(); ?>">
+						<? echo get_single_image("featureds",$post->ID); ?>
+						</a>
+						<h2><a href="<?php the_permalink(); ?>" id="post-<?php the_ID(); ?>"><?php the_title(); ?></a></h2>
 
+						<?$buttons .= "<a href='#image-$id' class=\"button goto post-$id\" onclick='slideSwitch(\"post-$id\");return false;'>".($cnt+1)."</a>"; ?>
+					</div>
+			 	<?php $cnt++; endforeach; ?>
+				<div class="buttons clearfix">
+					<a href="#play-stop" class="playstop button" onclick="slide_toggle(); return false;">play/pause</a>
+					<? echo $buttons; ?>
+				</div>
+			</div>
+
+		</div>
 	<? endif; ?>
-
-<?php  //require(TEMPLATEPATH . "/links_block.php"); ?>	
+	<?php dynamic_sidebar("Lateral"); ?> 
+	
 <?php require(TEMPLATEPATH . "/mss_block.php"); ?>	
 
 
@@ -65,7 +61,17 @@
 <script type="text/javascript" charset="utf-8">
 	var interval = false;
 	var play = true;
-	
+	$(".featured-item").mouseover(function(){
+			play = false;
+			$('.playstop.button').removeClass('play');
+			$('.playstop.button').addClass('pause');
+			slide_stop();
+	    }).mouseout(function(){
+			play = true;
+			$('.playstop.button').removeClass('pause');
+			$('.playstop.button').addClass('play');
+			slide_play();
+	    });
 	function slideSwitch(force_next) {
 		var $active = jQuery('#more-featured .featured-item.active');
 
@@ -88,7 +94,7 @@
 		$('.buttons .goto.'+$next.attr('id')).addClass('active');
 		if (play){
 			clearTimeout(interval);
-			interval = setTimeout( "slideSwitch('')", 3000 );
+			interval = setTimeout( "slideSwitch('')", 4000 );
 		}
 	}
 

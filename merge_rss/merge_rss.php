@@ -84,7 +84,7 @@ function hierarhical_select($list,$parent=0,$level=0,$current=''){
 }
 
 function mss_sort_rss_helper($a,$b) {
-	return strtotime($a['pubdate']) < strtotime($b['pubdate']);
+	return $a['pubdate'] < $b['pubdate'];
 }
 function mss_get_rss($cat,$type,$count=null){
 	global
@@ -121,21 +121,24 @@ function mss_get_rss($cat,$type,$count=null){
 	foreach($rss as $item){
 //		$new_item = fetch_rss($item->url);
 		$feed = fetch_feed($item->url);
-		$maxitems = $feed->get_item_quantity(10);
-		$rss_items = $feed->get_items(0, $maxitems);
-		$new_item = array();
-		foreach($rss_items as $key=>$nitem){
-			$new_item = array(
-				 'rss_title'	=> $item->title//$nitem->get_title()
-				,'image_url'	=> $item->image_url// 
-				,'link'			=> $nitem->get_permalink()
-				,'title'			=> $nitem->get_title()
-				,'description'	=> $nitem->get_description()
-				,'pubdate'		=> strtotime($nitem->get_date())
-				,'date'			=> $nitem->get_date()
-			);
-		}
-		$rss_list[] = $new_item;
+		if (!is_wp_error($feed)) :
+			$maxitems = $feed->get_item_quantity(1);
+			$rss_items = $feed->get_items(0, $maxitems);
+			$new_item = array();
+			foreach($rss_items as $key=>$nitem){
+				$new_item = array(
+					 'rss_title'	=> $item->title//$nitem->get_title()
+					,'image_url'	=> $item->image_url// 
+					,'link'			=> $nitem->get_permalink()
+					,'title'			=> $nitem->get_title()
+					,'description'	=> $nitem->get_description()
+					,'pubdate'		=> strtotime($nitem->get_date())
+					,'date'			=> $nitem->get_date()
+					,'url'			=> $feed->get_link()
+				);
+				$rss_list[] = $new_item;
+			}
+		endif;
 	}
 
 /*	$all_rss = array();
@@ -145,7 +148,7 @@ function mss_get_rss($cat,$type,$count=null){
 */
 	$all_rss = $rss_list;
 	usort($all_rss, mss_sort_rss_helper);
-//	var_dump($all_rss);
+
 	$return = array();
 	$cnt = 0;
 	foreach ($all_rss as $rss) {

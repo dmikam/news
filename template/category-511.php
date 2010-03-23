@@ -23,7 +23,7 @@
 				<ul>
 					<? $videos = get_posts("category=511&orderby=ID&order=DESC&numberposts=5"); ?>
 					<? foreach($videos as $video) : ?>	
-						<li><a href="<?php echo get_permalink($video->ID);?>?video"><?php echo $video->post_title; ?></a></li>
+						<li><a href="<?php echo get_permalink($video->ID);?>?video=1"><?php echo $video->post_title; ?></a></li>
 					<? endforeach; ?>
 				</ul>
 				<script type="text/javascript" charset="utf-8">
@@ -42,6 +42,38 @@
 				</a>
 			</h2>
 			<div class="entry">
+				<h5 class="metadata clearfix">
+					<div class="author-date-head">
+						<span class="date"><?	echo date('d.m.Y',strtotime($post->post_date));  ?></span> · <span class="author"><? the_author_posts_link(); ?></span> 
+						<? $author2 = get_meta('author2'); ?>
+						<? if (!empty($author2)) : ?>
+							<span class="author"> · 
+								<? $rolauthor2 = get_meta('rol-author2'); ?>
+								<? if (!empty($rolauthor2)) : ?>
+									<? echo $rolauthor2; ?>:
+								<? endif; ?>
+								<? echo $author2; ?>
+							</span>
+						<? endif; ?>
+						<? $author3 = get_meta('author3'); ?>
+						<? if (!empty($author3)) : ?>
+							<span class="author"> ·
+								<? $rolauthor3 = get_meta('rol-author3'); ?>
+								<? if (!empty($rolauthor3)) : ?>
+									<? echo $rolauthor3; ?>:
+								<? endif; ?> 
+								 <? echo $author3; ?>			
+							</span>
+						<? endif; ?>
+					</div>
+				
+					<ul id="share-services-head">
+						<li class="facebook"><a href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>&t=<?php the_title_attribute(); ?>" title="Enviar a facebook" target="blank">Facebook</a></li>
+						<li class="meneame"><a href="http://meneame.net/submit.php?url=<?php the_permalink();?>?video=1" target="_blank" title="Enviar a Meneame">Meneame</a></li>
+						<li class="digg"><a href="http://digg.com/submit?phase=2&url=<?php the_permalink();?>?video=1" target="_blank" title="Enviar a Digg">Digg</a></li>
+						<li class="twitter"><a href="http://twitter.com/home?status=Estoy leyendo <?php the_permalink(); ?>?video=1" title="Enviar a twitter" target="_blank">Twitter</a></li>		
+					</ul>
+				</h5>
 					<?php echo apply_filters('the_content', preg_replace("/\[embed.*\[\/embed\]/",'', get_the_content())); ?>
 			</div>	
 			<? $withcomments = 1; ?>	

@@ -33,8 +33,11 @@ body {
 }
 a {
 	text-decoration:none;
-	color:#891715;
+	color:#005DD7;
 }
+	a.red {
+		color:#D12421;
+	}
 a:hover {
 	text-decoration:underline;
 }
@@ -133,7 +136,7 @@ a img {
 			background:transparent url("images/separator.png") right 6px no-repeat;
 		}
 		#navbar #menu  li.enfoques {
-			width:85px;
+			width:80px;
 		}
 		#navbar #menu  li.enfoques a { 
 			text-transform:lowercase;
@@ -378,7 +381,7 @@ a img {
 			#content.single h2.category.cat-title, #content.category-page h2.category.cat-title {
 				line-height:20px;
 				padding-top:12px;
-				height:67px;
+				height:66px;
 			}
 					#content .category.cat-title.cat-1 { 
 						background:url('images/sprite.png') #829CBA 0px -364px  no-repeat;
@@ -422,6 +425,9 @@ a img {
 					}
 					#content.single .category.cat-title.cat-21 { 
 						background:url('images/sprite.png') #AFC1C5 0px -889px no-repeat;
+					}
+					#content.single .category.cat-title.cat-508 { 
+						background:url('images/sprite.png') #D12421 0px -889px no-repeat;
 					}
 
 			#content .category.cat-1 { 
@@ -557,6 +563,7 @@ a img {
 			font-size:13px;
 			line-height:19px;
 		}
+		
 		#content #sub-content .category_news .category_news_post .entry .read_more {
 			background:url('images/sprite.png') no-repeat right -41px;
 			width:65px;
@@ -590,6 +597,11 @@ a img {
 		line-height:10px;
 		font-size:12px;
 	}
+	#content #sub-content .category_news .category_news_post .entry p.source {
+		line-height:10px;
+		font-size:12px;
+		margin-bottom:30px;
+	}
 		#content .source strong {
 			color:#D12421;
 			font-weight:normal;
@@ -597,6 +609,25 @@ a img {
 		#content .source a {
 			color:#4C4C4C;
 		}
+	.donations_subscribers {
+		background:url('images/donations/donations_subscribers.png') no-repeat;
+		width:720px;
+		margin:20px auto;
+		padding-top:165px;
+	}
+	.donations_subscribers ul li {
+		margin:10px 23px;
+	}
+	.donations_subscribers ul li.subsbank {
+		margin-right:50px;
+	}
+	.entry .donations_subscribers ul  {
+		margin-left: 0px;
+	}
+	.donatenow li {
+		float:left;
+		list-style:none;
+	}
 	#sidebar {
 		margin-top:10px;
 		float:right;
@@ -657,7 +688,7 @@ a img {
 			padding-left:23px;
 			line-height:19px;
 			margin-bottom:5px;
-			background:url('images/sprite.png') -634px -240px no-repeat;
+			background:url('images/sprite.png') -604px -240px no-repeat;
 			font-size:17px;
 			color:#000;
 			text-transform:none;
@@ -668,7 +699,7 @@ a img {
 			padding-left:23px;
 			line-height:14px;
 			margin-bottom:5px;
-			background:url('images/sprite.png') -634px -335px no-repeat;
+			background:url('images/sprite.png') -604px -335px no-repeat;
 			font-size:12px;
 			padding-top:2px;
 			padding-bottom:2px;
@@ -724,14 +755,15 @@ a img {
 				color:#333333;
 				display:block;
 				padding-left:23px;
+				text-transform:uppercase;
 			}
 			.rss_title span.rss_item_title a {
 				display:block;
 				padding-left:23px;
-				line-height:14px;
+				line-height:21px;
 				margin-bottom:5px;
-				background:url('images/sprite.png')   -634px -207px no-repeat;
-				font-size:20px;
+				background:url('images/sprite.png')   -634px -202px no-repeat;
+				font-size:18px;
 				color:#000;
 				text-transform:none;
 				font-family:"Georgia", serif;
@@ -931,6 +963,9 @@ a img {
 			.entry .metadata ul#share-services-head li.twitter a {
 				background:url('images/sprite.png') no-repeat left -176px;
 			}
+			.entry .metadata ul#share-services-head li.bitacoras a {
+				background:url('images/sprite.png') no-repeat -140px -176px;
+			}
 	.entry p  {
 		margin:0px 0px 20px 0px;
 		color:#4C4C4C;
@@ -949,6 +984,8 @@ a img {
 		margin-bottom:10px;
 		margin-top:-20px;
 		margin-right:-20px;
+		max-width:610px;
+		height:auto;
 	}
 	.entry .alignleft {
 		float:left;
@@ -956,13 +993,19 @@ a img {
 		margin-bottom:10px;
 		margin-top:5px;
 		margin-left:-20px;
+		max-width:610px;
+		height:auto;
 	}
 	.entry .alignright img, .entry .alignleft img, .entry .alignnone img, .entry .aligncenter img  {
 		width:100%;
 		height:auto;
+		max-width:610px;
+		height:auto;
 	}
 	.entry .aligncenter {
 		margin:0px auto 10px auto;
+		max-width:610px;
+		height:auto;
 	}
 	.entry .wp-caption-text {
 		font-size:12px;
@@ -990,7 +1033,21 @@ a img {
 			padding:0px 0px 30px 0px;
 			margin-right:-10px;
 		}
-		
+	.entry .bloque-destacado {
+		float:right;
+		width:220px;
+		padding:30px 0px 0px 0px;
+		margin-right:-20px;
+		margin-left:20px;
+	}
+		.entry .bloque-destacado p {
+			font-size:20px;
+			font-family:"Georgia", serif;
+			color:#D12420;
+			line-height:25px;
+			padding:0px 0px 30px 0px;
+			margin-right:-10px;
+		}
 	.entry blockquote {
 		padding-left:40px;
 		background:url('images/comment-quote.jpg') no-repeat left top;
@@ -1022,6 +1079,7 @@ a img {
 			padding:30px 20px 1px 50px;
 			display:table;
 			margin-bottom:20px;
+			color:#fff;
 		}
 		.entry .destacado p {
 			color:#fff;
@@ -1052,6 +1110,7 @@ a img {
 		vertical-align:middle;
 		line-height:13px;
 		float:left;
+		width: 480px;
 	}
 	
 	#share {
@@ -1062,11 +1121,11 @@ a img {
 	}
 	#share #share-title {
 		display:table-cell;
-		padding:0px 13px 0px 10px;
+		padding:2px 13px 0px 10px;
 		text-align:center;
 		color:#fff;
 		float:left;
-		height:20px;
+		height:18px;
 		background:url('images/sprite.png') no-repeat right 0px;
 	}
 	#share #share-services {
@@ -1093,6 +1152,9 @@ a img {
 		#share #share-services li#twitter {
 			background:url('images/sprite.png') no-repeat left -176px;
 		}  
+		#share #share-services li#bitacoras {
+			background:url('images/sprite.png') no-repeat -140px -176px;
+		}
 		#share #share-services li a {
 			display:block;
 			height:15px;
@@ -1614,17 +1676,17 @@ ol.commentlist li.thread-odd {}
 			#en-perspectiva .enfoques-data {
 				border-top:5px solid #91C200;
 			}
-			.enfoques-name {
+			.enfoques-name a {
 				font-size:12px;
 				font-weight:normal;
 				text-transform:uppercase;
 				color:#D12421;
 				margin:0px 20px 5px 20px;
 			}
-				#sociedad-civil .enfoques-name {
+				#sociedad-civil .enfoques-name a {
 					color:#61A6FF;
 				}
-				#en-perspectiva .enfoques-name {
+				#en-perspectiva .enfoques-name a {
 					color:#91C200;
 				}
 			.enfoques-title {

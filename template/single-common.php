@@ -7,7 +7,7 @@
 				<?php 
 					$cats = get_the_category(); 
 					foreach ($cats as $cat) :
-						if ($cat->category_parent == 0 && $cat->term_id!=24) : ?>
+						if ($cat->category_parent == 0 && $cat->term_id!=24 && $cat->term_id!=511) : ?>
 							<h2 class="category cat-title cat-<? echo $cat->term_id; ?>">
 						<?	
 							echo $cat->cat_name;
@@ -68,6 +68,7 @@
 						<li class="meneame"><a href="http://meneame.net/submit.php?url=<?php the_permalink();?>" target="_blank" title="Enviar a Meneame">Meneame</a></li>
 						<li class="digg"><a href="http://digg.com/submit?phase=2&url=<?php the_permalink();?>" target="_blank" title="Enviar a Digg">Digg</a></li>
 						<li class="twitter"><a href="http://twitter.com/home?status=Estoy leyendo <?php the_permalink(); ?>" title="Enviar a twitter" target="_blank">Twitter</a></li>		
+						<li class="bitacoras"><a href="http://bitacoras.com/anotaciones/<?php the_permalink(); ?>" title="Enviar a bitacoras.com" target="_blank">Bitacoras</a></li>	
 					</ul>
 				</h5>
 				<?php the_content('Leer más &raquo;'); ?>
@@ -92,6 +93,7 @@
 						<li id="meneame"><a href="http://meneame.net/submit.php?url=<?php the_permalink();?>" target="_blank" title="Enviar a Meneame">Meneame</a></li>
 						<li id="digg"><a href="http://digg.com/submit?phase=2&url=<?php the_permalink();?>" target="_blank" title="Enviar a Digg">Digg</a></li>
 						<li id="twitter"><a href="http://twitter.com/home?status=Estoy leyendo <?php the_permalink(); ?>" title="Enviar a twitter" target="_blank">Twitter</a></li>		
+						<li id="bitacoras"><a href="http://bitacoras.com/anotaciones/<?php the_permalink(); ?>" title="Enviar a bitacoras.com" target="_blank">Bitacoras</a></li>	
 					</ul>
 				</div>
 			</div>

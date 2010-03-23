@@ -14,11 +14,11 @@
 <?php		foreach ($mss as $item) :		?>
 			<div class="enfoques-item clearfix">
 					<?php if (!empty($item['image_url'])){	?>
-						<div class="enfoques-image"><img src="<?php echo $item['image_url'] ?>" alt="image" /></div>
+						<div class="enfoques-image"><a href="<?php echo $item['url']; ?>" target="_blank"><img src="<?php echo $item['image_url'] ?>" alt="image" /></a></div>
 					<?	}  ?>
 					<div class="enfoques-data clearfix">
 						<?php if (!empty($item['rss_title'])){ ?>
-							<h3 class="enfoques-name"> <?php echo $item['rss_title'] ?> </h3>
+							<h3 class="enfoques-name"><a href="<?php echo $item['url']; ?>" target="_blank"> <?php echo $item['rss_title'] ?> </a></h3>
 						<?	} ?>
 						<h2 class="enfoques-title">
 							<a href="<?php echo $item['link']; ?>" target="_blank"><?php echo $item['title']; ?></a>
@@ -37,11 +37,11 @@
 <?php		foreach ($mss as $item) :		?>
 			<div class="enfoques-item clearfix">
 					<?php if (!empty($item['image_url'])){	?>
-						<div class="enfoques-image"><img src="<?php echo $item['image_url'] ?>" alt="image" /></div>
+						<div class="enfoques-image"><a href="<?php echo $item['url']; ?>" target="_blank"><img src="<?php echo $item['image_url'] ?>" alt="image" /></a></div>
 					<?	}  ?>
 					<div class="enfoques-data clearfix">
 						<?php if (!empty($item['rss_title'])){ ?>
-							<h3 class="enfoques-name"> <?php echo $item['rss_title'] ?> </h3>
+							<h3 class="enfoques-name"><a href="<?php echo $item['url']; ?>" target="_blank"> <?php echo $item['rss_title'] ?> </a></h3>
 						<?	} ?>
 						<h2 class="enfoques-title">
 							<a href="<?php echo $item['link']; ?>" target="_blank"><?php echo $item['title']; ?></a>
@@ -60,11 +60,11 @@
 <?php		foreach ($mss as $item) :		?>
 			<div class="enfoques-item clearfix">
 					<?php if (!empty($item['image_url'])){	?>
-						<div class="enfoques-image"><img src="<?php echo $item['image_url'] ?>" alt="image" /></div>
+						<div class="enfoques-image"><a href="<?php echo $item['url']; ?>" target="_blank"><img src="<?php echo $item['image_url'] ?>" alt="image" /></a></div>
 					<?	}  ?>
 					<div class="enfoques-data clearfix">
 						<?php if (!empty($item['rss_title'])){ ?>
-							<h3 class="enfoques-name"> <?php echo $item['rss_title'] ?> </h3>
+							<h3 class="enfoques-name"><a href="<?php echo $item['url']; ?>" target="_blank"> <?php echo $item['rss_title'] ?> </a></h3>
 						<?	} ?>
 						<h2 class="enfoques-title">
 							<a href="<?php echo $item['link']; ?>" target="_blank"><?php echo $item['title']; ?></a>

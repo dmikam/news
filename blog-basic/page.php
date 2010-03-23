@@ -16,7 +16,7 @@
 				<span class="date"><?	echo date('d.m.Y',strtotime($post->post_date));  ?></span> · <span class="author"><? the_author_posts_link(); ?></span> 
 			</h5>
 
-			<div class="entry">
+			<div class="entry clearfix">
 					<?php the_content('Leer más'); ?>
 			</div>
 			

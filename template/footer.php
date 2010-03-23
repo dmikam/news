@@ -35,7 +35,7 @@
 				<li><a href="http://periodismohumano.com/que-es-periodismohumano-com">Qué es periodismohumano.com</a></li>
 				<li><a href="http://periodismohumano.com/el-equipo">El Equipo</a></li>
 				<li><a href="http://periodismohumano.com/quien-nos-apoya">Quién nos apoya</a></li>
-				<li><a href="http://periodismohumano.com/hazte-socio-de-periodismohumano-com">Hazte socio de periodismohumano</a></li>
+				<li><a href="http://periodismohumano.com/haztesocio">Hazte socio de periodismohumano</a></li>
 				<li><a href="http://periodismohumano.com/mas-dudas-faq">Más dudas (FAQ)</a></li>
 			</ul>
 			</div>
@@ -44,13 +44,24 @@
 			<div class="footer_content">
 			
 			<ul class="social">
-				<li><a class="facebook" href="">facebook</a></li>
-				<li><a class="twitter" href="">twitter</a></li>
-				<li><a class="rss" href="">rss</a></li>
+				<li><a class="facebook" href="http://facebook.com/periodismohumano">facebook</a></li>
+				<li><a class="twitter" href="http://twitter.com/phumano">twitter</a></li>
+				<li><a class="rss" href="<?php bloginfo('rss2_url'); ?>">rss</a></li>
 			</ul>
 			<h3 id="followus">Síguenos...</h3>
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	try {
+	var pageTracker = _gat._getTracker("UA-1171730-8");
+	pageTracker._setDomainName(".periodismohumano.com");
+	pageTracker._trackPageview();
+	} catch(err) {}</script>
+	<?php wp_footer(); ?>  
 </body>
 </html>
