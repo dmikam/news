@@ -1,0 +1,666 @@
+/*
+      Theme Name: Special blog
+      Theme URI: http://www.periodismohumano.com
+      Version: 1.0
+      Author: Daniel Aguilar
+      Author URI: http://www.e-dac.es
+*/
+
+/* FIXES */
+*, html { 
+	margin:0; 
+	padding:0;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {display: inline-block;}
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+/* END FIXES */
+a {
+	text-decoration:none;
+	color:#000;
+}
+a:hover {
+	text-decoration:underline;
+}
+
+html,body {
+	background:#000;
+	font-family:"Microsoft Sans Serif", sans-serif;
+}
+#all {
+}
+#top {
+	height:20px;
+	background:#000;
+	width:100%;
+	padding:3px 0px;
+	border-bottom:1px solid #bbb;
+}
+	#top #center {
+		width:900px;
+		margin:0px auto;
+	}
+	#top h1 {
+		height:20px;
+		width:182px;
+		background:url('images/logoph.png') no-repeat;
+		float:left;
+		margin-left:20px;
+	}
+		#top h1 a {
+			display:block;
+			height:20px;
+			width:182px;
+			text-indent:-999999px;
+		}
+	#top #backph {
+		float:right;
+		color:#fff;
+		margin-right:20px;
+		font-size:12px;
+	}
+	#nav {
+		width:100%;
+		background:#000;
+		height:20px;
+		text-align:center;
+	}
+	#nav #menu {
+		list-style:none;
+		width:900px;
+		margin:0px auto;
+	}
+		#nav #menu li {
+			float:left;
+			border-right:1px solid #bbb;
+		}
+			#nav #menu li:last-child {
+				border-right:0px;
+			}
+			#nav #menu li a {
+				display:block;
+				text-transform:uppercase;
+				color:#eee;
+				font-size:12px;
+				width:200px;
+				text-align:center;
+				padding:3px 0px;
+			}
+			#nav #menu li a:hover {
+			}
+#header {
+	height:220px;
+	width:900px;
+	margin:0px auto;
+}	
+	#header h1 a {
+		height:280px;
+		width:900px;
+		display:block;
+		text-indent:-9999999px;
+	}
+	
+	#multimedia {
+		width:900px;
+		margin:20px auto;
+		padding-bottom:50px;
+	}
+	#container {
+		background:url('images/shadow.png') repeat-x #fff;
+		width:100%;
+		padding-top:30px;
+	}
+	#content {
+		width:900px;
+		margin:0px auto;
+	}
+		#content #featured {
+		}
+		#video-nav {
+			width:900px;
+			margin:-180px auto 0px auto;
+			height:190px;
+		} 
+		#more-videos {
+			width:280px;
+			background:#000;
+			padding:10px;
+			float:right;
+			opacity:0.7;
+			-moz-opacity:0.7;
+			
+		}
+				#more-videos h2 {
+					color:#fff;
+					font-family: Georgia, serif;
+					font-style:italic;
+					border-bottom:1px dashed #ddd;
+					text-transform:lowercase;
+					margin-bottom:10px;
+				}
+				#more-videos ul {
+					margin:0px 0px 10px 0px;					
+				}
+				#more-videos li {
+					list-style:none;
+					margin:5px 0px;
+					font-size:15px;
+				}
+					#more-videos li a {
+						color:#fff;
+						font-size:12px;
+					}
+				#more-videos .simplePagerNav {
+					text-transform:lowercase;
+					padding:10px 10px;
+					border-top:1px dashed #ddd;
+					font-size:12px;
+				}
+				#more-videos #previousPage {
+					float:left;
+					color:#fff;
+					display:block;
+					background:url('images/previous.png') 0px 3px no-repeat;
+					padding-left:15px;
+					height:15px;
+					line-height:14px;
+				}
+				#more-videos #nextPage {
+					float:right;
+					color:#fff;
+					display:block;
+					background:url('images/next.png') right 3px no-repeat;
+					padding-right:15px;
+					height:15px;
+					line-height:14px;
+				}
+	#container p {
+		margin:10px 0px;
+	}
+	#content ul, #content ol {
+		margin:10px;
+	}
+	#content .share_and_tags {
+		margin-bottom:40px;
+	}
+	#content .tags {
+		border-bottom:1px dashed #B3B3B3;
+		border-top:1px dashed #B3B3B3;
+		padding:5px 10px;	
+		font-size:12px;
+	}
+		#content .tags p {
+			margin:0px;
+		}
+		#content .tags strong {
+			float:left;
+			width:75px;
+			font-family: "Georgia", serif;
+			color:#D12421;
+		}
+		
+		
+	#content .share {
+		border-bottom:1px dashed #B3B3B3;
+		border-top:1px dashed #B3B3B3;
+		padding:5px 10px;
+		font-size:12px;
+		margin-top:10px;
+	}
+		#content .share strong {
+			float:left;
+			width:75px;
+			font-family: "Georgia", serif;
+			color:#61A6FF;
+		}
+		#content .share ul {
+			margin:0px;
+		}
+		
+		#content .share ul li {
+			list-style:none;
+			float:left;
+			margin:0px 10px 0px 0px;
+			height:15px;
+			text-indent:20px;
+		}
+			#content .share ul li a {
+				color:#808080;
+				text-transform:lowercase;
+			}
+			#content .share ul li.twitter {
+				background:url('images/sprite2.png') no-repeat;
+			}
+			#content .share ul li.facebook {
+				background:url('images/sprite2.png') 0px -15px no-repeat;
+			}	
+			#content .share ul li.digg {
+				background:url('images/sprite2.png') 0px -45px no-repeat;
+			}
+			#content .share ul li.meneame {
+				background:url('images/sprite2.png') 0px -30px no-repeat;
+			}
+			#content .share ul li.bitacoras {
+				background:url('images/sprite.png') no-repeat -140px -176px;
+			}
+			
+	.title {
+		font-family:"Georgia", serif;
+		font-weight:normal;
+		padding-bottom:5px;
+		border-bottom:2px dotted #000;
+	}
+		.title.big {
+			font-size:35px;
+			line-height:37px;
+		}
+		.title.medium {
+			font-size:25px;
+			line-height:27px;
+		}
+		.title a:hover {
+			text-decoration:none;
+		}
+		.entry {
+			font-size:14px;
+			line-height:22px;
+			font-family:"Microsoft Sans Serif", sans-serif;
+			color:#4C4C4C;
+			margin-bottom:30px;
+		}
+		.entry blockquote {
+			padding-left:40px;
+			background:url('images/comment-quote.jpg') no-repeat left top;
+			margin-right:30px;
+			margin-left:20px;
+		}
+			.entry blockquote p {
+				font-size:17px;
+				font-family:"Georgia", serif;
+				line-height:23px;
+				background:url('images/quote-close-gray.jpg') no-repeat right bottom;
+				padding-right:40px;
+				font-style:italic;
+			}
+		.entry a img {
+			border:0px;
+		}
+		.entry .alignright {
+			float:right;
+			margin-left:20px;
+			margin-bottom:10px;
+			margin-top:-20px;
+			margin-right:-20px;
+		}
+		.entry .alignleft {
+			float:left;
+			margin-right:20px;
+			margin-bottom:10px;
+			margin-top:5px;
+			margin-left:-20px;
+		}
+		.entry .alignright img, .entry .alignleft img, .entry .alignnone img, .entry .aligncenter img  {
+			width:100%;
+			height:auto;
+		}
+		.entry .aligncenter {
+			margin:0px auto 10px auto;
+		}
+		.entry .center {
+			text-align:center;
+		}
+		.entry .wp-caption-text {
+			font-size:12px;
+			background:url('images/sprite.png') 0px -1638px no-repeat #E6E6E6;
+			padding:20px 10px 10px 20px;
+			color:#4C4C4C;
+			line-height:14px;
+			margin-top:4px;
+			margin-bottom:0px;
+		}
+		.entry .bloque {
+			float:right;
+			width:220px;
+			padding:30px 0px 0px 0px;
+			background:url('images/quote.jpg') no-repeat left top;
+			margin-right:-20px;
+			margin-left:20px;
+		}
+			.entry .bloque p {
+				font-size:20px;
+				font-family:"Georgia", serif;
+				color:#D12420;
+				line-height:25px;
+				background:url('images/quote-in.jpg') no-repeat right bottom;
+				padding:0px 0px 30px 0px;
+				margin-right:-10px;
+			}
+			.entry .bloque-destacado {
+				float:right;
+				width:220px;
+				padding:30px 0px 0px 0px;
+				margin-right:-20px;
+				margin-left:20px;
+			}
+				.entry .bloque-destacado p {
+					font-size:20px;
+					font-family:"Georgia", serif;
+					color:#D12420;
+					line-height:25px;
+					padding:0px 0px 30px 0px;
+					margin-right:-10px;
+				}
+		.entry .despiece {
+			background:url('images/sprite.png') 0px -1638px no-repeat #E6E6E6;
+			color:#4C4C4C;
+			padding:30px 20px 1px 20px;
+		}
+			.entry .despiece h3 {
+				font-family:"Georgia", serif;
+				font-weight:normal;
+				font-size:20px;
+				color:#4C4C4C;
+				margin-bottom:10px;
+			}
+			.entry .destacado {
+				background:url('images/featuredin.jpg') no-repeat #000;
+				padding:30px 20px 1px 50px;
+				display:table;
+				margin-bottom:20px;
+				color:#fff;
+			}
+			.entry .destacado p {
+				color:#fff;
+			}
+			.entry .moreinfo {
+				color:#D12420;
+				font-size:12px;
+			}
+	#more {
+		width:936px;
+		margin:30px auto 0px auto;
+	}
+	#more .post {
+		float:left;
+		width:200px;
+		margin:17px;
+	}
+		#more .post a img {
+			border:0px;
+			border:1px solid #EEEEEE;
+			padding:1px;
+		}
+		#more .post a:hover img {
+			background:#ccc;
+		}
+	#sidebar {
+	
+	}
+	#footer {
+		width:100%;
+		margin:0px auto 0px auto;
+		padding-top:30px;
+		background:#fff;
+		font-size:0.8em;
+	}
+		#footer .line {
+			width:100%;
+			margin:0px auto;
+		}
+			#phlogo {
+				background:url("images/sprite.png") no-repeat scroll -3px -696px transparent;
+				color:#FFFFFF;
+				float:left;
+				font-family:Georgia;
+				height:43px;
+				margin-left:4%;
+				margin-top:20px;
+				text-transform:lowercase;
+				width:217px;
+				text-align:right;
+			}
+			#footer .footer_content {
+				width:980px;
+				margin:0px auto;
+			}
+				#line_titles h3 {
+					color:#D12421;
+					font-family:"Georgia", serif;
+					font-size:20px;
+					text-transform:lowercase;
+					font-weight:normal;
+					margin-bottom:10px;
+				}
+			.who {
+				width:250px;
+				float:right;
+			}
+			.what {
+				width:250px;
+				float:right;
+
+			}
+			.contact {
+				width:150px;
+				float:right;
+			}
+			#footer #line_content {
+				background:url('images/footer-background.jpg') #D12421 repeat-x 0px -1px;
+				padding-bottom:20px;
+			}
+				#line_content ul {
+					background:url('images/mark-footer-white.jpg') no-repeat 0px -1px;
+					padding-top:20px;
+				}
+				#line_content ul li {
+					list-style:none;
+					margin:0px 0px 10px 0px;
+				}
+					#line_content ul.what li {
+						width:50%;
+						float:left;
+					}
+
+					#line_content ul li a {
+						color:#fff;
+					}
+			#footer #line_socials {
+				background:#000;
+			}
+				#line_socials #followus {
+					width:100px;
+					float:right;
+					font-family:"Georgia", serif;
+					font-size:20px;
+					text-transform:lowercase;
+					font-weight:normal;
+					color:#fff;
+					background:url('images/mark-footer-red.jpg') no-repeat 0px 0px;
+					padding-top:20px;
+					margin-bottom:15px;
+				}
+				#line_socials .social {
+					width:550px;
+					float:right;
+					padding-top:17px;
+				}
+					#line_socials .social li {
+						float:left;
+						margin:9px 20px;
+						list-style:none;
+					}
+					#line_socials .social li a { 
+						display:block;
+						text-indent:20px;
+						color:#fff;
+						height:15px;
+					}
+						#line_socials .social li a.facebook { 
+							background:url('images/sprite.png') no-repeat left -161px;
+						}
+						#line_socials .social li a.twitter { 
+							background:url('images/sprite.png') no-repeat left -146px;
+						}	
+						#line_socials .social li a.rss { 
+							background:url('images/sprite.png') no-repeat left -132px;
+						}
+
+/*Comentarios*/
+	#comments-title {
+		border-bottom:1px dashed #D12421;
+		border-top:1px dashed #D12421;
+		background:url('images/mediumquote.jpg') no-repeat 99% center;
+		padding:5px;
+	}
+		#comments-title h3 {
+			font-size:12px;
+			font-weight:normal;
+			color:#D12421;
+		}
+		#respond {
+			padding:0px 20px;
+		}
+		#cancel-comment-reply-link {
+			padding-left:16px;
+			color:#D12421;
+			float:right;
+			margin-right:20px;
+			line-height:14px;
+			margin-top:1px;
+		}
+		#leave_comment {
+			color:#4C4C4C;
+			font-weight:normal;
+			font-size:12px;
+			border-bottom:1px dashed #B3B3B3;
+			border-top:1px dashed #B3B3B3;
+			padding:5px;
+		}
+		#commentform #subform {
+			width:560px;
+			padding:30px 0px;
+		}
+			#commentform  p {
+				margin:5px 0px;
+				color:#4C4C4C;
+			}
+			#commentform #subform label {
+				display:inline-block;
+				width:200px;
+				text-align:right;
+				margin-right:20px;
+				float:left;
+				font-size:12px;
+			}
+
+			#commentform #subform input[type=text], #commentform textarea {
+				border:0px;
+				width:340px;
+				padding:3px 0px;
+				background:#E6E6E6;
+			}
+			#commentform #subform input[type=submit] {
+				background:url('images/respond.png') #fff no-repeat 0px 4px;
+				font-weight:bold;
+				font-family: "Georgia", serif;
+				padding:2px 0px 3px 20px;
+				margin-bottom:7px;
+				display:block;
+				height:19px;
+				line-height:6px;
+				border:0px;
+				font-size:12px;
+				color:#b3b3b3;
+				margin-left:220px;
+				margin-top:10px;
+				text-transform:lowercase;
+			}
+				#commentform #subform input[type=submit]:hover {
+					text-decoration:underline;
+				}
+		#subform #loggedin {
+			font-size:12px;
+			margin:10px 0px;
+			text-align:right;
+		}
+
+	ol.commentlist { color:#4C4C4C; list-style:none; margin-top:30px; margin-left:5px; padding:0; text-indent:0; }
+		ol.commentlist li.depth-1 {
+			background:url('images/miniquote.png') no-repeat left top;
+			padding:0px 25px 10px;
+			border-bottom:1px dashed #D12421;
+			margin-bottom:20px;
+		}
+		ol.commentlist li.depth-2 {
+			margin:10px 1px;
+			padding:20px 45px 10px;
+			background:url('images/miniquote.png') #F3F3F3 no-repeat 20px 20px;
+		}
+		ol.commentlist li:last-child {
+			border:0px;
+		}
+	ol.commentlist li.alt { }
+	ol.commentlist li.bypostauthor {}
+	ol.commentlist li.byuser {}
+	ol.commentlist li.comment-author-admin {}
+	ol.commentlist li.comment { }
+		ol.commentlist li div.comment-author {
+			color:#D12421;
+			font-size:12px;
+			font-weight:bold;
+			font-family: "Georgia", serif;
+		}
+	ol.commentlist li div.vcard { }
+	ol.commentlist li div.vcard cite.fn { font-style:normal; }
+	ol.commentlist li div.vcard cite.fn a.url {}
+	ol.commentlist li div.vcard img.avatar { border:5px solid #ccc; float:right; margin:0 0 1em 1em; }
+	ol.commentlist li div.vcard img.avatar-32 {}
+	ol.commentlist li div.vcard img.photo {}
+	ol.commentlist li div.commentmetadata {}
+	ol.commentlist li div.comment-meta { font-size:9px; }
+	ol.commentlist li div.comment-meta a { color:#ccc; }
+	ol.commentlist li p { font-size:12px; line-height:18px; margin:1em 0 1em; }
+	ol.commentlist li ul { font-size:11px; list-style:square; margin:0 0 1em 2em; }
+	ol.commentlist li div.reply .comment-reply-link { 
+		font-size:12px;
+		font-weight:normal;
+		color:#B3B3B3;
+		background:url('images/respond.png') no-repeat;
+		font-weight:bold;
+		font-family: "Georgia", serif;
+		padding:2px 0px 3px 20px;
+		margin-bottom:7px;
+		display:block;
+		height:12px;
+		line-height:6px;
+		text-transform:lowercase;
+	}
+
+	ol.commentlist li ul.children { list-style:none; margin:1em 0 0; text-indent:0; }
+	ol.commentlist li ul.children li {}
+	ol.commentlist li ul.children li.alt {}
+	ol.commentlist li ul.children li.bypostauthor {}
+	ol.commentlist li ul.children li.byuser {}
+	ol.commentlist li ul.children li.comment {}
+	ol.commentlist li ul.children li.comment-author-admin {}
+	ol.commentlist li ul.children li.depth-4 { border-left:0px solid #bbb; border-bottom:0px; margin:0 0 .25em .25em; }
+	ol.commentlist li ul.children li.depth-5 {}
+	ol.commentlist li ul.children li.odd {}
+	ol.commentlist li.parent { border-left:0px solid #111; }
+	ol.commentlist li.pingback { border-bottom:1px dotted #666; padding:1em; }
+	ol.commentlist li.thread-alt { }
+	ol.commentlist li.thread-even {}
+	ol.commentlist li.thread-odd {}
+	
