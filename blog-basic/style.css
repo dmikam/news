@@ -246,6 +246,7 @@ body {
 			font-family: "Georgia", serif;
 			color:#61A6FF;
 		}
+	
 		#content .share ul li {
 			list-style:none;
 			float:left;
@@ -253,6 +254,7 @@ body {
 			height:15px;
 			text-indent:20px;
 		}
+
 			#content .share ul li a {
 				color:#808080;
 				text-transform:lowercase;

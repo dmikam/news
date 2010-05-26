@@ -452,7 +452,7 @@ a img {
 				background:url('images/sprite.png') no-repeat 0px -326px #AFC1C5;
 			}
 			#content .category.cat-508 { 
-				background:url('images/sprite.png') #D12421 0px -364px no-repeat;
+				background:url('images/sprite.png') #D12421 0px -326px no-repeat;
 			}
 			#content #right .category.cat-1 { 
 				background:url('images/sprite.png') no-repeat 0px -288px #829CBA;
@@ -475,7 +475,7 @@ a img {
 			#content #right .category.cat-21 { 
 				background:url('images/sprite.png') no-repeat 0px -288px #AFC1C5;
 			}
-			#content .category.cat-508 { 
+			#content #right .category.cat-508 { 
 				background:url('images/sprite.png') #D12421 0px -288px no-repeat;
 			}
 		#content #sub-content #right .news {
@@ -1601,7 +1601,7 @@ ol.commentlist li ul.children li.depth-4 { border-left:0px solid #bbb; border-bo
 ol.commentlist li ul.children li.depth-5 {}
 ol.commentlist li ul.children li.odd {}
 ol.commentlist li.parent { border-left:0px solid #111; }
-ol.commentlist li.pingback { border-bottom:1px dotted #666; padding:1em; }
+ol.commentlist li.pingback {  }
 ol.commentlist li.thread-alt { }
 ol.commentlist li.thread-even {}
 ol.commentlist li.thread-odd {}

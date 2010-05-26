@@ -16,13 +16,16 @@
 				</ul>
 			</div>
 		<? endif; ?>
-			
+		
+		<? $related = related_posts_shortcode('limit=5'); ?>	
+		<? if ($related) : ?>
 		<h3>Información relacionada</h3>
 		<div id="meta_links" class="block clearfix">
 				<div class="related_posts">
-				<?php echo related_posts_shortcode('limit=5');?>
+				<?php echo $related;?>
 				</div>
 		</div>
+		<? endif; ?>
 
 	<? else: ?>
 		<div id="featureds" class="featureds_main"> 

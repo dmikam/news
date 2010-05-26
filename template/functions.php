@@ -280,13 +280,7 @@ function related_posts_shortcode( $atts ) {
 			}
 			return '<ul>'.$retval.'</ul>';
 		} else {
-			$retval .= '
-				No related posts found
-			';
-			$retval .= '
-			';
-		return $retval;
-
+			return false;
 		}
 	}
 	return;
@@ -434,5 +428,5 @@ function allow_contributor_uploads() {
 	$contributor->add_cap('upload_files');
 }
 
-add_filter( 'wp_feed_cache_transient_lifetime', create_function( '$a', 'return 7200;' ) );
+add_filter( 'wp_feed_cache_transient_lifetime', create_function( '$a', 'return 1800;' ) );
 ?>

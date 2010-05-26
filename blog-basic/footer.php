@@ -74,5 +74,7 @@
 	pageTracker._setDomainName(".periodismohumano.com");
 	pageTracker._trackPageview();
 	} catch(err) {}</script>
+	<?php wp_footer(); ?>  
+	
 </body>
 </html>
